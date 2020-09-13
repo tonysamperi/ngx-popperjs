@@ -1,0 +1,4 @@
+language: node_js
+script: npm run build:lib
+node_js:
+  - v10

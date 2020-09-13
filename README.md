@@ -1,1 +1,282 @@
-# In progress...
+# ngx-popperjs  
+
+[![npm](https://img.shields.io/npm/v/ngx-popperjs.svg?style=flat-square)](https://www.npmjs.com/package/ngx-popperjs) 
+[![npm](https://img.shields.io/npm/dm/ngx-popperjs.svg?style=flat-square)](https://www.npmjs.com/package/ngx-popperjs) 
+<!-- 
+    TODO: SETUP SNYK
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/MrFrankel/ngx-popperjs/blob/master/LICENSE) [![Greenkeeper badge](https://badges.greenkeeper.io/MrFrankel/ngx-popperjs.svg)](https://greenkeeper.io/) -->
+  <img src="http://badge-size.now.sh/https://unpkg.com/ngx-popperjs@8.0.0/bundles/ngx-popperjs.umd.js?compression=brotli" alt="Stable Release Size"/>
+  <img src="http://badge-size.now.sh/https://unpkg.com/ngx-popperjs@8.0.0/bundles/ngx-popperjs.umd.js?compression=gzip" alt="Stable Release Size"/>
+[![Build Status](https://travis-ci.org/tonysamperi/ngx-popperjs.svg?branch=master)](https://travis-ci.org/MrFrankel/ngx-popperjs)
+
+ngx-popperjs is an angular wrapper for the legacy version of the [Popper.js](https://popper.js.org/) library.
+
+The goal of this library is to take Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/) and update the compatibility up to Angular 10 (in first instance).
+Since his library is compatible with Angular 7 and downwards, this will start with Angular 8.
+If you need to work with an older version of Angular, please refer to Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/).
+
+## Changes
+
+###v 8.0.0
+* Proud first release 😉
+
+### Installation
+
+node and npm are required to run this package.
+
+1. Use npm/yarn to install the package:
+
+  ```terminal
+  $ npm install popper.js --save
+  $ npm install ngx-popperjs --save 
+  ```
+  
+  Or 
+  
+   ```terminal
+    $ yarn add popper.js --save
+    $ yarn add ngx-popperjs --save 
+  ```
+
+2. You simply add into your module `NgxPopperjsModule`:
+
+  ```typescript
+  import {NgxPopperModule} from 'ngx-popperjs';
+  
+  @NgModule({
+   // ...
+   imports: [
+     // ...
+     NgxPopperjsModule
+   ]
+  })
+  ```
+  
+SystemJS 
+```
+    System.config({
+        paths: {
+            // paths serve as alias
+            'npm:': 'libs/'
+        },
+        // map tells the System loader where to look for things
+        map: {
+            ... ,
+            'ngx-popperjs': 'npm:ngx-popperjs',
+            'popper-directive.js': 'npm:ngx-popperjs',
+            'popper.module': 'npm:ngx-popperjs',
+        },
+        // packages tells the System loader how to load when no filename and/or no extension
+        packages: {
+            ... ,
+            'ngx-popperjs': {
+                main: 'index.js',
+                defaultExtension: 'js'
+            },
+            'popper.js': {
+                main: 'popperjs-directive.js',
+                defaultExtension: 'js'
+            },
+            'popper.module': {
+                main: './popperjs.module.js',
+                defaultExtension: 'js'
+            }
+        }
+    });
+
+```
+  
+
+3. Add to view:
+
+  ```HTML  
+   <div     [popper]="popper1Content"
+            [popperShowOnStart]="true"
+            [popperTrigger]="'click'"
+            [popperHideOnClickOutside]="true"
+            [popperHideOnScroll]="true"
+            [popperPlacement]="'bottom'">
+         <p class="bold">Hey!</p>
+         <p class="thin">Choose where to put your popper!</p>         
+       </div>
+       <popper-content #popper1Content>
+         <p class="bold">Popper on bottom</p>
+       </popper-content>
+  ```
+
+4. As text:
+ ```HTML
+      <div [popper]="'As text'"
+           [popperTrigger]="'hover'"
+           [popperPlacement]="'bottom'"
+           (popperOnShown)="onShown($event)">
+        <p class="bold">Pop</p>
+        <p class="thin">on the bottom</p>
+      </div>
+ ```
+
+  ```HTML
+       <div popper="{{someTextProperty}}"
+            [popperTrigger]="'hover'"
+            [popperPlacement]="'bottom'"
+            [popperStyles]="{'background-color: 'blue''}",
+            (popperOnShown)="onShown($event)">
+         <p class="bold">Pop</p>
+         <p class="thin">on the bottom</p>
+       </div>
+  ```
+ 
+  5. Position fixed, breaking overflow:
+   ```HTML
+        <div [popper]="'As text'"
+             [popperTrigger]="'hover'"
+             [popperPlacement]="'bottom'"
+             [popperPositionFixed]="true"
+             (popperOnShown)="onShown($event)">
+        </div>
+   ```
+ 
+ 6. Specific target:
+  ```HTML
+ <div class="example">
+       <div #popperTargetElement></div>
+       <div [popper]="'As text'"
+            [popperTrigger]="'hover'"
+            [popperPlacement]="'bottom'"
+            [popperTarget]="popperTargetElement.nativeElement"
+            (popperOnShown)="onShown($event)">
+       </div>
+  ```
+  
+7. hide/show programmatically:
+  ```HTML
+   <div [popper]="tooltipcontent"
+           [popperTrigger]="'hover'"
+           [popperPlacement]="'bottom'"
+           [popperApplyClass]="'popperSpecialStyle'">
+        <p class="bold">Pop</p>
+        <p class="thin">on the bottom</p>
+      </div>
+      <popper-content #tooltipcontent>
+        <div>
+          <p>This is a tooltip with text</p>
+          <span (click)="tooltipcontent.hide()">Close</span>
+        </div>
+      </popper-content>
+  ```
+ 
+8. Attributes map:  
+  
+    | Option                       | Type              | Default   | Description                                                                                              |
+    |:-----------------------      |:----------------  |:--------- | :------------------------------------------------------------------------------------------------------  |
+    | popperDisableAnimation       | boolean           | false     | Disable the default animation on show/hide                                                               |
+    | popperDisableStyle           | boolean           | false     | Disable the default styling                                                                              |
+    | popperDisabled               | boolean           | false     | Disable the popper, ignore all events                                                                    |
+    | popperDelay                  | number            | 0         | Delay time until popper it shown                                                                         |
+    | popperTimeout                | number            | 0         | Set delay before the popper is hidden                                                                    |
+    | popperTimeoutAfterShow       | number            | 0         | Set a time on which the popper will be hidden after it is shown                                          |
+    | popperPlacement              | Placement(string) | auto      | The placement to show the popper relative to the reference element                                       |
+    | popperTarget                 | HtmlElement       | auto      | Specify a different reference element other the the one hosting the directive                            |
+    | popperBoundaries             | string(selector)  | undefined | Specify a selector to serve as the boundaries of the element                                             |
+    | popperShowOnStart            | boolean           | false     | Popper default to show                                                                                   |
+    | popperTrigger                | Trigger(string)   | hover     | Trigger/Event on which to show/hide the popper                                                           |
+    | popperPositionFixed          | boolean           | false     | Set the popper element to use position: fixed                                                            |
+    | popperAppendTo               | string            | undefined | append The popper-content element to a given selector, if multiple will apply to first                   |
+    | popperPreventOverflow        | boolean           | undefined | Prevent the popper from being positioned outside the boundary                                            |
+    | popperHideOnClickOutside     | boolean           | true      | Popper will hide on a click outside                                                                      |
+    | popperHideOnScroll           | boolean           | false     | Popper will hide on scroll                                                                               |
+    | popperHideOnMouseLeave       | boolean           | false     | Popper will hide on mouse leave                                                                          |
+    | popperModifiers              | popperModifier    | undefined | popper.js custom modifiers hock                                                                          |
+    | popperApplyClass             | string            | undefined | list of comma separated class to apply on ngpx__container                                                |
+    | popperStyles                 | Object            | undefined | Apply the styles object, aligned with ngStyles                                                           |
+    | popperApplyArrowClass        | string            | undefined | list of comma separated class to apply on ngpx__arrow                                                    |
+    | popperOnShown                | EventEmitter<>    | $event    | Event handler when popper is shown                                                                       |
+    | popperOnHidden               | EventEmitter<>    | $event    | Event handler when popper is hidden                                                                      |
+    | popperOnUpdate               | EventEmitter<>    | $event    | Event handler when popper is updated                                                                     |
+    | popperAriaDescribeBy         | string            | undefined | Define value for aria-describeby attribute                                                               |
+    | popperAriaRole               | string            | popper    | Define value for aria-role attribute                                                                     |
+
+
+
+9. Override defaults:
+
+    ngx-popperjs comes with a few default properties you can override in default to effect all instances
+    These are overridden by any child attributes.
+```JavaScript
+NgModule({
+  imports: [
+    BrowserModule,
+    FormsModule,
+    NgxPopperjsModule.forRoot({placement: 'bottom'})],
+  declarations: [AppComponent],
+  providers: [],
+  bootstrap: [AppComponent]
+
+})
+```
+  
+   | Options                  | Type              | Default   |
+   |:-------------------      |:----------------  |:--------- |
+   | showDelay                | number            | 0         |
+   | disableAnimation         | boolean           | false     |
+   | disableDefaultStyling    | boolean           | false     |
+   | placement                | Placement(string) | auto      |
+   | boundariesElement        | string(selector)  | undefined |
+   | trigger                  | Trigger(string)   | hover     |
+   | popperModifiers          | popperModifier    | undefined |
+   | positionFixed            | boolean           | false     |
+   | hideOnClickOutside       | boolean           | true      |
+   | hideOnMouseLeave         | boolean           | false     |
+   | hideOnScroll             | boolean           | false     |
+   | applyClass               | string            | undefined |
+   | styles                   | Object            | undefined |
+   | applyArrowClass          | string            | undefined |
+   | ariaDescribeBy           | string            | undefined |
+   | ariaRole                 | string            | undefined |
+   | appendTo                 | string            | undefined |
+   | preventOverflow          | boolean           | undefined |
+
+10. popperPlacement:
+
+  | 'top'
+  | 'bottom'
+  | 'left'
+  | 'right'
+  | 'top-start'
+  | 'bottom-start'
+  | 'left-start'
+  | 'right-start'
+  | 'top-end'
+  | 'bottom-end'
+  | 'left-end'
+  | 'right-end'
+  | 'auto'
+  | 'auto-start'
+  | 'auto-end'
+  | Function
+  
+11. popperTrigger:
+
+  | 'click'
+  | 'mousedown'
+  | 'hover'
+  | 'none'
+  
+    
+### Demo
+<a href="https://tonysamperi.github.io/ngx-popperjs/">Demo</a>
+
+### Contribute
+  Hell ya!!!
+  
+```terminal
+  $ npm install
+  $ npm run build
+  $ npm run dev  //run example
+  $ npm run start_test  //run tests
+```
+
+### Thanks to
+
+MrFrankel for setting up ngx-popper and maintaining till v 7.0.0.
+

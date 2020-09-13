@@ -1,0 +1,198 @@
+@import "scss/vars";
+@import "scss/code-highlight";
+@import "scss/popper-theme";
+
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Luckiest Guy;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Luckiest Guy Regular"), local("LuckiestGuy-Regular"), url(/assets/fonts/luckiest-guy-latin-400.woff2) format("woff2"), url(/assets/fonts/luckiest-guy-latin-400.woff) format("woff")
+}
+
+body {
+  line-height: 1.6;
+  background: map-get($pop-colors, background);
+  color: map-get($pop-colors, accent);
+  font-family: -apple-system, Helvetica Neue, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+
+  *, :after, :before {
+    box-sizing: inherit;
+  }
+
+  // COMMON ELEMENTS - START
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    &.pop-link-yellow {
+      color: #ffe69d;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      padding-bottom: 1px;
+      border-bottom: 2px solid rgba(255, 228, 148, 0.25);
+      -webkit-transition: border-bottom-color 0.15s ease-in-out;
+      transition: border-bottom-color 0.15s ease-in-out;
+
+      &:hover {
+        border-bottom: 2px solid rgba(255, 228, 148, 1);
+      }
+    }
+  }
+
+  ul {
+    padding-left: 20px;
+    margin: 0;
+
+    &.pop-list {
+      list-style: none;
+
+      > li > svg {
+        display: inline-block;
+        top: 6px;
+        left: 2px;
+        margin-right: 6px;
+        position: relative;
+        color: map-get($pop-colors, primary-light);
+        height: 25px;
+        margin-left: -30px;
+      }
+    }
+  }
+
+  // COMMON ELEMENTS - END
+
+  @include pop-custom-theme();
+
+  .pop-title-light {
+    font-family: 'Luckiest Guy', sans-serif;
+    -webkit-letter-spacing: 0.5px;
+    -moz-letter-spacing: 0.5px;
+    -ms-letter-spacing: 0.5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 30px;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    color: map-get($pop-colors, accent);
+  }
+
+  .pop-button-white {
+    display: inline-block;
+    background: white;
+    padding: 10px 16px;
+    border-radius: 4px;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: map-get($pop-colors, primary);
+    box-shadow: 0 8px 16px -4px rgba(200, 59, 80, 0.5);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    margin: 5px;
+
+    > svg {
+      vertical-align: -7px;
+      margin-right: 5px;
+    }
+  }
+
+  // TYPOGRAPHY - START
+
+  .pop-text-center {
+    text-align: center;
+  }
+
+  .pop-text-bold {
+    font-weight: bold;
+  }
+
+  .pop-lucky-font {
+    font-family: 'Luckiest Guy', sans-serif;
+  }
+
+  .pop-color-primary {
+    color: map-get($pop-colors, primary);
+  }
+
+  // TYPOGRAPHY - END
+
+  .pop-code-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #642f45;
+    border-radius: 4px;
+    color: #ffd3f8;
+    font-family: Menlo, SFMono-Regular, Consolas, Liberation Mono, monospace;
+    font-size: 14px;
+    overflow: hidden;
+    font-weight: normal;
+    margin: 5px;
+    max-width: 100%;
+    overflow-x: auto;
+
+    > div {
+      padding: 10px 15px;
+      white-space: nowrap;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      background: #642f45;
+      border-radius: 4px;
+      color: #ffd3f8;
+      font-family: Menlo, SFMono-Regular, Consolas, Liberation Mono, monospace;
+      font-size: 14px;
+      overflow: hidden;
+      font-weight: normal;
+      margin: 5px;
+      max-width: 100%;
+      overflow-x: auto;
+
+      &:first-child {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        background: rgba(0, 0, 0, 0.25);
+        text-align: center;
+        padding: 0 15px;
+        color: white;
+      }
+    }
+
+    .pop-code-box-icon {
+      max-width: 50px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+
+}

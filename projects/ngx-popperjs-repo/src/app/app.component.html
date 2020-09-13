@@ -1,0 +1,210 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * POPPER DEMO :) * * * * * * * * * * * -->
+<!-- * * * * * * * * cloned from popper.js.org * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- Toolbar -->
+<div class="content" role="main">
+    <div class="pop-top-section">
+        <img src="assets/images/popper-logo.svg" alt="" />
+        <h2 class="pop-lucky-font pop-color-primary">Tooltip &amp; Popover <br> Positioning Engine</h2>
+        <div>
+            <a href="https://github.com/tonysamperi/ngx-popperjs" rel="nofollow noreferrer" class="pop-button-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="css-1oabto8">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                Star on GitHub
+            </a>
+        </div>
+    </div>
+    <div class="pop-install-section">
+        <h3 class="pop-title-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="css-mc2z91">
+                <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                <rect x="2" y="7" width="20" height="5"></rect>
+                <line x1="12" y1="22" x2="12" y2="7"></line>
+                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+            </svg>
+            Install Popper
+        </h3>
+        <div>
+            <div class="terminal">
+                <pre>npm i ngx-popperjs</pre>
+            </div>
+        </div>
+    </div>
+    <div class="pop-demo">
+        <article pop-position>
+            <div class="pop-popcorn-wrap">
+                <button *ngFor="let positionButton of positionButtons"
+                        (click)="updatePosition(positionButton)"
+                        [attr.data-placement]="positionButton"
+                        [attr.aria-label]="positionButton"
+                        class="pop-demo-placement-button">
+                    <div [class.selected]="selectedPosition === positionButton"></div>
+                </button>
+                <popper-content #myPopperContent><p class="pop-lucky-font">I'm popper :)</p></popper-content>
+                <img alt="Popcorn box" src="assets/images/popcorn-box.svg"
+                     [popper]="myPopperContent"
+                     [popperShowOnStart]="true"
+                     popperTrigger="click"
+                     [popperPlacement]="selectedPosition"
+                     class="pop-popcorn-box">
+            </div>
+            <div>
+                <h3 class="pop-title-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="5 9 2 12 5 15"></polyline>
+                        <polyline points="9 5 12 2 15 5"></polyline>
+                        <polyline points="15 19 12 22 9 19"></polyline>
+                        <polyline points="19 9 22 12 19 15"></polyline>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <line x1="12" y1="2" x2="12" y2="22"></line>
+                    </svg>
+                    Placement
+                </h3>
+                <p><strong>Click on the dots</strong> to place the tooltip. There are 12 different placements to choose
+                    from.</p>
+                <pre><code pop-position-code></code></pre>
+            </div>
+        </article>
+        <article pop-overflow>
+            <div class="pop-popcorn-wrap">
+                <popper-content #popcornPrices>
+                    <p class="pop-text-bold">POPCORN<br />SIZE<br />& PRICE</p>
+                    <ul>
+                        <li>XXS: $1.99</li>
+                        <li>XS: $2.99</li>
+                        <li>S: $3.99</li>
+                        <li>M: $4.99</li>
+                        <li>L: $5.99</li>
+                        <li>XL: $6.99</li>
+                        <li>XXL: $7.99</li>
+                    </ul>
+                </popper-content>
+                <img alt="Popcorn box" src="assets/images/popcorn-box.svg"
+                     [popper]="popcornPrices"
+                     [popperShowOnStart]="true"
+                     popperTrigger="click"
+                     popperPlacement="right"
+                     class="pop-popcorn-box">
+            </div>
+            <div>
+                <h3 class="pop-title-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6.13 1L6 16a2 2 0 0 0 2 2h15"></path>
+                        <path d="M1 6.13L16 6a2 2 0 0 1 2 2v15"></path>
+                    </svg>
+                    Overflow prevention
+                </h3>
+                <p><strong>Scroll the container</strong> to see the tooltip stay within the
+                    boundary. Once the opposite edges of the popcorn and tooltip are aligned, the tooltip is allowed to
+                    overflow to prevent detachment.</p>
+                <pre><code pop-overflow-code></code></pre>
+            </div>
+        </article>
+        <article pop-flipping>
+            <div class="pop-popcorn-wrap">
+                <img alt="Popcorn box" src="assets/images/popcorn-box.svg"
+                     popper="I'm another popper :)"
+                     [popperShowOnStart]="true"
+                     popperTrigger="click"
+                     popperPlacement="top"
+                     class="pop-popcorn-box">
+            </div>
+            <div>
+                <h3 class="pop-title-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="19" x2="12" y2="5"></line>
+                        <polyline points="5 12 12 5 19 12"></polyline>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                    Flipping
+                </h3>
+                <p><strong>Scroll the container</strong> to see the tooltip stay within the
+                    boundary. Once the opposite edges of the popcorn and tooltip are aligned, the tooltip is allowed to
+                    overflow to prevent detachment.</p>
+                <pre><code pop-flipping-code></code></pre>
+            </div>
+        </article>
+    </div>
+    <div class="pop-generic-section">
+        <div class="pop-text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                 stroke="#ffe69d"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6.13 1L6 16a2 2 0 0 0 2 2h15"></path>
+                <path d="M1 6.13L16 6a2 2 0 0 1 2 2v15"></path>
+            </svg>
+            <h3 class="pop-title-light">In a nutshell, Popper:</h3>
+        </div>
+        <ul class="pop-list">
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <strong>Places your tooltip or popover relative to the reference</strong> taking into account their
+                sizes, and positions its arrow centered to the reference.
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <strong>Takes into account the many different contexts it can live in</strong> relative to the reference
+                (different offsetParents, different or nested scrolling containers).
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <strong>Keeps your tooltip or popover in view as best as possible</strong>. It prevents it from being
+                clipped or cut off (overflow prevention) and changes the placement if the original does not fit
+                (flipping).
+            </li>
+        </ul>
+    </div>
+    <div class="pop-generic-section">
+        <div class="pop-text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                 stroke="#ffe69d"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <h3 class="pop-title-light">Free and open-source</h3>
+        </div>
+    </div>
+    <div class="pop-generic-section">
+        <div class="pop-text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                 stroke="#ffe69d"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <h3 class="pop-title-light">Ready to start?</h3>
+            <p>Start reading <a class="pop-link-yellow" href="http://github.com/tonysamperi/ngx-popperjs">Popper's
+                documentation</a>!</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>This Angular wrapper was created with ♥ by <a class="pop-link-yellow" href="tonysamperi.github.io" target="_blank">Tony
+        Samperi</a>
+    </p>
+    <p>© 2020 MIT License</p>
+</footer>
+
+<router-outlet></router-outlet>
