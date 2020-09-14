@@ -1,8 +1,9 @@
 @import "scss/vars";
 @import "scss/code-highlight";
 @import "scss/popper-theme";
+@import "../../ngx-popperjs/src/lib/scss/theme";
 
-/* You can add global styles to this file, and also import other style files */
+/* You can add global scss to this file, and also import other style files */
 @font-face {
   font-family: Luckiest Guy;
   font-style: normal;
@@ -77,6 +78,11 @@ body {
   // COMMON ELEMENTS - END
 
   @include pop-custom-theme();
+
+  [pop-theming] {
+
+    @include ngx-popperjs-theme(#777, #fff1e0);
+  }
 
   .pop-title-light {
     font-family: 'Luckiest Guy', sans-serif;

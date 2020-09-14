@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 import {NgxPopperjsPlacements} from "ngx-popperjs";
 import * as Prism from "prismjs";
 //
@@ -7,8 +7,16 @@ import {forEach, map, filter} from "lodash";
 enum NgxPopArticleTypes {
     position = "position",
     overflow = "overflow",
-    flipping = "flipping"
+    flipping = "flipping",
+    theming = "theming"
 }
+
+const codeTypes: { [key in keyof typeof NgxPopArticleTypes]: "css" | "markup" } = {
+    position: "markup",
+    overflow: "markup",
+    flipping: "markup",
+    theming: "css",
+};
 
 @Component({
     selector: "app-root",
@@ -50,7 +58,17 @@ export class NgxPopperjsAppComponent implements OnInit {
      [popperShowOnStart]="true"
      popperTrigger="click"
      popperPlacement="${this.selectedPosition}"
-     class="pop-popcorn-box"&gt;`
+     class="pop-popcorn-box"&gt;`,
+            theming: `@import ~ngx-popperjs/css/theme-dark.css
+/* OR */
+@import ~ngx-popperjs/css/theme-white.css
+/* OR */
+@import ~ngx-popperjs/scss/theme-dark
+/* OR */
+@import ~ngx-popperjs/scss/theme-white
+/* OR */
+@include ngx-popperjs-theme(#777, #fff1e0);
+`
         } as { [key in NgxPopArticleTypes]: string };
     }
 
@@ -77,7 +95,7 @@ export class NgxPopperjsAppComponent implements OnInit {
         if (!$code) {
             return;
         }
-        $code.classList.add(".language-markup");
+        $code.classList.add(`language-${codeTypes[key] || "markup"}`);
         $code.innerHTML = this.codeMap[key];
         Prism.highlightElement($code);
     }

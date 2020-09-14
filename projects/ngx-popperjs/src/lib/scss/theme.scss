@@ -1,0 +1,17 @@
+@mixin ngx-popperjs-theme($background, $text, $max-width: 250px, $z-index: 999) {
+
+  div.ngxp__container {
+    background: $background;
+    color: $text;
+    border: 0;
+    max-width: $max-width;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
+    z-index: $z-index;
+
+    > .ngxp__arrow {
+      &:before {
+        background-color: $background;
+      }
+    }
+  }
+}

@@ -87,6 +87,23 @@ SystemJS
     });
 
 ```
+
+Optionally you can include in your `styles.css` / `styles.css` one of the prebuilt themes:
+* `@import ~ngx-popperjs/css/theme-dark.css`
+* `@import ~ngx-popperjs/css/theme-white.css`
+* `@import ~ngx-popperjs/scss/theme-dark.scss`
+* `@import ~ngx-popperjs/scss/theme-white.scss`
+
+or easily create your own theme using the @mixin
+
+```
+@import ~ngx-popperjs/scss/theme.scss
+
+body {
+    @include ngx-popperjs-theme($background-color, $text-color, $max-width, $z-index) 
+}
+```
+
   
 
 3. Add to view:
@@ -199,7 +216,6 @@ SystemJS
     | popperAriaRole               | string            | popper    | Define value for aria-role attribute                                                                     |
 
 
-
 9. Override defaults:
 
     ngx-popperjs comes with a few default properties you can override in default to effect all instances
@@ -214,7 +230,7 @@ NgModule({
   providers: [],
   bootstrap: [AppComponent]
 
-})
+});
 ```
   
    | Options                  | Type              | Default   |
@@ -273,7 +289,6 @@ NgModule({
   
 ```terminal
   $ npm install
-  $ npm run build
   $ npm run start  //run example
 ```
 

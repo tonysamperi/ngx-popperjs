@@ -28,7 +28,9 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
-        "build": "ng build",
+        "build": "ng build && gulp postBuild",
+        "build:demo": "ng build ngx-popperjs-repo",
+        "pack": "gulp pack",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"
@@ -58,6 +60,8 @@
         "@types/jasminewd2": "~2.0.3",
         "@types/node": "~8.9.4",
         "codelyzer": "^5.0.0",
+        "gulp": "^4.0.2",
+        "gulp-sass": "^4.1.0",
         "jasmine-core": "~3.4.0",
         "jasmine-spec-reporter": "~4.2.1",
         "jest": "^26.4.2",
@@ -68,6 +72,7 @@
         "karma-jasmine-html-reporter": "^1.4.0",
         "lodash": "^4.17.20",
         "ng-packagr": "^5.4.0",
+        "node-sass-tilde-importer": "^1.0.2",
         "prismjs": "^1.21.0",
         "protractor": "~7.0.0",
         "ts-node": "~7.0.0",

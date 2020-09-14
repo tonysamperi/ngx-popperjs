@@ -22,7 +22,17 @@ strong {
   padding: 60px 25px 50px;
   position: relative;
 
-  > img {
+  > img.pop-angular-logo {
+    position: absolute;
+    width: $pop-angular-logo-size;
+    left: calc(50% - #{$pop-angular-logo-size/2});
+    top: calc(50% - #{$pop-angular-logo-size/2});
+    border-radius: 50%;
+    background-color: #FFF;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  > img.pop-popper-logo {
     height: 200px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -117,6 +127,23 @@ strong {
     &[pop-position] > div.pop-popcorn-wrap {
       height: 450px;
       position: relative;
+    }
+
+    &[pop-theming] {
+      > div.pop-popcorn-wrap {
+        position: relative;
+        width: 100%;
+        border-radius: 10px;
+        border: 2px dashed #ff6b81;
+        background-color: #281e36;
+        height: 300px;
+
+        .pop-popcorn-box {
+          width: 100px;
+          margin-left: -50px;
+          margin-top: -50px;
+        }
+      }
     }
 
     &[pop-overflow], &[pop-flipping] {
