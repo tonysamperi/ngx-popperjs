@@ -7,17 +7,9 @@
     box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
     z-index: 999;
     font-family: 'Roboto', sans-serif;
-  }
-  .ngxp__container[x-placement^=top] .ngxp__arrow {
-    border-color: white transparent transparent transparent;
-  }
-  .ngxp__container[x-placement^=right] .ngxp__arrow {
-    border-color: transparent white transparent transparent;
-  }
-  .ngxp__container[x-placement^=bottom] .ngxp__arrow {
-    border-color: transparent transparent white transparent;
-  }
-  .ngxp__container[x-placement^=left] .ngxp__arrow {
-    border-color: transparent transparent transparent white;
+
+    > .ngxp__arrow:before {
+      background: #FFF;
+    }
   }
 }

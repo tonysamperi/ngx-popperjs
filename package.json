@@ -1,56 +1,79 @@
 {
-  "name": "ngx-popperjs-repo",
-  "version": "1.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "~8.2.14",
-    "@angular/common": "~8.2.14",
-    "@angular/compiler": "~8.2.14",
-    "@angular/core": "~8.2.14",
-    "@angular/forms": "~8.2.14",
-    "@angular/platform-browser": "~8.2.14",
-    "@angular/platform-browser-dynamic": "~8.2.14",
-    "@angular/router": "~8.2.14",
-    "@popperjs/core": "^2.4.4",
-    "popper.js": "~1.16.1",
-    "rxjs": "~6.4.0",
-    "tslib": "^1.10.0",
-    "zone.js": "~0.9.1"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.803.29",
-    "@angular-devkit/build-ng-packagr": "~0.803.29",
-    "@angular/cli": "~8.3.29",
-    "@angular/compiler-cli": "~8.2.14",
-    "@angular/language-service": "~8.2.14",
-    "@types/jasmine": "~3.3.8",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~8.9.4",
-    "codelyzer": "^5.0.0",
-    "jasmine-core": "~3.4.0",
-    "jasmine-spec-reporter": "~4.2.1",
-    "jest": "^26.4.2",
-    "karma": "~4.1.0",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~2.0.1",
-    "karma-jasmine": "~2.0.1",
-    "karma-jasmine-html-reporter": "^1.4.0",
-    "lodash": "^4.17.20",
-    "ng-packagr": "^5.4.0",
-    "prismjs": "^1.21.0",
-    "protractor": "~7.0.0",
-    "ts-node": "~7.0.0",
-    "tsickle": "^0.37.0",
-    "tslint": "^6.1.2",
-    "tslint-consistent-codestyle": "^1.16.0",
-    "typescript": "~3.5.3"
-  }
+    "name": "ngx-popperjs-repo",
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "ngx-popperjs is an Angular wrapper for @popperjs",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tonysamperi/ngx-popperjs"
+    },
+    "bugs": {
+        "url": "https://github.com/tonysamperi/ngx-tour-wizard/issues"
+    },
+    "author": {
+        "name": "Tony Samperi",
+        "email": "github@tonysamperi.it"
+    },
+    "keywords": [
+        "Angular 8+",
+        "ngx-popperjs",
+        "popper Angular",
+        "popper 2",
+        "popperjs"
+    ],
+    "engines": {
+        "node": ">=10.15.3",
+        "npm": ">=6.9.0"
+    },
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "test": "ng test",
+        "lint": "ng lint",
+        "e2e": "ng e2e"
+    },
+    "private": true,
+    "dependencies": {
+        "@angular/animations": "~8.2.14",
+        "@angular/common": "~8.2.14",
+        "@angular/compiler": "~8.2.14",
+        "@angular/core": "~8.2.14",
+        "@angular/forms": "~8.2.14",
+        "@angular/platform-browser": "~8.2.14",
+        "@angular/platform-browser-dynamic": "~8.2.14",
+        "@angular/router": "~8.2.14",
+        "@popperjs/core": "~2.4.4",
+        "rxjs": "~6.4.0",
+        "tslib": "^1.10.0",
+        "zone.js": "~0.9.1"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "~0.803.29",
+        "@angular-devkit/build-ng-packagr": "~0.803.29",
+        "@angular/cli": "~8.3.29",
+        "@angular/compiler-cli": "~8.2.14",
+        "@angular/language-service": "~8.2.14",
+        "@types/jasmine": "~3.3.8",
+        "@types/jasminewd2": "~2.0.3",
+        "@types/node": "~8.9.4",
+        "codelyzer": "^5.0.0",
+        "jasmine-core": "~3.4.0",
+        "jasmine-spec-reporter": "~4.2.1",
+        "jest": "^26.4.2",
+        "karma": "~4.1.0",
+        "karma-chrome-launcher": "~2.2.0",
+        "karma-coverage-istanbul-reporter": "~2.0.1",
+        "karma-jasmine": "~2.0.1",
+        "karma-jasmine-html-reporter": "^1.4.0",
+        "lodash": "^4.17.20",
+        "ng-packagr": "^5.4.0",
+        "prismjs": "^1.21.0",
+        "protractor": "~7.0.0",
+        "ts-node": "~7.0.0",
+        "tsickle": "^0.37.0",
+        "tslint": "^6.1.2",
+        "tslint-consistent-codestyle": "^1.16.0",
+        "typescript": "~3.5.3"
+    }
 }

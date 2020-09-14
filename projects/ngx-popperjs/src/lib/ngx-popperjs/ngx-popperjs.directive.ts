@@ -16,26 +16,25 @@ import {
     SimpleChange,
     ViewContainerRef
 } from "@angular/core";
-import {NgxPopperjsContentComponent} from "./ngx-popperjs-content/ngx-popper-content.component";
-import {NgxPopperjsOptions} from "./models/ngx-popperjs-options.model";
-import {NgxPopperjsPlacements} from "./models/ngx-popperjs-placements.model";
-import {NgxPopperjsTriggers} from "./models/ngx-popperjs-triggers.model";
+import {NgxPopperjsContentComponent} from "../ngx-popperjs-content/ngx-popper-content.component";
+import {NgxPopperjsOptions} from "../models/ngx-popperjs-options.model";
+import {NgxPopperjsPlacements} from "../models/ngx-popperjs-placements.model";
+import {NgxPopperjsTriggers} from "../models/ngx-popperjs-triggers.model";
 
 @Directive({
     // tslint:disable-next-line:directive-selector
-    selector: "[popper]",
-    exportAs: "popper"
+    selector: "[popper]"
 })
 export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
 
-    public static baseOptions: NgxPopperjsOptions = {
+    static baseOptions: NgxPopperjsOptions = {
         showDelay: 0,
         placement: NgxPopperjsPlacements.AUTO,
         hideOnClickOutside: true,
         hideOnMouseLeave: false,
         hideOnScroll: false,
-        showTrigger: NgxPopperjsTriggers.HOVER,
-        appendTo: void 0,
+        showTrigger: NgxPopperjsTriggers.hover,
+        appendTo: undefined,
         ariaRole: "popper",
         ariaDescribe: "",
         styles: {}
@@ -83,7 +82,13 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
     @Input("popperPlacement")
     set placement(newValue: NgxPopperjsPlacements) {
         this._popperPlacement = newValue;
-        this._popperContent && (this._popperContent.popperOptions.placement = newValue) && this._shown && this._popperContent.show();
+        if (this._popperContent) {
+            this._popperContent.popperOptions.placement = newValue;
+            if (!this._shown) {
+                return;
+            }
+            this._popperContent.popperInstance.setOptions(this._popperContent.popperOptions);
+        }
     }
 
     get placement(): NgxPopperjsPlacements {
@@ -167,20 +172,20 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
 
     applyTriggerListeners() {
         switch (this.showTrigger) {
-            case NgxPopperjsTriggers.CLICK:
+            case NgxPopperjsTriggers.click:
                 this._pushListener("click", this.toggle.bind(this));
                 break;
-            case NgxPopperjsTriggers.MOUSEDOWN:
+            case NgxPopperjsTriggers.mousedown:
                 this._pushListener("mousedown", this.toggle.bind(this));
                 break;
-            case NgxPopperjsTriggers.HOVER:
+            case NgxPopperjsTriggers.hover:
                 this._pushListener("mouseenter", this.scheduledShow.bind(this, this.showDelay));
                 ["touchend", "touchcancel", "mouseleave"].forEach((eventName) => {
                     this._pushListener(eventName, this.scheduledHide.bind(this, null, this.hideTimeout));
                 });
                 break;
         }
-        if (this.showTrigger !== NgxPopperjsTriggers.HOVER && this.hideOnMouseLeave) {
+        if (this.showTrigger !== NgxPopperjsTriggers.hover && this.hideOnMouseLeave) {
             ["touchend", "touchcancel", "mouseleave"].forEach((eventName) => {
                 this._pushListener(eventName, this.scheduledHide.bind(this, null, this.hideTimeout));
             });

@@ -1,8 +1,29 @@
 {
   "name": "ngx-popperjs",
   "version": "8.0.0",
+  "license": "MIT",
+  "description": "ngx-popperjs is an Angular wrapper for @popperjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tonysamperi/ngx-popperjs"
+  },
+  "bugs": {
+    "url": "https://github.com/tonysamperi/ngx-tour-wizard/issues"
+  },
+  "author": {
+    "name": "Tony Samperi",
+    "email": "github@tonysamperi.it"
+  },
+  "keywords": [
+    "Angular 8+",
+    "ngx-popperjs",
+    "popper Angular",
+    "popper 2",
+    "popperjs"
+  ],
   "peerDependencies": {
     "@angular/common": "^8.2.14",
-    "@angular/core": "^8.2.14"
+    "@angular/core": "^8.2.14",
+    "@popperjs/core": "~2.4.4"
   }
 }

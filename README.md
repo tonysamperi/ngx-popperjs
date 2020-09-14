@@ -9,11 +9,13 @@
   <img src="http://badge-size.now.sh/https://unpkg.com/ngx-popperjs@8.0.0/bundles/ngx-popperjs.umd.js?compression=gzip" alt="Stable Release Size"/>
 [![Build Status](https://travis-ci.org/tonysamperi/ngx-popperjs.svg?branch=master)](https://travis-ci.org/MrFrankel/ngx-popperjs)
 
-ngx-popperjs is an angular wrapper for the legacy version of the [Popper.js](https://popper.js.org/) library.
+ngx-popperjs is an angular wrapper for the [Popper.js](https://popper.js.org/) library.
 
-The goal of this library is to take Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/) and update the compatibility up to Angular 10 (in first instance).
+*Note* that I also updated everything to use **Popper 2** (v *2.4.4* at this time) 
+
+The goal of this library is to take Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/) and update the compatibility up to Angular 10 (in first instance Angular 8).
 Since his library is compatible with Angular 7 and downwards, this will start with Angular 8.
-If you need to work with an older version of Angular, please refer to Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/).
+If you need to work with an older version of Angular (5 to 7), please refer to Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/).
 
 ## Changes
 
@@ -27,7 +29,7 @@ node and npm are required to run this package.
 1. Use npm/yarn to install the package:
 
   ```terminal
-  $ npm install popper.js --save
+  $ npm install @popperjs/core --save
   $ npm install ngx-popperjs --save 
   ```
   
@@ -272,8 +274,7 @@ NgModule({
 ```terminal
   $ npm install
   $ npm run build
-  $ npm run dev  //run example
-  $ npm run start_test  //run tests
+  $ npm run start  //run example
 ```
 
 ### Thanks to

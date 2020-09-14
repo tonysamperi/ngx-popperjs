@@ -13,7 +13,7 @@ import {NgxPopperjsModule, NgxPopperjsTriggers} from "ngx-popperjs";
     BrowserModule,
     AppRoutingModule,
     NgxPopperjsModule.forRoot({
-      trigger: NgxPopperjsTriggers.CLICK,
+      trigger: NgxPopperjsTriggers.click,
       hideOnClickOutside: false
     })
   ],

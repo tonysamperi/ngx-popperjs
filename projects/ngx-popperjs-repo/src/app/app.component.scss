@@ -104,13 +104,14 @@ strong {
       position: absolute;
       left: 50%;
       top: 50%;
-      width: 150px;
-      margin-left: -75px;
-      margin-top: -75px;
+      width: 130px;
+      margin-left: -65px;
+      margin-top: -65px;
     }
 
     > div.pop-popcorn-wrap + div {
       padding: 0 40px;
+      display: grid;
     }
 
     &[pop-position] > div.pop-popcorn-wrap {
@@ -305,10 +306,17 @@ footer {
   height: 34px;
 }
 
-.terminal pre {
+.terminal {
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   color: white;
   padding: 0 1rem 1rem;
   margin: 0;
   text-align: left;
+  padding-top: 44px;
+}
+
+.terminal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

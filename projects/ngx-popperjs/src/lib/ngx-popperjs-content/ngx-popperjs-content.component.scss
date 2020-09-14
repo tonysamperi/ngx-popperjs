@@ -1,3 +1,8 @@
+popper-content {
+  position: relative;
+  display: block;
+}
+
 .ngxp__container {
   display: none;
   position: absolute;
@@ -13,77 +18,39 @@
     animation: ngxp-fadeIn 150ms ease-out;
   }
 
-  > .ngxp__arrow {
-    border-color: grey;
-    width: 0;
-    height: 0;
-    border-style: solid;
+
+  > .ngxp__arrow,
+  > .ngxp__arrow:before {
     position: absolute;
-    margin: 5px;
+    width: 10px;
+    height: 10px;
+    z-index: -1;
   }
 
-  &[x-placement^="top"],
-  &[x-placement^="bottom"],
-  &[x-placement^="right"],
-  &[x-placement^="left"] {
-    display: block;
+  > .ngxp__arrow:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: '';
+    background: #333;
+    top: 0;
+    left: 0;
   }
 
-  &[x-placement^="top"] {
-    margin-bottom: 5px;
+  &[data-popper-placement^='top'] > .ngxp__arrow {
+    bottom: -4px;
   }
 
-  &[x-placement^="top"] > .ngxp__arrow {
-    border-width: 5px 5px 0 5px;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    bottom: -5px;
-    left: calc(50% - 5px);
-    margin-top: 0;
-    margin-bottom: 0;
+  &[data-popper-placement^='bottom'] > .ngxp__arrow {
+    top: -4px;
   }
 
-  &[x-placement^="top"] > .ngxp__arrow.__force-arrow {
-    border-right-color: transparent !important;
-    border-bottom-color: transparent !important;
-    border-left-color: transparent !important;
+  &[data-popper-placement^='left'] > .ngxp__arrow {
+    right: -4px;
   }
 
-  &[x-placement^="bottom"] {
-    margin-top: 5px;
-  }
-
-  &[x-placement^="bottom"] > .ngxp__arrow {
-    border-width: 0 5px 5px 5px;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    top: -5px;
-    left: calc(50% - 5px);
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  &[x-placement^="bottom"] > .ngxp__arrow.__force-arrow {
-    border-top-color: transparent !important;
-    border-right-color: transparent !important;
-    border-left-color: transparent !important;
-  }
-
-  &[x-placement^="right"] {
-    margin-left: 5px;
-  }
-
-  &[x-placement^="right"] > .ngxp__arrow {
-    border-width: 5px 5px 5px 0;
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    left: -5px;
-    top: calc(50% - 5px);
-    margin-left: 0;
-    margin-right: 0;
+  &[data-popper-placement^='right'] > .ngxp__arrow {
+    left: -4px;
   }
 
   &[x-placement^="right"] > .ngxp__arrow.__force-arrow {

@@ -1,7 +1,7 @@
 import {ModuleWithProviders, NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 //
-import {NgxPopperjsDirective} from "./ngx-popperjs.directive";
+import {NgxPopperjsDirective} from "./ngx-popperjs/ngx-popperjs.directive";
 import {NgxPopperjsContentComponent} from "./ngx-popperjs-content/ngx-popper-content.component";
 import {NgxPopperjsOptions} from "./models/ngx-popperjs-options.model";
 

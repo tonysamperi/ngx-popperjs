@@ -63,6 +63,10 @@ export class NgxPopperjsAppComponent implements OnInit {
         forEach(document.querySelectorAll(".pop-popcorn-wrap"), (el: HTMLElement) => el.scrollTop = 300);
     }
 
+    onPopperUpdate($event): void {
+        console.info("ON POPPER UPDATE FIRED!", $event);
+    }
+
     updatePosition(positionButton: NgxPopperjsPlacements): void {
         this.selectedPosition = positionButton;
         this._updateCode(NgxPopArticleTypes.position);
