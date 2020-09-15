@@ -29,7 +29,7 @@
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build && gulp postBuild",
-        "build:demo": "ng build ngx-popperjs-repo",
+        "build:demo": "ng build ngx-popperjs-repo baseHref=",
         "pack": "gulp pack",
         "test": "ng test",
         "lint": "ng lint",
