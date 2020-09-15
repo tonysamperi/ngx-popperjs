@@ -4,7 +4,7 @@ import {CommonModule} from "@angular/common";
 import {NgxPopperjsDirective} from "./ngx-popperjs/ngx-popperjs.directive";
 import {NgxPopperjsContentComponent} from "./ngx-popperjs-content/ngx-popper-content.component";
 import {NgxPopperjsOptions} from "./models/ngx-popperjs-options.model";
-
+import {NGX_POPPERJS_DEFAULTS} from "./models/ngx-popperjs-defaults.model";
 
 @NgModule({
   imports: [
@@ -28,7 +28,7 @@ export class NgxPopperjsModule {
     return {
       ngModule: NgxPopperjsModule,
       providers: [
-        {provide: "popperDefaults", useValue: popperBaseOptions}
+        {provide: NGX_POPPERJS_DEFAULTS, useValue: popperBaseOptions}
       ]
     };
   }
