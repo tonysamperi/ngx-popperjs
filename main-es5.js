@@ -650,6 +650,42 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "../ngx-popperjs/src/lib/models/ngx-popperjs-defaults.model.ts":
+  /*!*********************************************************************!*\
+    !*** ../ngx-popperjs/src/lib/models/ngx-popperjs-defaults.model.ts ***!
+    \*********************************************************************/
+
+  /*! exports provided: NGX_POPPERJS_DEFAULTS */
+
+  /***/
+  function ngxPopperjsSrcLibModelsNgxPopperjsDefaultsModelTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "NGX_POPPERJS_DEFAULTS", function () {
+      return NGX_POPPERJS_DEFAULTS;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "../../node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "../../node_modules/@angular/core/fesm2015/core.js");
+
+    var NGX_POPPERJS_DEFAULTS = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]("NGX_POPPERJS_DEFAULTS");
+    /***/
+  },
+
+  /***/
   "../ngx-popperjs/src/lib/models/ngx-popperjs-placements.model.ts":
   /*!***********************************************************************!*\
     !*** ../ngx-popperjs/src/lib/models/ngx-popperjs-placements.model.ts ***!
@@ -1100,6 +1136,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _ngx_popperjs_content_ngx_popper_content_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./ngx-popperjs-content/ngx-popper-content.component */
     "../ngx-popperjs/src/lib/ngx-popperjs-content/ngx-popper-content.component.ts");
+    /* harmony import */
+
+
+    var _models_ngx_popperjs_defaults_model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./models/ngx-popperjs-defaults.model */
+    "../ngx-popperjs/src/lib/models/ngx-popperjs-defaults.model.ts");
 
     var NgxPopperjsModule_1; //
 
@@ -1115,7 +1157,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           return {
             ngModule: NgxPopperjsModule_1,
             providers: [{
-              provide: "popperDefaults",
+              provide: _models_ngx_popperjs_defaults_model__WEBPACK_IMPORTED_MODULE_5__["NGX_POPPERJS_DEFAULTS"],
               useValue: popperBaseOptions
             }]
           };
@@ -1183,6 +1225,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _models_ngx_popperjs_triggers_model__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ../models/ngx-popperjs-triggers.model */
     "../ngx-popperjs/src/lib/models/ngx-popperjs-triggers.model.ts");
+    /* harmony import */
+
+
+    var _models_ngx_popperjs_defaults_model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../models/ngx-popperjs-defaults.model */
+    "../ngx-popperjs/src/lib/models/ngx-popperjs-defaults.model.ts");
 
     var NgxPopperjsDirective_1; // tslint:disable:no-input-rename
 
@@ -1627,7 +1675,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         type: undefined,
         decorators: [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"],
-          args: ["popperDefaults"]
+          args: [_models_ngx_popperjs_defaults_model__WEBPACK_IMPORTED_MODULE_5__["NGX_POPPERJS_DEFAULTS"]]
         }]
       }];
     };
@@ -1663,7 +1711,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     NgxPopperjsDirective = NgxPopperjsDirective_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"])({
       // tslint:disable-next-line:directive-selector
       selector: "[popper]"
-    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](5, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])("popperDefaults"))], NgxPopperjsDirective);
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](5, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_models_ngx_popperjs_defaults_model__WEBPACK_IMPORTED_MODULE_5__["NGX_POPPERJS_DEFAULTS"]))], NgxPopperjsDirective);
     /***/
   },
 

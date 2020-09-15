@@ -280,6 +280,25 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 
 /***/ }),
 
+/***/ "../ngx-popperjs/src/lib/models/ngx-popperjs-defaults.model.ts":
+/*!*********************************************************************!*\
+  !*** ../ngx-popperjs/src/lib/models/ngx-popperjs-defaults.model.ts ***!
+  \*********************************************************************/
+/*! exports provided: NGX_POPPERJS_DEFAULTS */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NGX_POPPERJS_DEFAULTS", function() { return NGX_POPPERJS_DEFAULTS; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "../../node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "../../node_modules/@angular/core/fesm2015/core.js");
+
+
+const NGX_POPPERJS_DEFAULTS = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]("NGX_POPPERJS_DEFAULTS");
+
+
+/***/ }),
+
 /***/ "../ngx-popperjs/src/lib/models/ngx-popperjs-placements.model.ts":
 /*!***********************************************************************!*\
   !*** ../ngx-popperjs/src/lib/models/ngx-popperjs-placements.model.ts ***!
@@ -576,6 +595,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "../../node_modules/@angular/common/fesm2015/common.js");
 /* harmony import */ var _ngx_popperjs_ngx_popperjs_directive__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ngx-popperjs/ngx-popperjs.directive */ "../ngx-popperjs/src/lib/ngx-popperjs/ngx-popperjs.directive.ts");
 /* harmony import */ var _ngx_popperjs_content_ngx_popper_content_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ngx-popperjs-content/ngx-popper-content.component */ "../ngx-popperjs/src/lib/ngx-popperjs-content/ngx-popper-content.component.ts");
+/* harmony import */ var _models_ngx_popperjs_defaults_model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./models/ngx-popperjs-defaults.model */ "../ngx-popperjs/src/lib/models/ngx-popperjs-defaults.model.ts");
 var NgxPopperjsModule_1;
 
 
@@ -583,12 +603,13 @@ var NgxPopperjsModule_1;
 //
 
 
+
 let NgxPopperjsModule = NgxPopperjsModule_1 = class NgxPopperjsModule {
     static forRoot(popperBaseOptions = {}) {
         return {
             ngModule: NgxPopperjsModule_1,
             providers: [
-                { provide: "popperDefaults", useValue: popperBaseOptions }
+                { provide: _models_ngx_popperjs_defaults_model__WEBPACK_IMPORTED_MODULE_5__["NGX_POPPERJS_DEFAULTS"], useValue: popperBaseOptions }
             ]
         };
     }
@@ -631,9 +652,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ngx_popperjs_content_ngx_popper_content_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ngx-popperjs-content/ngx-popper-content.component */ "../ngx-popperjs/src/lib/ngx-popperjs-content/ngx-popper-content.component.ts");
 /* harmony import */ var _models_ngx_popperjs_placements_model__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models/ngx-popperjs-placements.model */ "../ngx-popperjs/src/lib/models/ngx-popperjs-placements.model.ts");
 /* harmony import */ var _models_ngx_popperjs_triggers_model__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/ngx-popperjs-triggers.model */ "../ngx-popperjs/src/lib/models/ngx-popperjs-triggers.model.ts");
+/* harmony import */ var _models_ngx_popperjs_defaults_model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../models/ngx-popperjs-defaults.model */ "../ngx-popperjs/src/lib/models/ngx-popperjs-defaults.model.ts");
 var NgxPopperjsDirective_1;
 
 // tslint:disable:no-input-rename
+
 
 
 
@@ -946,7 +969,7 @@ NgxPopperjsDirective.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ComponentFactoryResolver"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] },
-    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: ["popperDefaults",] }] }
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_models_ngx_popperjs_defaults_model__WEBPACK_IMPORTED_MODULE_5__["NGX_POPPERJS_DEFAULTS"],] }] }
 ];
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])("popperApplyClass")
@@ -1037,7 +1060,7 @@ NgxPopperjsDirective = NgxPopperjsDirective_1 = tslib__WEBPACK_IMPORTED_MODULE_0
         // tslint:disable-next-line:directive-selector
         selector: "[popper]"
     }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](5, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])("popperDefaults"))
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](5, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_models_ngx_popperjs_defaults_model__WEBPACK_IMPORTED_MODULE_5__["NGX_POPPERJS_DEFAULTS"]))
 ], NgxPopperjsDirective);
 
 
