@@ -13,9 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["polyfills-es5"], {
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/es/date/index.js":
-  /*!****************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/es/date/index.js ***!
-    \****************************************************************************************************************************/
+  /*!************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/es/date/index.js ***!
+    \************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -51,9 +51,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/es/math/index.js":
-  /*!****************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/es/math/index.js ***!
-    \****************************************************************************************************************************/
+  /*!************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/es/math/index.js ***!
+    \************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -141,9 +141,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/es/number/index.js":
-  /*!******************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/es/number/index.js ***!
-    \******************************************************************************************************************************/
+  /*!**************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/es/number/index.js ***!
+    \**************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -207,9 +207,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/es/reflect/index.js":
-  /*!*******************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/es/reflect/index.js ***!
-    \*******************************************************************************************************************************/
+  /*!***************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/es/reflect/index.js ***!
+    \***************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -277,9 +277,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/es/symbol/index.js":
-  /*!******************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/es/symbol/index.js ***!
-    \******************************************************************************************************************************/
+  /*!**************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/es/symbol/index.js ***!
+    \**************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -371,9 +371,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/a-function.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/a-function.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/a-function.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -392,9 +392,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/a-possible-prototype.js":
-  /*!*********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/a-possible-prototype.js ***!
-    \*********************************************************************************************************************************************/
+  /*!*****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/a-possible-prototype.js ***!
+    \*****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -417,9 +417,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/add-to-unscopables.js":
-  /*!*******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/add-to-unscopables.js ***!
-    \*******************************************************************************************************************************************/
+  /*!***************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/add-to-unscopables.js ***!
+    \***************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -458,9 +458,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/advance-string-index.js":
-  /*!*********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/advance-string-index.js ***!
-    \*********************************************************************************************************************************************/
+  /*!*****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/advance-string-index.js ***!
+    \*****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -483,9 +483,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/an-instance.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/an-instance.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/an-instance.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -504,9 +504,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/an-object.js":
-  /*!**********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/an-object.js ***!
-    \**********************************************************************************************************************************/
+  /*!******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/an-object.js ***!
+    \******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -529,9 +529,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-copy-within.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-copy-within.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-copy-within.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -587,9 +587,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-fill.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-fill.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-fill.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -633,9 +633,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-for-each.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-for-each.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-for-each.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -669,9 +669,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-from.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-from.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-from.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -750,9 +750,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-includes.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-includes.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-includes.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -803,9 +803,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-iteration.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-iteration.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-iteration.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -910,9 +910,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-last-index-of.js":
-  /*!********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-last-index-of.js ***!
-    \********************************************************************************************************************************************/
+  /*!****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-last-index-of.js ***!
+    \****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -974,9 +974,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-method-has-species-support.js":
-  /*!*********************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-method-has-species-support.js ***!
-    \*********************************************************************************************************************************************************/
+  /*!*****************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-method-has-species-support.js ***!
+    \*****************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -1019,9 +1019,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-method-is-strict.js":
-  /*!***********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-method-is-strict.js ***!
-    \***********************************************************************************************************************************************/
+  /*!*******************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-method-is-strict.js ***!
+    \*******************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -1048,9 +1048,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-method-uses-to-length.js":
-  /*!****************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-method-uses-to-length.js ***!
-    \****************************************************************************************************************************************************/
+  /*!************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-method-uses-to-length.js ***!
+    \************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -1100,9 +1100,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-reduce.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-reduce.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-reduce.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -1170,9 +1170,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-species-create.js":
-  /*!*********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-species-create.js ***!
-    \*********************************************************************************************************************************************/
+  /*!*****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/array-species-create.js ***!
+    \*****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -1213,9 +1213,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/call-with-safe-iteration-closing.js":
-  /*!*********************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/call-with-safe-iteration-closing.js ***!
-    \*********************************************************************************************************************************************************/
+  /*!*****************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/call-with-safe-iteration-closing.js ***!
+    \*****************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -1241,9 +1241,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/check-correctness-of-iteration.js":
-  /*!*******************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/check-correctness-of-iteration.js ***!
-    \*******************************************************************************************************************************************************/
+  /*!***************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/check-correctness-of-iteration.js ***!
+    \***************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -1311,9 +1311,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/classof-raw.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/classof-raw.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/classof-raw.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -1330,9 +1330,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/classof.js":
-  /*!********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/classof.js ***!
-    \********************************************************************************************************************************/
+  /*!****************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/classof.js ***!
+    \****************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -1377,9 +1377,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/collection-strong.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/collection-strong.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/collection-strong.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -1629,9 +1629,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/collection-weak.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/collection-weak.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/collection-weak.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -1784,9 +1784,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/collection.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/collection.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/collection.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -1938,9 +1938,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/copy-constructor-properties.js":
-  /*!****************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/copy-constructor-properties.js ***!
-    \****************************************************************************************************************************************************/
+  /*!************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/copy-constructor-properties.js ***!
+    \************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -1978,9 +1978,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/correct-is-regexp-logic.js":
-  /*!************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/correct-is-regexp-logic.js ***!
-    \************************************************************************************************************************************************/
+  /*!********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/correct-is-regexp-logic.js ***!
+    \********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2014,9 +2014,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/correct-prototype-getter.js":
-  /*!*************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/correct-prototype-getter.js ***!
-    \*************************************************************************************************************************************************/
+  /*!*********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/correct-prototype-getter.js ***!
+    \*********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2039,9 +2039,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-html.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-html.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-html.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2066,9 +2066,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-iterator-constructor.js":
-  /*!****************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-iterator-constructor.js ***!
-    \****************************************************************************************************************************************************/
+  /*!************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-iterator-constructor.js ***!
+    \************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2115,9 +2115,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-non-enumerable-property.js":
-  /*!*******************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-non-enumerable-property.js ***!
-    \*******************************************************************************************************************************************************/
+  /*!***************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-non-enumerable-property.js ***!
+    \***************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2146,9 +2146,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-property-descriptor.js":
-  /*!***************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-property-descriptor.js ***!
-    \***************************************************************************************************************************************************/
+  /*!***********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-property-descriptor.js ***!
+    \***********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2168,9 +2168,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-property.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-property.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/create-property.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2200,9 +2200,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/date-to-iso-string.js":
-  /*!*******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/date-to-iso-string.js ***!
-    \*******************************************************************************************************************************************/
+  /*!***************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/date-to-iso-string.js ***!
+    \***************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2242,9 +2242,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/date-to-primitive.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/date-to-primitive.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/date-to-primitive.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2273,9 +2273,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/define-iterator.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/define-iterator.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/define-iterator.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2434,9 +2434,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/define-well-known-symbol.js":
-  /*!*************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/define-well-known-symbol.js ***!
-    \*************************************************************************************************************************************************/
+  /*!*********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/define-well-known-symbol.js ***!
+    \*********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2470,9 +2470,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/descriptors.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/descriptors.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/descriptors.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2495,9 +2495,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/document-create-element.js":
-  /*!************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/document-create-element.js ***!
-    \************************************************************************************************************************************************/
+  /*!********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/document-create-element.js ***!
+    \********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2524,9 +2524,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/dom-iterables.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/dom-iterables.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/dom-iterables.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2572,9 +2572,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/engine-is-ios.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/engine-is-ios.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/engine-is-ios.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2590,9 +2590,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/engine-user-agent.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/engine-user-agent.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/engine-user-agent.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2608,9 +2608,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/engine-v8-version.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/engine-v8-version.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/engine-v8-version.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2647,9 +2647,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/enum-bug-keys.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/enum-bug-keys.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/enum-bug-keys.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2662,9 +2662,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/export.js":
-  /*!*******************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/export.js ***!
-    \*******************************************************************************************************************************/
+  /*!***************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/export.js ***!
+    \***************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2757,9 +2757,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/fails.js":
-  /*!******************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/fails.js ***!
-    \******************************************************************************************************************************/
+  /*!**************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/fails.js ***!
+    \**************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2778,9 +2778,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/fix-regexp-well-known-symbol-logic.js":
-  /*!***********************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/fix-regexp-well-known-symbol-logic.js ***!
-    \***********************************************************************************************************************************************************/
+  /*!*******************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/fix-regexp-well-known-symbol-logic.js ***!
+    \*******************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2951,9 +2951,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/freezing.js":
-  /*!*********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/freezing.js ***!
-    \*********************************************************************************************************************************/
+  /*!*****************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/freezing.js ***!
+    \*****************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -2971,9 +2971,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/function-bind-context.js":
-  /*!**********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/function-bind-context.js ***!
-    \**********************************************************************************************************************************************/
+  /*!******************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/function-bind-context.js ***!
+    \******************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3022,9 +3022,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/function-bind.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/function-bind.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/function-bind.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3080,9 +3080,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/get-built-in.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/get-built-in.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/get-built-in.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3109,9 +3109,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/get-iterator-method.js":
-  /*!********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/get-iterator-method.js ***!
-    \********************************************************************************************************************************************/
+  /*!****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/get-iterator-method.js ***!
+    \****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3140,9 +3140,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/global.js":
-  /*!*******************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/global.js ***!
-    \*******************************************************************************************************************************/
+  /*!***************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/global.js ***!
+    \***************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3161,9 +3161,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/has.js":
-  /*!****************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/has.js ***!
-    \****************************************************************************************************************************/
+  /*!************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/has.js ***!
+    \************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3180,9 +3180,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/hidden-keys.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/hidden-keys.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/hidden-keys.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3194,9 +3194,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/host-report-errors.js":
-  /*!*******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/host-report-errors.js ***!
-    \*******************************************************************************************************************************************/
+  /*!***************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/host-report-errors.js ***!
+    \***************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3219,9 +3219,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/html.js":
-  /*!*****************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/html.js ***!
-    \*****************************************************************************************************************************/
+  /*!*************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/html.js ***!
+    \*************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3237,9 +3237,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/ie8-dom-define.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/ie8-dom-define.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/ie8-dom-define.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3270,9 +3270,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/indexed-object.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/indexed-object.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/indexed-object.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3300,9 +3300,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/inherit-if-required.js":
-  /*!********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/inherit-if-required.js ***!
-    \********************************************************************************************************************************************/
+  /*!****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/inherit-if-required.js ***!
+    \****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3330,9 +3330,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/inspect-source.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/inspect-source.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/inspect-source.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3356,9 +3356,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/internal-metadata.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/internal-metadata.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/internal-metadata.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3453,9 +3453,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/internal-state.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/internal-state.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/internal-state.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3556,9 +3556,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-array-iterator-method.js":
-  /*!*************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-array-iterator-method.js ***!
-    \*************************************************************************************************************************************************/
+  /*!*********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-array-iterator-method.js ***!
+    \*********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3584,9 +3584,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-array.js":
-  /*!*********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-array.js ***!
-    \*********************************************************************************************************************************/
+  /*!*****************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-array.js ***!
+    \*****************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3607,9 +3607,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-forced.js":
-  /*!**********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-forced.js ***!
-    \**********************************************************************************************************************************/
+  /*!******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-forced.js ***!
+    \******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3639,9 +3639,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-integer.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-integer.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-integer.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3663,9 +3663,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-object.js":
-  /*!**********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-object.js ***!
-    \**********************************************************************************************************************************/
+  /*!******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-object.js ***!
+    \******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3680,9 +3680,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-pure.js":
-  /*!********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-pure.js ***!
-    \********************************************************************************************************************************/
+  /*!****************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-pure.js ***!
+    \****************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3694,9 +3694,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-regexp.js":
-  /*!**********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-regexp.js ***!
-    \**********************************************************************************************************************************/
+  /*!******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/is-regexp.js ***!
+    \******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3727,9 +3727,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/iterate.js":
-  /*!********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/iterate.js ***!
-    \********************************************************************************************************************************/
+  /*!****************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/iterate.js ***!
+    \****************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3805,9 +3805,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/iterators-core.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/iterators-core.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/iterators-core.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3870,9 +3870,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/iterators.js":
-  /*!**********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/iterators.js ***!
-    \**********************************************************************************************************************************/
+  /*!******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/iterators.js ***!
+    \******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3884,9 +3884,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/math-expm1.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/math-expm1.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/math-expm1.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3906,9 +3906,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/math-fround.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/math-fround.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/math-fround.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3948,9 +3948,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/math-log1p.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/math-log1p.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/math-log1p.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3968,9 +3968,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/math-sign.js":
-  /*!**********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/math-sign.js ***!
-    \**********************************************************************************************************************************/
+  /*!******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/math-sign.js ***!
+    \******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -3988,9 +3988,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/microtask.js":
-  /*!**********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/microtask.js ***!
-    \**********************************************************************************************************************************/
+  /*!******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/microtask.js ***!
+    \******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4105,9 +4105,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/native-promise-constructor.js":
-  /*!***************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/native-promise-constructor.js ***!
-    \***************************************************************************************************************************************************/
+  /*!***********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/native-promise-constructor.js ***!
+    \***********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4123,9 +4123,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/native-symbol.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/native-symbol.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/native-symbol.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4145,9 +4145,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/native-weak-map.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/native-weak-map.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/native-weak-map.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4168,9 +4168,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/new-promise-capability.js":
-  /*!***********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/new-promise-capability.js ***!
-    \***********************************************************************************************************************************************/
+  /*!*******************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/new-promise-capability.js ***!
+    \*******************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4203,9 +4203,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/not-a-regexp.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/not-a-regexp.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/not-a-regexp.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4228,9 +4228,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/number-is-finite.js":
-  /*!*****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/number-is-finite.js ***!
-    \*****************************************************************************************************************************************/
+  /*!*************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/number-is-finite.js ***!
+    \*************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4252,9 +4252,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/number-parse-float.js":
-  /*!*******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/number-parse-float.js ***!
-    \*******************************************************************************************************************************************/
+  /*!***************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/number-parse-float.js ***!
+    \***************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4286,9 +4286,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/number-parse-int.js":
-  /*!*****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/number-parse-int.js ***!
-    \*****************************************************************************************************************************************/
+  /*!*************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/number-parse-int.js ***!
+    \*************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4320,9 +4320,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-assign.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-assign.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-assign.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4416,9 +4416,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-create.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-create.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-create.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4540,9 +4540,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-define-properties.js":
-  /*!*************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-define-properties.js ***!
-    \*************************************************************************************************************************************************/
+  /*!*********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-define-properties.js ***!
+    \*********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4584,9 +4584,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-define-property.js":
-  /*!***********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-define-property.js ***!
-    \***********************************************************************************************************************************************/
+  /*!*******************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-define-property.js ***!
+    \*******************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4629,9 +4629,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-own-property-descriptor.js":
-  /*!***********************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-own-property-descriptor.js ***!
-    \***********************************************************************************************************************************************************/
+  /*!*******************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-own-property-descriptor.js ***!
+    \*******************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4683,9 +4683,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-own-property-names-external.js":
-  /*!***************************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-own-property-names-external.js ***!
-    \***************************************************************************************************************************************************************/
+  /*!***********************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-own-property-names-external.js ***!
+    \***********************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4720,9 +4720,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-own-property-names.js":
-  /*!******************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-own-property-names.js ***!
-    \******************************************************************************************************************************************************/
+  /*!**************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-own-property-names.js ***!
+    \**************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4748,9 +4748,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-own-property-symbols.js":
-  /*!********************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-own-property-symbols.js ***!
-    \********************************************************************************************************************************************************/
+  /*!****************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-own-property-symbols.js ***!
+    \****************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4762,9 +4762,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-prototype-of.js":
-  /*!************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-prototype-of.js ***!
-    \************************************************************************************************************************************************/
+  /*!********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-get-prototype-of.js ***!
+    \********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4805,9 +4805,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-keys-internal.js":
-  /*!*********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-keys-internal.js ***!
-    \*********************************************************************************************************************************************/
+  /*!*****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-keys-internal.js ***!
+    \*****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4854,9 +4854,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-keys.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-keys.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-keys.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4881,9 +4881,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-property-is-enumerable.js":
-  /*!******************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-property-is-enumerable.js ***!
-    \******************************************************************************************************************************************************/
+  /*!**************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-property-is-enumerable.js ***!
+    \**************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4908,9 +4908,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-set-prototype-of.js":
-  /*!************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-set-prototype-of.js ***!
-    \************************************************************************************************************************************************/
+  /*!********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-set-prototype-of.js ***!
+    \********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4954,9 +4954,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-to-string.js":
-  /*!*****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-to-string.js ***!
-    \*****************************************************************************************************************************************/
+  /*!*************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/object-to-string.js ***!
+    \*************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -4982,9 +4982,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/own-keys.js":
-  /*!*********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/own-keys.js ***!
-    \*********************************************************************************************************************************/
+  /*!*****************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/own-keys.js ***!
+    \*****************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5018,9 +5018,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/path.js":
-  /*!*****************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/path.js ***!
-    \*****************************************************************************************************************************/
+  /*!*************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/path.js ***!
+    \*************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5036,9 +5036,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/perform.js":
-  /*!********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/perform.js ***!
-    \********************************************************************************************************************************/
+  /*!****************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/perform.js ***!
+    \****************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5063,9 +5063,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/promise-resolve.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/promise-resolve.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/promise-resolve.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5097,9 +5097,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/redefine-all.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/redefine-all.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/redefine-all.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5122,9 +5122,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/redefine.js":
-  /*!*********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/redefine.js ***!
-    \*********************************************************************************************************************************/
+  /*!*****************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/redefine.js ***!
+    \*****************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5185,9 +5185,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/reflect-metadata.js":
-  /*!*****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/reflect-metadata.js ***!
-    \*****************************************************************************************************************************************/
+  /*!*************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/reflect-metadata.js ***!
+    \*************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5268,9 +5268,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/regexp-exec-abstract.js":
-  /*!*********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/regexp-exec-abstract.js ***!
-    \*********************************************************************************************************************************************/
+  /*!*****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/regexp-exec-abstract.js ***!
+    \*****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5311,9 +5311,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/regexp-exec.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/regexp-exec.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/regexp-exec.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5417,9 +5417,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/regexp-flags.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/regexp-flags.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/regexp-flags.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5450,9 +5450,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/regexp-sticky-helpers.js":
-  /*!**********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/regexp-sticky-helpers.js ***!
-    \**********************************************************************************************************************************************/
+  /*!******************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/regexp-sticky-helpers.js ***!
+    \******************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5487,9 +5487,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/require-object-coercible.js":
-  /*!*************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/require-object-coercible.js ***!
-    \*************************************************************************************************************************************************/
+  /*!*********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/require-object-coercible.js ***!
+    \*********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5507,9 +5507,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/same-value.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/same-value.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/same-value.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5527,9 +5527,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/set-global.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/set-global.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/set-global.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5558,9 +5558,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/set-species.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/set-species.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/set-species.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5605,9 +5605,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/set-to-string-tag.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/set-to-string-tag.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/set-to-string-tag.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5641,9 +5641,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/shared-key.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/shared-key.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/shared-key.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5668,9 +5668,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/shared-store.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/shared-store.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/shared-store.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5692,9 +5692,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/shared.js":
-  /*!*******************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/shared.js ***!
-    \*******************************************************************************************************************************/
+  /*!***************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/shared.js ***!
+    \***************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5720,9 +5720,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/species-constructor.js":
-  /*!********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/species-constructor.js ***!
-    \********************************************************************************************************************************************/
+  /*!****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/species-constructor.js ***!
+    \****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5754,9 +5754,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-html-forced.js":
-  /*!*******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-html-forced.js ***!
-    \*******************************************************************************************************************************************/
+  /*!***************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-html-forced.js ***!
+    \***************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5780,9 +5780,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-multibyte.js":
-  /*!*****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-multibyte.js ***!
-    \*****************************************************************************************************************************************/
+  /*!*************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-multibyte.js ***!
+    \*************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5822,9 +5822,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-pad.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-pad.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-pad.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5873,9 +5873,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-repeat.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-repeat.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-repeat.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5911,9 +5911,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-trim-forced.js":
-  /*!*******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-trim-forced.js ***!
-    \*******************************************************************************************************************************************/
+  /*!***************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-trim-forced.js ***!
+    \***************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5941,9 +5941,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-trim.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-trim.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/string-trim.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -5986,9 +5986,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/task.js":
-  /*!*****************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/task.js ***!
-    \*****************************************************************************************************************************/
+  /*!*************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/task.js ***!
+    \*************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6125,9 +6125,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/this-number-value.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/this-number-value.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/this-number-value.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6152,9 +6152,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-absolute-index.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-absolute-index.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-absolute-index.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6179,9 +6179,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-indexed-object.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-indexed-object.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-indexed-object.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6205,9 +6205,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-integer.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-integer.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-integer.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6226,9 +6226,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-length.js":
-  /*!**********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-length.js ***!
-    \**********************************************************************************************************************************/
+  /*!******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-length.js ***!
+    \******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6250,9 +6250,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-object.js":
-  /*!**********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-object.js ***!
-    \**********************************************************************************************************************************/
+  /*!******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-object.js ***!
+    \******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6273,9 +6273,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-primitive.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-primitive.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-primitive.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6303,9 +6303,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-string-tag-support.js":
-  /*!**********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-string-tag-support.js ***!
-    \**********************************************************************************************************************************************/
+  /*!******************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/to-string-tag-support.js ***!
+    \******************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6324,9 +6324,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/uid.js":
-  /*!****************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/uid.js ***!
-    \****************************************************************************************************************************/
+  /*!************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/uid.js ***!
+    \************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6344,9 +6344,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/use-symbol-as-uid.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/use-symbol-as-uid.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/use-symbol-as-uid.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6364,9 +6364,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/well-known-symbol-wrapped.js":
-  /*!**************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/well-known-symbol-wrapped.js ***!
-    \**************************************************************************************************************************************************/
+  /*!**********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/well-known-symbol-wrapped.js ***!
+    \**********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6382,9 +6382,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/well-known-symbol.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/well-known-symbol.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/well-known-symbol.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6431,9 +6431,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/whitespaces.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/whitespaces.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/internals/whitespaces.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6447,9 +6447,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.concat.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.concat.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.concat.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6561,9 +6561,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.copy-within.js":
-  /*!*******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.copy-within.js ***!
-    \*******************************************************************************************************************************************/
+  /*!***************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.copy-within.js ***!
+    \***************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6596,9 +6596,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.every.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.every.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.every.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6642,9 +6642,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.fill.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.fill.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.fill.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6677,9 +6677,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.filter.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.filter.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.filter.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6725,9 +6725,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.find-index.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.find-index.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.find-index.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6778,9 +6778,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.find.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.find.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.find.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6831,9 +6831,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.for-each.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.for-each.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.for-each.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6863,9 +6863,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.from.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.from.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.from.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6900,9 +6900,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.index-of.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.index-of.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.index-of.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6952,9 +6952,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.is-array.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.is-array.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.is-array.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -6981,9 +6981,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.iterator.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.iterator.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.iterator.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7075,9 +7075,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.join.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.join.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.join.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7120,9 +7120,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.last-index-of.js":
-  /*!*********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.last-index-of.js ***!
-    \*********************************************************************************************************************************************/
+  /*!*****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.last-index-of.js ***!
+    \*****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7150,9 +7150,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.map.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.map.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.map.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7198,9 +7198,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.of.js":
-  /*!**********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.of.js ***!
-    \**********************************************************************************************************************************/
+  /*!******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.of.js ***!
+    \******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7255,9 +7255,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.reduce-right.js":
-  /*!********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.reduce-right.js ***!
-    \********************************************************************************************************************************************/
+  /*!****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.reduce-right.js ***!
+    \****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7304,9 +7304,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.reduce.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.reduce.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.reduce.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7352,9 +7352,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.slice.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.slice.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.slice.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7457,9 +7457,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.some.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.some.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.some.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7503,9 +7503,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.sort.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.sort.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.sort.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7562,9 +7562,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.splice.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.splice.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.array.splice.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7689,9 +7689,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.now.js":
-  /*!**********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.now.js ***!
-    \**********************************************************************************************************************************/
+  /*!******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.now.js ***!
+    \******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7716,9 +7716,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.to-iso-string.js":
-  /*!********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.to-iso-string.js ***!
-    \********************************************************************************************************************************************/
+  /*!****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.to-iso-string.js ***!
+    \****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7747,9 +7747,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.to-json.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.to-json.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.to-json.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7799,9 +7799,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.to-primitive.js":
-  /*!*******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.to-primitive.js ***!
-    \*******************************************************************************************************************************************/
+  /*!***************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.to-primitive.js ***!
+    \***************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7832,9 +7832,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.to-string.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.to-string.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.date.to-string.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7864,9 +7864,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.function.bind.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.function.bind.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.function.bind.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7893,9 +7893,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.function.has-instance.js":
-  /*!***********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.function.has-instance.js ***!
-    \***********************************************************************************************************************************************/
+  /*!*******************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.function.has-instance.js ***!
+    \*******************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7943,9 +7943,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.function.name.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.function.name.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.function.name.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -7983,9 +7983,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.json.to-string-tag.js":
-  /*!********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.json.to-string-tag.js ***!
-    \********************************************************************************************************************************************/
+  /*!****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.json.to-string-tag.js ***!
+    \****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8007,9 +8007,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.map.js":
-  /*!*****************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.map.js ***!
-    \*****************************************************************************************************************************/
+  /*!*************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.map.js ***!
+    \*************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8037,9 +8037,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.acosh.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.acosh.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.acosh.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8076,9 +8076,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.asinh.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.asinh.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.asinh.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8111,9 +8111,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.atanh.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.atanh.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.atanh.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8142,9 +8142,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.cbrt.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.cbrt.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.cbrt.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8175,9 +8175,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.clz32.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.clz32.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.clz32.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8205,9 +8205,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.cosh.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.cosh.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.cosh.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8241,9 +8241,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.expm1.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.expm1.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.expm1.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8271,9 +8271,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.fround.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.fround.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.fround.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8300,9 +8300,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.hypot.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.hypot.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.hypot.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8354,9 +8354,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.imul.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.imul.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.imul.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8396,9 +8396,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.log10.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.log10.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.log10.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8425,9 +8425,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.log1p.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.log1p.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.log1p.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8454,9 +8454,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.log2.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.log2.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.log2.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8483,9 +8483,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.sign.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.sign.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.sign.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8512,9 +8512,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.sinh.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.sinh.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.sinh.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8555,9 +8555,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.tanh.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.tanh.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.tanh.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8589,9 +8589,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.to-string-tag.js":
-  /*!********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.to-string-tag.js ***!
-    \********************************************************************************************************************************************/
+  /*!****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.to-string-tag.js ***!
+    \****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8609,9 +8609,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.trunc.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.trunc.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.math.trunc.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8638,9 +8638,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.constructor.js":
-  /*!********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.constructor.js ***!
-    \********************************************************************************************************************************************/
+  /*!****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.constructor.js ***!
+    \****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8789,9 +8789,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.epsilon.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.epsilon.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.epsilon.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8814,9 +8814,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.is-finite.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.is-finite.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.is-finite.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8843,9 +8843,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.is-integer.js":
-  /*!*******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.is-integer.js ***!
-    \*******************************************************************************************************************************************/
+  /*!***************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.is-integer.js ***!
+    \***************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8872,9 +8872,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.is-nan.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.is-nan.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.is-nan.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8900,9 +8900,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.is-safe-integer.js":
-  /*!************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.is-safe-integer.js ***!
-    \************************************************************************************************************************************************/
+  /*!********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.is-safe-integer.js ***!
+    \********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8932,9 +8932,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.max-safe-integer.js":
-  /*!*************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.max-safe-integer.js ***!
-    \*************************************************************************************************************************************************/
+  /*!*********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.max-safe-integer.js ***!
+    \*********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8957,9 +8957,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.min-safe-integer.js":
-  /*!*************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.min-safe-integer.js ***!
-    \*************************************************************************************************************************************************/
+  /*!*********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.min-safe-integer.js ***!
+    \*********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -8982,9 +8982,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.parse-float.js":
-  /*!********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.parse-float.js ***!
-    \********************************************************************************************************************************************/
+  /*!****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.parse-float.js ***!
+    \****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9012,9 +9012,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.parse-int.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.parse-int.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.parse-int.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9042,9 +9042,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.to-fixed.js":
-  /*!*****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.to-fixed.js ***!
-    \*****************************************************************************************************************************************/
+  /*!*************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.to-fixed.js ***!
+    \*************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9211,9 +9211,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.to-precision.js":
-  /*!*********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.to-precision.js ***!
-    \*********************************************************************************************************************************************/
+  /*!*****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.number.to-precision.js ***!
+    \*****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9257,9 +9257,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.assign.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.assign.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.assign.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9287,9 +9287,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.create.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.create.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.create.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9321,9 +9321,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.define-properties.js":
-  /*!**************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.define-properties.js ***!
-    \**************************************************************************************************************************************************/
+  /*!**********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.define-properties.js ***!
+    \**********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9356,9 +9356,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.define-property.js":
-  /*!************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.define-property.js ***!
-    \************************************************************************************************************************************************/
+  /*!********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.define-property.js ***!
+    \********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9391,9 +9391,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.freeze.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.freeze.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.freeze.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9440,9 +9440,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.get-own-property-descriptor.js":
-  /*!************************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.get-own-property-descriptor.js ***!
-    \************************************************************************************************************************************************************/
+  /*!********************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.get-own-property-descriptor.js ***!
+    \********************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9489,9 +9489,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.get-own-property-names.js":
-  /*!*******************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.get-own-property-names.js ***!
-    \*******************************************************************************************************************************************************/
+  /*!***************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.get-own-property-names.js ***!
+    \***************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9526,9 +9526,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.get-prototype-of.js":
-  /*!*************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.get-prototype-of.js ***!
-    \*************************************************************************************************************************************************/
+  /*!*********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.get-prototype-of.js ***!
+    \*********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9574,9 +9574,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.is-extensible.js":
-  /*!**********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.is-extensible.js ***!
-    \**********************************************************************************************************************************************/
+  /*!******************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.is-extensible.js ***!
+    \******************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9614,9 +9614,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.is-frozen.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.is-frozen.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.is-frozen.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9654,9 +9654,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.is-sealed.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.is-sealed.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.is-sealed.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9694,9 +9694,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.is.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.is.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.is.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9723,9 +9723,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.keys.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.keys.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.keys.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9766,9 +9766,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.prevent-extensions.js":
-  /*!***************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.prevent-extensions.js ***!
-    \***************************************************************************************************************************************************/
+  /*!***********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.prevent-extensions.js ***!
+    \***********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9815,9 +9815,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.seal.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.seal.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.seal.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9864,9 +9864,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.set-prototype-of.js":
-  /*!*************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.set-prototype-of.js ***!
-    \*************************************************************************************************************************************************/
+  /*!*********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.set-prototype-of.js ***!
+    \*********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9893,9 +9893,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.to-string.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.to-string.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.object.to-string.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9926,9 +9926,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.parse-float.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.parse-float.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.parse-float.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9955,9 +9955,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.parse-int.js":
-  /*!***********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.parse-int.js ***!
-    \***********************************************************************************************************************************/
+  /*!*******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.parse-int.js ***!
+    \*******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -9984,9 +9984,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.promise.js":
-  /*!*********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.promise.js ***!
-    \*********************************************************************************************************************************/
+  /*!*****************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.promise.js ***!
+    \*****************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -10498,9 +10498,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.apply.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.apply.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.apply.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -10552,9 +10552,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.construct.js":
-  /*!*******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.construct.js ***!
-    \*******************************************************************************************************************************************/
+  /*!***************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.construct.js ***!
+    \***************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -10663,9 +10663,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.define-property.js":
-  /*!*************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.define-property.js ***!
-    \*************************************************************************************************************************************************/
+  /*!*********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.define-property.js ***!
+    \*********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -10730,9 +10730,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.delete-property.js":
-  /*!*************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.delete-property.js ***!
-    \*************************************************************************************************************************************************/
+  /*!*********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.delete-property.js ***!
+    \*********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -10766,9 +10766,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.get-own-property-descriptor.js":
-  /*!*************************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.get-own-property-descriptor.js ***!
-    \*************************************************************************************************************************************************************/
+  /*!*********************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.get-own-property-descriptor.js ***!
+    \*********************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -10806,9 +10806,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.get-prototype-of.js":
-  /*!**************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.get-prototype-of.js ***!
-    \**************************************************************************************************************************************************/
+  /*!**********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.get-prototype-of.js ***!
+    \**********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -10846,9 +10846,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.get.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.get.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.get.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -10901,9 +10901,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.has.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.has.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.has.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -10928,9 +10928,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.is-extensible.js":
-  /*!***********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.is-extensible.js ***!
-    \***********************************************************************************************************************************************/
+  /*!*******************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.is-extensible.js ***!
+    \*******************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -10961,9 +10961,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.own-keys.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.own-keys.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.own-keys.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -10990,9 +10990,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.prevent-extensions.js":
-  /*!****************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.prevent-extensions.js ***!
-    \****************************************************************************************************************************************************/
+  /*!************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.prevent-extensions.js ***!
+    \************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11038,9 +11038,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.set-prototype-of.js":
-  /*!**************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.set-prototype-of.js ***!
-    \**************************************************************************************************************************************************/
+  /*!**********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.set-prototype-of.js ***!
+    \**********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11085,9 +11085,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.set.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.set.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.reflect.set.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11182,9 +11182,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.regexp.constructor.js":
-  /*!********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.regexp.constructor.js ***!
-    \********************************************************************************************************************************************/
+  /*!****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.regexp.constructor.js ***!
+    \****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11322,9 +11322,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.regexp.exec.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.regexp.exec.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.regexp.exec.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11352,9 +11352,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.regexp.flags.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.regexp.flags.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.regexp.flags.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11390,9 +11390,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.regexp.to-string.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.regexp.to-string.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.regexp.to-string.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11446,9 +11446,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.set.js":
-  /*!*****************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.set.js ***!
-    \*****************************************************************************************************************************/
+  /*!*************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.set.js ***!
+    \*************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11476,9 +11476,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.anchor.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.anchor.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.anchor.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11514,9 +11514,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.big.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.big.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.big.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11552,9 +11552,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.blink.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.blink.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.blink.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11590,9 +11590,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.bold.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.bold.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.bold.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11628,9 +11628,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.code-point-at.js":
-  /*!**********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.code-point-at.js ***!
-    \**********************************************************************************************************************************************/
+  /*!******************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.code-point-at.js ***!
+    \******************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11661,9 +11661,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.ends-with.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.ends-with.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.ends-with.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11731,9 +11731,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.fixed.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.fixed.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.fixed.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11769,9 +11769,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.fontcolor.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.fontcolor.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.fontcolor.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11807,9 +11807,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.fontsize.js":
-  /*!*****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.fontsize.js ***!
-    \*****************************************************************************************************************************************/
+  /*!*************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.fontsize.js ***!
+    \*************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11845,9 +11845,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.from-code-point.js":
-  /*!************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.from-code-point.js ***!
-    \************************************************************************************************************************************************/
+  /*!********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.from-code-point.js ***!
+    \********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11893,9 +11893,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.includes.js":
-  /*!*****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.includes.js ***!
-    \*****************************************************************************************************************************************/
+  /*!*************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.includes.js ***!
+    \*************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11937,9 +11937,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.italics.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.italics.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.italics.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -11975,9 +11975,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.iterator.js":
-  /*!*****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.iterator.js ***!
-    \*****************************************************************************************************************************************/
+  /*!*************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.iterator.js ***!
+    \*************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12030,9 +12030,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.link.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.link.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.link.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12068,9 +12068,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.match.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.match.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.match.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12139,9 +12139,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.raw.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.raw.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.raw.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12185,9 +12185,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.repeat.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.repeat.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.repeat.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12214,9 +12214,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.replace.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.replace.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.replace.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12397,9 +12397,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.search.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.search.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.search.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12454,9 +12454,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.small.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.small.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.small.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12492,9 +12492,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.split.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.split.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.split.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12657,9 +12657,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.starts-with.js":
-  /*!********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.starts-with.js ***!
-    \********************************************************************************************************************************************/
+  /*!****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.starts-with.js ***!
+    \****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12725,9 +12725,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.strike.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.strike.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.strike.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12763,9 +12763,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.sub.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.sub.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.sub.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12801,9 +12801,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.sup.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.sup.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.sup.js ***!
+    \********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12839,9 +12839,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.trim.js":
-  /*!*************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.trim.js ***!
-    \*************************************************************************************************************************************/
+  /*!*********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.string.trim.js ***!
+    \*********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12877,9 +12877,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.async-iterator.js":
-  /*!***********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.async-iterator.js ***!
-    \***********************************************************************************************************************************************/
+  /*!*******************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.async-iterator.js ***!
+    \*******************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12897,9 +12897,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.description.js":
-  /*!********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.description.js ***!
-    \********************************************************************************************************************************************/
+  /*!****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.description.js ***!
+    \****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -12981,9 +12981,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.has-instance.js":
-  /*!*********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.has-instance.js ***!
-    \*********************************************************************************************************************************************/
+  /*!*****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.has-instance.js ***!
+    \*****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13001,9 +13001,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.is-concat-spreadable.js":
-  /*!*****************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.is-concat-spreadable.js ***!
-    \*****************************************************************************************************************************************************/
+  /*!*************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.is-concat-spreadable.js ***!
+    \*************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13021,9 +13021,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.iterator.js":
-  /*!*****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.iterator.js ***!
-    \*****************************************************************************************************************************************/
+  /*!*************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.iterator.js ***!
+    \*************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13041,9 +13041,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.js":
-  /*!********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.js ***!
-    \********************************************************************************************************************************/
+  /*!****************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.js ***!
+    \****************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13522,9 +13522,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.match-all.js":
-  /*!******************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.match-all.js ***!
-    \******************************************************************************************************************************************/
+  /*!**************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.match-all.js ***!
+    \**************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13541,9 +13541,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.match.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.match.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.match.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13561,9 +13561,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.replace.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.replace.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.replace.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13581,9 +13581,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.search.js":
-  /*!***************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.search.js ***!
-    \***************************************************************************************************************************************/
+  /*!***********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.search.js ***!
+    \***********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13601,9 +13601,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.species.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.species.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.species.js ***!
+    \************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13621,9 +13621,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.split.js":
-  /*!**************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.split.js ***!
-    \**************************************************************************************************************************************/
+  /*!**********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.split.js ***!
+    \**********************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13641,9 +13641,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.to-primitive.js":
-  /*!*********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.to-primitive.js ***!
-    \*********************************************************************************************************************************************/
+  /*!*****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.to-primitive.js ***!
+    \*****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13661,9 +13661,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.to-string-tag.js":
-  /*!**********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.to-string-tag.js ***!
-    \**********************************************************************************************************************************************/
+  /*!******************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.to-string-tag.js ***!
+    \******************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13681,9 +13681,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.unscopables.js":
-  /*!********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.unscopables.js ***!
-    \********************************************************************************************************************************************/
+  /*!****************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.symbol.unscopables.js ***!
+    \****************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13701,9 +13701,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.weak-map.js":
-  /*!**********************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.weak-map.js ***!
-    \**********************************************************************************************************************************/
+  /*!******************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/es.weak-map.js ***!
+    \******************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13812,9 +13812,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.define-metadata.js":
-  /*!*****************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.define-metadata.js ***!
-    \*****************************************************************************************************************************************************/
+  /*!*************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.define-metadata.js ***!
+    \*************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13852,9 +13852,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.delete-metadata.js":
-  /*!*****************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.delete-metadata.js ***!
-    \*****************************************************************************************************************************************************/
+  /*!*************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.delete-metadata.js ***!
+    \*************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13898,9 +13898,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.get-metadata-keys.js":
-  /*!*******************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.get-metadata-keys.js ***!
-    \*******************************************************************************************************************************************************/
+  /*!***************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.get-metadata-keys.js ***!
+    \***************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -13966,9 +13966,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.get-metadata.js":
-  /*!**************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.get-metadata.js ***!
-    \**************************************************************************************************************************************************/
+  /*!**********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.get-metadata.js ***!
+    \**********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -14019,9 +14019,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.get-own-metadata-keys.js":
-  /*!***********************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.get-own-metadata-keys.js ***!
-    \***********************************************************************************************************************************************************/
+  /*!*******************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.get-own-metadata-keys.js ***!
+    \*******************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -14059,9 +14059,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.get-own-metadata.js":
-  /*!******************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.get-own-metadata.js ***!
-    \******************************************************************************************************************************************************/
+  /*!**************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.get-own-metadata.js ***!
+    \**************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -14099,9 +14099,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.has-metadata.js":
-  /*!**************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.has-metadata.js ***!
-    \**************************************************************************************************************************************************/
+  /*!**********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.has-metadata.js ***!
+    \**********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -14151,9 +14151,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.has-own-metadata.js":
-  /*!******************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.has-own-metadata.js ***!
-    \******************************************************************************************************************************************************/
+  /*!**************************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.has-own-metadata.js ***!
+    \**************************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -14191,9 +14191,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.metadata.js":
-  /*!**********************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.metadata.js ***!
-    \**********************************************************************************************************************************************/
+  /*!******************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/esnext.reflect.metadata.js ***!
+    \******************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -14230,9 +14230,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/web.dom-collections.for-each.js":
-  /*!***************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/web.dom-collections.for-each.js ***!
-    \***************************************************************************************************************************************************/
+  /*!***********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/web.dom-collections.for-each.js ***!
+    \***********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -14270,9 +14270,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/web.dom-collections.iterator.js":
-  /*!***************************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/web.dom-collections.iterator.js ***!
-    \***************************************************************************************************************************************************/
+  /*!***********************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/modules/web.dom-collections.iterator.js ***!
+    \***********************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -14334,9 +14334,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/node_modules/core-js/proposals/reflect-metadata.js":
-  /*!*****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/proposals/reflect-metadata.js ***!
-    \*****************************************************************************************************************************************/
+  /*!*************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/node_modules/core-js/proposals/reflect-metadata.js ***!
+    \*************************************************************************************************************************/
 
   /*! no static exports found */
 
@@ -14383,9 +14383,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-jit-polyfills.js":
-  /*!****************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-jit-polyfills.js ***!
-    \****************************************************************************************************************************************/
+  /*!************************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-jit-polyfills.js ***!
+    \************************************************************************************************************************/
 
   /*! no exports provided */
 
@@ -14418,9 +14418,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js ***!
+    \********************************************************************************************************************/
 
   /*! no exports provided */
 
@@ -15298,9 +15298,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js":
-  /*!************************************************************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js ***!
-    \************************************************************************************************************************************/
+  /*!********************************************************************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js ***!
+    \********************************************************************************************************************/
 
   /*! no exports provided */
 
@@ -15333,9 +15333,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/regenerator-runtime/runtime.js":
-  /*!***************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/regenerator-runtime/runtime.js ***!
-    \***************************************************************************************/
+  /*!***********************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/regenerator-runtime/runtime.js ***!
+    \***********************************************************************/
 
   /*! no static exports found */
 
@@ -16052,9 +16052,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/tslib/tslib.es6.js":
-  /*!***************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/tslib/tslib.es6.js ***!
-    \***************************************************************************/
+  /*!***********************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/tslib/tslib.es6.js ***!
+    \***********************************************************/
 
   /*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __createBinding, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet */
 
@@ -16656,9 +16656,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/zone.js/dist/zone-evergreen.js":
-  /*!***************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/zone.js/dist/zone-evergreen.js ***!
-    \***************************************************************************************/
+  /*!***********************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/zone.js/dist/zone-evergreen.js ***!
+    \***********************************************************************/
 
   /*! no static exports found */
 
@@ -20230,9 +20230,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   "../../node_modules/zone.js/dist/zone-legacy.js":
-  /*!************************************************************************************!*\
-    !*** C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/zone.js/dist/zone-legacy.js ***!
-    \************************************************************************************/
+  /*!********************************************************************!*\
+    !*** C:/git/ngx-popperjs/node_modules/zone.js/dist/zone-legacy.js ***!
+    \********************************************************************/
 
   /*! no static exports found */
 
@@ -20736,16 +20736,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   1:
-  /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-    !*** multi C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js zone.js/dist/zone-legacy C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js C:/easyPhp/eds-www/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-jit-polyfills.js ./src/polyfills.ts ***!
-    \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+  /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+    !*** multi C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js zone.js/dist/zone-legacy C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js C:/git/ngx-popperjs/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-jit-polyfills.js ./src/polyfills.ts ***!
+    \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
   /*! no static exports found */
 
   /***/
   function _(module, exports, __webpack_require__) {
     __webpack_require__(
-    /*! C:\easyPhp\eds-www\git\ngx-popperjs\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\es5-polyfills.js */
+    /*! C:\git\ngx-popperjs\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\es5-polyfills.js */
     "../../node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js");
 
     __webpack_require__(
@@ -20753,15 +20753,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     "../../node_modules/zone.js/dist/zone-legacy.js");
 
     __webpack_require__(
-    /*! C:\easyPhp\eds-www\git\ngx-popperjs\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\jit-polyfills.js */
+    /*! C:\git\ngx-popperjs\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\jit-polyfills.js */
     "../../node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
 
     __webpack_require__(
-    /*! C:\easyPhp\eds-www\git\ngx-popperjs\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\es5-jit-polyfills.js */
+    /*! C:\git\ngx-popperjs\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\es5-jit-polyfills.js */
     "../../node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-jit-polyfills.js");
 
     module.exports = __webpack_require__(
-    /*! C:\easyPhp\eds-www\git\ngx-popperjs\projects\ngx-popperjs-repo\src\polyfills.ts */
+    /*! C:\git\ngx-popperjs\projects\ngx-popperjs-repo\src\polyfills.ts */
     "./src/polyfills.ts");
     /***/
   }
