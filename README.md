@@ -28,8 +28,7 @@ node and npm are required to run this package.
 1. Use npm/yarn to install the package:
 
   ```terminal
-  $ npm install @popperjs/core --save
-  $ npm install ngx-popperjs --save 
+  $ npm install @popperjs/core ngx-popperjs --save
   ```
   
   Or 
@@ -57,31 +56,13 @@ SystemJS
 ```
     System.config({
         paths: {
-            // paths serve as alias
-            'npm:': 'libs/'
-        },
+           'npm:': 'https://unpkg.com/' // or your local folder
+         }
         // map tells the System loader where to look for things
         map: {
             ... ,
-            'ngx-popperjs': 'npm:ngx-popperjs',
-            'popper-directive.js': 'npm:ngx-popperjs',
-            'popper.module': 'npm:ngx-popperjs',
-        },
-        // packages tells the System loader how to load when no filename and/or no extension
-        packages: {
-            ... ,
-            'ngx-popperjs': {
-                main: 'index.js',
-                defaultExtension: 'js'
-            },
-            'popper.js': {
-                main: 'popperjs-directive.js',
-                defaultExtension: 'js'
-            },
-            'popper.module': {
-                main: './popperjs.module.js',
-                defaultExtension: 'js'
-            }
+            "@popperjs/core": "npm:@popperjs/core@2.4.4/dist/umd/popper.js",
+            "ngx-popperjs": "npm:ngx-popperjs@8.0.0/bundles/ngx-popperjs.umd.js
         }
     });
 
@@ -90,41 +71,39 @@ SystemJS
 Optionally you can include in your `styles.css` / `styles.css` one of the prebuilt themes:
 * `@import ~ngx-popperjs/css/theme-dark.css`
 * `@import ~ngx-popperjs/css/theme-white.css`
-* `@import ~ngx-popperjs/scss/theme-dark.scss`
-* `@import ~ngx-popperjs/scss/theme-white.scss`
+* `@import ~ngx-popperjs/scss/theme-dark`
+* `@import ~ngx-popperjs/scss/theme-white`
 
 or easily create your own theme using the @mixin
 
 ```
-@import ~ngx-popperjs/scss/theme.scss
+@import ~ngx-popperjs/scss/theme
 
 body {
     @include ngx-popperjs-theme($background-color, $text-color, $max-width, $z-index) 
 }
 ```
 
-  
-
 3. Add to view:
 
   ```HTML  
-   <div     [popper]="popper1Content"
-            [popperShowOnStart]="true"
-            [popperTrigger]="'click'"
-            [popperHideOnClickOutside]="true"
-            [popperHideOnScroll]="true"
-            [popperPlacement]="'bottom'">
-         <p class="bold">Hey!</p>
-         <p class="thin">Choose where to put your popper!</p>         
-       </div>
-       <popper-content #popper1Content>
-         <p class="bold">Popper on bottom</p>
-       </popper-content>
+   <popper-content #popper1Content>
+       <p class="bold">Popper on bottom</p>
+   </popper-content>
+   <div [popper]="popper1Content"
+        [popperShowOnStart]="true"
+        [popperTrigger]="'click'"
+        [popperHideOnClickOutside]="true"
+        [popperHideOnScroll]="true"
+        [popperPlacement]="'bottom'">
+       <p class="bold">Hey!</p>
+       <p class="thin">Choose where to put your popper!</p>         
+   </div>
   ```
 
 4. As text:
  ```HTML
-      <div [popper]="'As text'"
+      <div popper="As text"
            [popperTrigger]="'hover'"
            [popperPlacement]="'bottom'"
            (popperOnShown)="onShown($event)">
@@ -146,7 +125,7 @@ body {
  
   5. Position fixed, breaking overflow:
    ```HTML
-        <div [popper]="'As text'"
+        <div popper="As text"
              [popperTrigger]="'hover'"
              [popperPlacement]="'bottom'"
              [popperPositionFixed]="true"
@@ -158,9 +137,9 @@ body {
   ```HTML
  <div class="example">
        <div #popperTargetElement></div>
-       <div [popper]="'As text'"
-            [popperTrigger]="'hover'"
-            [popperPlacement]="'bottom'"
+       <div popper="As text"
+            popperTrigger="hover"
+            popperPlacement="bottom"
             [popperTarget]="popperTargetElement.nativeElement"
             (popperOnShown)="onShown($event)">
        </div>
@@ -169,9 +148,9 @@ body {
 7. hide/show programmatically:
   ```HTML
    <div [popper]="tooltipcontent"
-           [popperTrigger]="'hover'"
-           [popperPlacement]="'bottom'"
-           [popperApplyClass]="'popperSpecialStyle'">
+        popperTrigger="hover"
+        popperPlacement="bottom"
+        [popperApplyClass]="'popperSpecialStyle'">
         <p class="bold">Pop</p>
         <p class="thin">on the bottom</p>
       </div>

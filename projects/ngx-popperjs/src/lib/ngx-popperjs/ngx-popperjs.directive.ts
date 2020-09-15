@@ -20,6 +20,7 @@ import {NgxPopperjsContentComponent} from "../ngx-popperjs-content/ngx-popper-co
 import {NgxPopperjsOptions} from "../models/ngx-popperjs-options.model";
 import {NgxPopperjsPlacements} from "../models/ngx-popperjs-placements.model";
 import {NgxPopperjsTriggers} from "../models/ngx-popperjs-triggers.model";
+import {Modifier} from "@popperjs/core";
 
 @Directive({
     // tslint:disable-next-line:directive-selector
@@ -102,8 +103,8 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
     @Input()
     popperApplyArrowClass: string;
 
-    @Input("popperModifiers")
-    popperModifiers: {};
+    @Input()
+    popperModifiers: Partial<Modifier<any, any>>[];
 
     @Output()
     popperOnHidden: EventEmitter<NgxPopperjsDirective> = new EventEmitter<NgxPopperjsDirective>();
@@ -137,6 +138,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
 
     @Input("popperTimeoutAfterShow")
     timeoutAfterShow: number = 0;
+
     private _eventListeners: any[] = [];
     private _globalEventListeners: any[] = [];
     private _popperContent: NgxPopperjsContentComponent;

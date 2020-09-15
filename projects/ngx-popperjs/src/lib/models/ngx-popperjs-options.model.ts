@@ -15,7 +15,7 @@ export interface NgxPopperjsOptions {
     hideOnMouseLeave?: boolean;
     hideOnScroll?: boolean;
     placement?: NgxPopperjsPlacements;
-    popperModifiers?: Array<Partial<Modifier<any, any>>>;
+    popperModifiers?: Partial<Modifier<any, any>>[];
     positionFixed?: boolean;
     preventOverflow?: boolean;
     showDelay?: number;
