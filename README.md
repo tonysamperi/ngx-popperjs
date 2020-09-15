@@ -2,13 +2,12 @@
 
 [![npm](https://img.shields.io/npm/v/ngx-popperjs.svg?style=flat-square)](https://www.npmjs.com/package/ngx-popperjs) 
 [![npm](https://img.shields.io/npm/dm/ngx-popperjs.svg?style=flat-square)](https://www.npmjs.com/package/ngx-popperjs) 
-<!-- 
-    TODO: SETUP SNYK
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/MrFrankel/ngx-popperjs/blob/master/LICENSE) [![Greenkeeper badge](https://badges.greenkeeper.io/MrFrankel/ngx-popperjs.svg)](https://greenkeeper.io/) -->
-  <img src="http://badge-size.now.sh/https://unpkg.com/ngx-popperjs@8.0.0/bundles/ngx-popperjs.umd.js?compression=brotli" alt="Stable Release Size"/>
-  <img src="http://badge-size.now.sh/https://unpkg.com/ngx-popperjs@8.0.0/bundles/ngx-popperjs.umd.js?compression=gzip" alt="Stable Release Size"/>
-[![Build Status](https://travis-ci.org/tonysamperi/ngx-popperjs.svg?branch=master)](https://travis-ci.org/MrFrankel/ngx-popperjs)
-
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/tonysamperi/ngx-popperjs/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/tonysamperi/ngx-popperjs.svg?branch=master)](https://travis-ci.org/tonysamperi/ngx-popperjs)
+[![Size](https://img.shields.io/bundlephobia/min/ngx-popperjs)](https://unpkg.com/ngx-popperjs@8.0.0/bundles/ngx-popperjs.umd.js)
+<!-- TODO: SETUP SNYK
+[![Greenkeeper badge](https://badges.greenkeeper.io/MrFrankel/ngx-popperjs.svg)](https://greenkeeper.io/)
+-->
 ngx-popperjs is an angular wrapper for the [Popper.js](https://popper.js.org/) library.
 
 *Note* that I also updated everything to use **Popper 2** (v *2.4.4* at this time) 
@@ -36,7 +35,7 @@ node and npm are required to run this package.
   Or 
   
    ```terminal
-    $ yarn add popper.js --save
+    $ yarn add @popperjs/core --save
     $ yarn add ngx-popperjs --save 
   ```
 

@@ -1,6 +1,6 @@
 {
   "name": "ngx-popperjs",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "license": "MIT",
   "description": "ngx-popperjs is an Angular wrapper for @popperjs",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "https://github.com/tonysamperi/ngx-popperjs"
   },
   "bugs": {
-    "url": "https://github.com/tonysamperi/ngx-tour-wizard/issues"
+    "url": "https://github.com/tonysamperi/ngx-popperjs/issues"
   },
   "author": {
     "name": "Tony Samperi",
