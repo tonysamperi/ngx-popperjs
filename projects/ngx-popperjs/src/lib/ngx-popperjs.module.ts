@@ -6,30 +6,40 @@ import {NgxPopperjsContentComponent} from "./ngx-popperjs-content/ngx-popper-con
 import {NgxPopperjsOptions} from "./models/ngx-popperjs-options.model";
 import {NGX_POPPERJS_DEFAULTS} from "./models/ngx-popperjs-defaults.model";
 
+export function provideNgxPopperjsOptions(config: NgxPopperjsOptions = {}): any {
+    return [
+        {provide: NGX_POPPERJS_DEFAULTS, useValue: config},
+    ];
+}
+
+
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [
-    NgxPopperjsContentComponent,
-    NgxPopperjsDirective
-  ],
-  entryComponents: [
-    NgxPopperjsContentComponent
-  ],
-  exports: [
-    NgxPopperjsContentComponent,
-    NgxPopperjsDirective
-  ]
+    imports: [
+        CommonModule
+    ],
+    declarations: [
+        NgxPopperjsContentComponent,
+        NgxPopperjsDirective
+    ],
+    entryComponents: [
+        NgxPopperjsContentComponent
+    ],
+    exports: [
+        NgxPopperjsContentComponent,
+        NgxPopperjsDirective
+    ],
+    providers: [
+        provideNgxPopperjsOptions()
+    ]
 })
 export class NgxPopperjsModule {
 
-  public static forRoot(popperBaseOptions: NgxPopperjsOptions = {}): ModuleWithProviders<NgxPopperjsModule> {
-    return {
-      ngModule: NgxPopperjsModule,
-      providers: [
-        {provide: NGX_POPPERJS_DEFAULTS, useValue: popperBaseOptions}
-      ]
-    };
-  }
+    public static forRoot(popperBaseOptions?: NgxPopperjsOptions): ModuleWithProviders<NgxPopperjsModule> {
+        return {
+            ngModule: NgxPopperjsModule,
+            providers: [
+                provideNgxPopperjsOptions(popperBaseOptions)
+            ]
+        };
+    }
 }

@@ -14,3 +14,6 @@
 #8.0.4
 * Handled void popperContentRef 
 * Improved performance
+
+#8.0.5
+* Allowing importing without using the forRoot to use defaults automatically
