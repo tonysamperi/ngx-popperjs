@@ -32,7 +32,7 @@ popper-content {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     content: '';
-    background: #FFF;
+    background-color: #FFF;
     top: 0;
     left: 0;
   }
@@ -53,32 +53,6 @@ popper-content {
     left: -4px;
   }
 
-  &[x-placement^="right"] > .ngxp__arrow.__force-arrow {
-    border-top-color: transparent !important;
-    border-bottom-color: transparent !important;
-    border-left-color: transparent !important;
-  }
-
-  &[x-placement^="left"] {
-    margin-right: 5px;
-  }
-
-  &[x-placement^="left"] > .ngxp__arrow {
-    border-width: 5px 0 5px 5px;
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-    border-right-color: transparent;
-    right: -5px;
-    top: calc(50% - 5px);
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  &[x-placement^="left"] > .ngxp__arrow.__force-arrow {
-    border-top-color: transparent !important;
-    border-bottom-color: transparent !important;
-    border-right-color: transparent !important;
-  }
 }
 
 @-webkit-keyframes ngxp-fadeIn {

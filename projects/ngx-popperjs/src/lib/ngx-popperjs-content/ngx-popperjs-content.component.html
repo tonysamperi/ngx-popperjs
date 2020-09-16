@@ -1,4 +1,5 @@
 <div #popperViewRef
+     [attr.id]="id"
      [class.ngxp__container]="!popperOptions.disableDefaultStyling"
      [class.ngxp__animation]="!popperOptions.disableAnimation"
      [style.display]="displayType"
@@ -19,8 +20,7 @@
     </div>
     <div class="ngxp__arrow"
          data-popper-arrow
-         [style.border-color]="arrowColor"
-         [class.__force-arrow]="arrowColor"
+         [class.ngxp__force-arrow]="arrowColor"
          [ngClass]="extractAppliedClassListExpr(popperOptions.applyArrowClass)"></div>
 
 </div>

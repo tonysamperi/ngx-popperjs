@@ -17,3 +17,8 @@
 
 #8.0.5
 * Allowing importing without using the forRoot to use defaults automatically
+
+#8.0.6
+* Fix arrow color when using NgxPopperjsOptions.style.backgroundColor to set default popper color
+* Made NgxPopperjsContentComponent extensible (protected members)
+* Misc and refactor

@@ -21,6 +21,8 @@ import {ArrowModifier} from "@popperjs/core/lib/modifiers/arrow";
 import {Instance} from "@popperjs/core/lib/types";
 import {PreventOverflowModifier} from "@popperjs/core/lib/modifiers/preventOverflow";
 import {OffsetModifier} from "@popperjs/core/lib/modifiers/offset";
+import {synthesizeLeadingComments} from "tsickle/src/jsdoc";
+import {style} from "@angular/animations";
 
 @Component({
     // tslint:disable-next-line:component-selector
@@ -32,9 +34,12 @@ import {OffsetModifier} from "@popperjs/core/lib/modifiers/offset";
 })
 export class NgxPopperjsContentComponent implements OnDestroy {
 
+    static nextId: number = 0;
+
     ariaHidden: string = "true";
     arrowColor: string | null = null;
     displayType: string = "none";
+    id: string = `ngx_poppperjs_${++NgxPopperjsContentComponent.nextId}`;
     isMouseOver: boolean = false;
     onHidden = new EventEmitter();
     onUpdate: () => any;
@@ -56,12 +61,13 @@ export class NgxPopperjsContentComponent implements OnDestroy {
     state: boolean = true;
     text: string;
 
-    private _globalResize: any;
+    protected _globalResize: any;
+    protected _styleId = `${this.id}_style`;
 
     constructor(public elRef: ElementRef,
-                private _renderer: Renderer2,
-                private _viewRef: ViewContainerRef,
-                private _changeDetectorRef: ChangeDetectorRef) {
+                protected _renderer: Renderer2,
+                protected _viewRef: ViewContainerRef,
+                protected _changeDetectorRef: ChangeDetectorRef) {
     }
 
     clean() {
@@ -192,7 +198,8 @@ export class NgxPopperjsContentComponent implements OnDestroy {
             this.displayType = "none";
             this.ariaHidden = "true";
             this.state = false;
-        } else {
+        }
+        else {
             this.opacity = 1;
             this.displayType = "block";
             this.ariaHidden = "false";
@@ -213,19 +220,37 @@ export class NgxPopperjsContentComponent implements OnDestroy {
     //   this._globalResize && typeof this._globalResize === "function" && this._globalResize();
     // }
 
-    private _determineArrowColor() {
-        ["background-color", "backgroundColor"].some((clr) => {
-            if (!this.popperOptions.styles) {
+    protected _createArrowSelector(): string {
+        return `div#${this.id}.ngxp__container > .ngxp__arrow.ngxp__force-arrow`;
+    }
 
-                return !1;
-            }
-            if (this.popperOptions.styles.hasOwnProperty(clr)) {
-                this.arrowColor = this.popperOptions.styles[clr];
-
-                return !0;
-            }
+    protected _determineArrowColor() {
+        if (!this.popperOptions.styles || this.arrowColor) {
 
             return !1;
-        });
+        }
+        const ruleValue = this.popperOptions.styles["background-color"] || this.popperOptions.styles.backgroundColor;
+        if (this.arrowColor === ruleValue) {
+            return !1;
+        }
+        this.arrowColor = ruleValue;
+        let $style = document.querySelector(`#${this._styleId}`) as HTMLStyleElement;
+        const styleContent = this.arrowColor ?
+            `${this._createArrowSelector()}:before { background-color: ${this.arrowColor}; }` : "";
+        if (!$style) {
+            $style = document.createElement("style") as HTMLStyleElement;
+            $style.id = this._styleId;
+            $style.setAttribute("type", "text/css");
+            document.head.append($style);
+        }
+        // tslint:disable-next-line:no-string-literal
+        if ($style["styleSheet"]) {
+            // tslint:disable-next-line:no-string-literal
+            $style["styleSheet"].cssText = styleContent;
+            // This is required for IE8 and below.
+        }
+        else {
+            $style.innerHTML = styleContent;
+        }
     }
 }
