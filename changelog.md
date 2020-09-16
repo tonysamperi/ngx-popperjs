@@ -9,4 +9,8 @@
 * Fixed array types convention
 
 #8.0.3
-* Using InjectionToken to handle defaults, preventing using forRoot on every module importing NgxPopperJsModule 
+* Using InjectionToken to handle defaults, preventing using forRoot on every module importing NgxPopperJsModule
+
+#8.0.4
+* Handled void popperContentRef 
+* Improved performance

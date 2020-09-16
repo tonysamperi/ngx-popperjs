@@ -8,12 +8,10 @@ import {
     EventEmitter,
     Inject,
     Input,
-    OnChanges,
     OnDestroy,
     OnInit,
     Output,
     Renderer2,
-    SimpleChange,
     ViewContainerRef
 } from "@angular/core";
 import {NgxPopperjsContentComponent} from "../ngx-popperjs-content/ngx-popper-content.component";
@@ -28,7 +26,7 @@ import {Modifier} from "@popperjs/core";
     // tslint:disable-next-line:directive-selector
     selector: "[popper]"
 })
-export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
+export class NgxPopperjsDirective implements OnInit, OnDestroy {
 
     static baseOptions: NgxPopperjsOptions = {
         showDelay: 0,
@@ -44,7 +42,23 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
     } as NgxPopperjsOptions;
 
     @Input("popperApplyClass")
-    applyClass: string;
+    set applyClass(newValue: string) {
+        if (newValue === this._applyClass) {
+            return;
+        }
+        this._applyClass = newValue;
+        if (this._popperContent) {
+            this._popperContent.popperOptions.applyClass = newValue;
+            if (!this._shown) {
+                return;
+            }
+            this._popperContent.popperInstance.setOptions(this._popperContent.popperOptions);
+        }
+    }
+
+    get applyClass(): string {
+        return this._applyClass;
+    }
 
     @Input("popperAriaDescribeBy")
     ariaDescribe: string | void;
@@ -59,13 +73,44 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
     closeOnClickOutside: boolean;
 
     @Input("popper")
-    content: string | NgxPopperjsContentComponent;
+    set content(newValue: string | NgxPopperjsContentComponent) {
+        if (newValue === this._content) {
+
+            return;
+        }
+        this._content = newValue;
+        if (this._popperContent) {
+            if (typeof newValue === "string") {
+                this._popperContent.text = newValue;
+            }
+            else {
+                this._popperContent = newValue;
+            }
+        }
+    }
+
+    get content(): string | NgxPopperjsContentComponent {
+        return this._content;
+    }
+
 
     @Input("popperDisableAnimation")
     disableAnimation: boolean;
 
     @Input("popperDisabled")
-    disabled: boolean;
+    set disabled(newValue: boolean) {
+        if (newValue === this._disabled) {
+            return;
+        }
+        this._disabled = !!newValue;
+        if (this._shown) {
+            this.hide();
+        }
+    }
+
+    get disabled(): boolean {
+        return this._disabled;
+    }
 
     @Input("popperDisableStyle")
     disableStyle: boolean;
@@ -103,7 +148,23 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
     popperAppendTo: string;
 
     @Input()
-    popperApplyArrowClass: string;
+    set popperApplyArrowClass(newValue: string) {
+        if (newValue === this._popperApplyArrowClass) {
+            return;
+        }
+        this._popperApplyArrowClass = newValue;
+        if (this._popperContent) {
+            this._popperContent.popperOptions.applyArrowClass = newValue;
+            if (!this._shown) {
+                return;
+            }
+            this._popperContent.popperInstance.setOptions(this._popperContent.popperOptions);
+        }
+    }
+
+    get popperApplyArrowClass(): string {
+        return this._popperApplyArrowClass;
+    }
 
     @Input()
     popperModifiers: Partial<Modifier<any, any>>[];
@@ -141,8 +202,12 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
     @Input("popperTimeoutAfterShow")
     timeoutAfterShow: number = 0;
 
+    private _applyClass: string;
+    private _content: string | NgxPopperjsContentComponent;
+    private _disabled: boolean;
     private _eventListeners: any[] = [];
     private _globalEventListeners: any[] = [];
+    private _popperApplyArrowClass: string;
     private _popperContent: NgxPopperjsContentComponent;
     private _popperContentClass = NgxPopperjsContentComponent;
     private _popperContentRef: ComponentRef<NgxPopperjsContentComponent>;
@@ -213,7 +278,8 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
         this._shown = false;
         if (this._popperContentRef) {
             this._popperContentRef.instance.hide();
-        } else {
+        }
+        else {
             this._popperContent.hide();
         }
         this.popperOnHidden.emit(this);
@@ -237,29 +303,6 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
         this.scheduledHide($event, this.hideTimeout);
     }
 
-    ngOnChanges(changes: { [propertyName: string]: SimpleChange }) {
-        if (changes.popperDisabled && changes.popperDisabled.currentValue) {
-            this.hide();
-        }
-        if (changes.content
-            && !changes.content.firstChange
-            && typeof changes.content.currentValue === "string") {
-            this._popperContent.text = changes.content.currentValue;
-        }
-
-        if (changes.applyClass
-            && !changes.applyClass.firstChange
-            && typeof changes.applyClass.currentValue === "string") {
-            this._popperContent.popperOptions.applyClass = changes.applyClass.currentValue;
-        }
-
-        if (changes.applyArrowClass
-            && !changes.applyArrowClass.firstChange
-            && typeof changes.applyArrowClass.currentValue === "string") {
-            this._popperContent.popperOptions.applyArrowClass = changes.applyArrowClass.currentValue;
-        }
-    }
-
     ngOnDestroy() {
         this._subscriptions.forEach(sub => sub.unsubscribe && sub.unsubscribe());
         this._subscriptions.length = 0;
@@ -276,10 +319,14 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
             this.closeOnClickOutside : this.hideOnClickOutside;
 
         if (typeof this.content === "string") {
-            const text = this.content;
             this._popperContent = this._constructContent();
-            this._popperContent.text = text;
-        } else {
+            this._popperContent.text = this.content;
+        }
+        else if (typeof this.content === typeof void 0) {
+            this._popperContent = this._constructContent();
+            this._popperContent.text = "";
+        }
+        else {
             this._popperContent = this.content;
         }
         const popperRef = this._popperContent;
@@ -304,7 +351,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
             if (!popperContentView ||
                 popperContentView === toElement ||
                 popperContentView.contains(toElement) ||
-                (this.content as NgxPopperjsContentComponent).isMouseOver) {
+                (this.content && (this.content as NgxPopperjsContentComponent).isMouseOver)) {
 
                 return;
             }
@@ -389,7 +436,8 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy, OnChanges {
 
         if (!node) {
             return null;
-        } else if (isScrollable && node.scrollHeight >= node.clientHeight) {
+        }
+        else if (isScrollable && node.scrollHeight >= node.clientHeight) {
             return node;
         }
 

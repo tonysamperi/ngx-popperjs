@@ -26,7 +26,7 @@ strong {
     position: absolute;
     width: $pop-angular-logo-size;
     left: calc(50% - #{$pop-angular-logo-size/2});
-    top: calc(50% - #{$pop-angular-logo-size/2});
+    top: 235px; // Since popper logo has height 200px
     border-radius: 50%;
     background-color: #FFF;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
@@ -89,6 +89,10 @@ strong {
   background-color: map-get($pop-colors, background);
   border-bottom: 1px solid map-get($pop-colors, violet);
 
+  @include respond-below(sm) {
+    padding: 0 20px;
+  }
+
   > article {
     position: relative;
     display: grid;
@@ -107,7 +111,6 @@ strong {
 
     @include respond-below(sm) {
       grid-template-columns: 1fr;
-
     }
 
     .pop-popcorn-box {
@@ -122,6 +125,9 @@ strong {
     > div.pop-popcorn-wrap + div {
       padding: 0 40px;
       display: grid;
+      @include respond-below(sm) {
+        padding: 0;
+      }
     }
 
     &[pop-position] > div.pop-popcorn-wrap {
@@ -316,6 +322,9 @@ footer {
   margin-top: 8px;
   overflow: hidden;
   background-color: rgb(15, 15, 16);
+  @include respond-below(sm) {
+    width: 100%;
+  }
 }
 
 .terminal::before {
