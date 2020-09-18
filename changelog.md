@@ -22,3 +22,7 @@
 * Fix arrow color when using NgxPopperjsOptions.style.backgroundColor to set default popper color
 * Made NgxPopperjsContentComponent extensible (protected members)
 * Misc and refactor
+
+#9.0.0
+* Removed router which was actually pointless (only for demo, but still unused)
+* Upgrade for Angular 9
