@@ -265,6 +265,10 @@ NgModule({
   $ npm run start  //run example
 ```
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
 ### Thanks to
 
 MrFrankel for setting up ngx-popper and maintaining till v 7.0.0.

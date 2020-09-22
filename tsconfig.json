@@ -20,7 +20,7 @@
         ],
         "paths": {
             "ngx-popperjs": [
-                "./projects/ngx-popperjs/src/public-api.ts"
+                "./projects/ngx-popperjs/src/public-api"
             ],
             "--ngx-popperjs": [
                 "dist/ngx-popperjs"
