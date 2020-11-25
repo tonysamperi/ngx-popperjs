@@ -36,7 +36,7 @@ node and npm are required to run this package.
 2. You simply add into your module `NgxPopperjsModule`:
 
   ```typescript
-  import {NgxPopperModule} from 'ngx-popperjs';
+  import {NgxPopperjsModule} from 'ngx-popperjs';
   
   @NgModule({
    // ...
