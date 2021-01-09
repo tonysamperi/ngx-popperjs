@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "license": "MIT",
     "description": "ngx-popperjs is an Angular wrapper for @popperjs",
-	"homepage": "https://tonysamperi.github.io/ngx-popperjs",
+    "homepage": "https://tonysamperi.github.io/ngx-popperjs",
     "repository": {
         "type": "git",
         "url": "https://github.com/tonysamperi/ngx-popperjs"
@@ -30,7 +30,7 @@
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build --prod && gulp postBuild",
-		"build:demo": "ng build --prod --baseHref= ngx-popperjs-repo",
+        "build:demo": "ng build --prod --baseHref= ngx-popperjs-repo",
         "pack": "gulp pack",
         "test": "ng test",
         "lint": "ng lint",
@@ -38,24 +38,24 @@
     },
     "private": true,
     "dependencies": {
-        "@angular/animations": "~9.1.12",
-        "@angular/common": "~9.1.12",
-        "@angular/compiler": "~9.1.12",
-        "@angular/core": "~9.1.12",
-        "@angular/forms": "~9.1.12",
-        "@angular/platform-browser": "~9.1.12",
-        "@angular/platform-browser-dynamic": "~9.1.12",
-        "@popperjs/core": "~2.4.4",
-        "rxjs": "~6.5.1",
-        "tslib": "^1.10.0",
-        "zone.js": "~0.10.2"
+        "@angular/animations": "~10.2.4",
+        "@angular/common": "~10.2.4",
+        "@angular/compiler": "~10.2.4",
+        "@angular/core": "~10.2.4",
+        "@angular/forms": "~10.2.4",
+        "@angular/platform-browser": "~10.2.4",
+        "@angular/platform-browser-dynamic": "~10.2.4",
+        "@popperjs/core": "~2.6.0",
+        "rxjs": "~6.6.3",
+        "tslib": "~1.14.1",
+        "zone.js": "~0.10.3"
     },
     "devDependencies": {
-        "@angular-devkit/build-angular": "~0.901.5",
-        "@angular-devkit/build-ng-packagr": "~0.803.29",
-        "@angular/cli": "~9.1.12",
-        "@angular/compiler-cli": "~9.1.12",
-        "@angular/language-service": "~9.1.12",
+        "@angular-devkit/build-angular": "~0.1002.1",
+        "@angular-devkit/build-ng-packagr": "~0.1002.1",
+        "@angular/cli": "~10.2.1",
+        "@angular/compiler-cli": "~10.2.4",
+        "@angular/language-service": "~10.2.4",
         "@types/jasmine": "~3.3.8",
         "@types/jasminewd2": "~2.0.3",
         "@types/node": "~8.9.4",
@@ -74,10 +74,10 @@
         "node-sass-tilde-importer": "^1.0.2",
         "prismjs": "^1.21.0",
         "protractor": "~7.0.0",
-        "ts-node": "~8.3.0",
+        "ts-node": "~9.1.1",
         "tsickle": "^0.37.0",
         "tslint": "~6.1.2",
         "tslint-consistent-codestyle": "^1.16.0",
-        "typescript": "~3.8.3"
+        "typescript": "~3.9.7"
     }
 }

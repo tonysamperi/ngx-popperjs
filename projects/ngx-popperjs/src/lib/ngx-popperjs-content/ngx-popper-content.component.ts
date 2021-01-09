@@ -21,8 +21,6 @@ import {ArrowModifier} from "@popperjs/core/lib/modifiers/arrow";
 import {Instance} from "@popperjs/core/lib/types";
 import {PreventOverflowModifier} from "@popperjs/core/lib/modifiers/preventOverflow";
 import {OffsetModifier} from "@popperjs/core/lib/modifiers/offset";
-import {synthesizeLeadingComments} from "tsickle/src/jsdoc";
-import {style} from "@angular/animations";
 
 @Component({
     // tslint:disable-next-line:component-selector
