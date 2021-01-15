@@ -2,9 +2,13 @@
  * Public API Surface of ngx-popperjs
  */
 
+// Components
+export * from "./lib/ngx-popperjs-content/ngx-popper-content.component";
+// Directives
+export * from "./lib/ngx-popperjs/ngx-popperjs.directive";
+// Models
 export * from "./lib/models/ngx-popperjs-options.model";
 export * from "./lib/models/ngx-popperjs-placements.model";
 export * from "./lib/models/ngx-popperjs-triggers.model";
-export * from "./lib/ngx-popperjs-content/ngx-popper-content.component";
-export * from "./lib/ngx-popperjs/ngx-popperjs.directive";
+// Module
 export * from "./lib/ngx-popperjs.module";
