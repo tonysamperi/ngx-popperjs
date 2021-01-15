@@ -30,6 +30,7 @@
         "start": "ng serve",
         "build": "ng build && gulp postBuild",
         "build:demo": "ng build ngx-popperjs-repo",
+        "publish": "npm publish ./dist/ngx-popperjs --tag latest-ng8",
         "pack": "gulp pack",
         "test": "ng test",
         "lint": "ng lint",

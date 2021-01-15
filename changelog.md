@@ -22,3 +22,6 @@
 * Fix arrow color when using NgxPopperjsOptions.style.backgroundColor to set default popper color
 * Made NgxPopperjsContentComponent extensible (protected members)
 * Misc and refactor
+
+#8.0.7
+* Added missing export of NgxPopperjsDirective. Useful for injection through other directives.
