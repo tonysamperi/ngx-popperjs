@@ -25,3 +25,9 @@
 
 #8.0.7
 * Added missing export of NgxPopperjsDirective. Useful for injection through other directives.
+
+#8.0.8
+* Oops, this one was skipped, sorry!
+
+#8.0.9
+* Fixed object merging for default options passed through the forRoot method

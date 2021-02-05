@@ -61,10 +61,10 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     }
 
     @Input("popperAriaDescribeBy")
-    ariaDescribe: string | void;
+    ariaDescribe: string;
 
     @Input("popperAriaRole")
-    ariaRole: string | void;
+    ariaRole: string;
 
     @Input("popperBoundaries")
     boundariesElement: string;
@@ -116,13 +116,13 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     disableStyle: boolean;
 
     @Input("popperHideOnClickOutside")
-    hideOnClickOutside: boolean | void;
+    hideOnClickOutside: boolean;
 
     @Input("popperHideOnMouseLeave")
-    hideOnMouseLeave: boolean | void;
+    hideOnMouseLeave: boolean;
 
     @Input("popperHideOnScroll")
-    hideOnScroll: boolean | void;
+    hideOnScroll: boolean;
 
     @Input("popperTimeout")
     hideTimeout: number = 0;
@@ -194,7 +194,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     showTrigger: NgxPopperjsTriggers | undefined;
 
     @Input("popperStyles")
-    styles: object;
+    styles: { [key: string]: string };
 
     @Input("popperTarget")
     targetElement: HTMLElement;
@@ -211,7 +211,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     private _popperContent: NgxPopperjsContentComponent;
     private _popperContentClass = NgxPopperjsContentComponent;
     private _popperContentRef: ComponentRef<NgxPopperjsContentComponent>;
-    private _popperPlacement: NgxPopperjsPlacements = NgxPopperjsPlacements.AUTO;
+    private _popperPlacement: NgxPopperjsPlacements;
     private _scheduledHideTimeout: any;
     private _scheduledShowTimeout: any;
     private _shown: boolean = false;
@@ -223,20 +223,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
                 private _elementRef: ElementRef,
                 private _renderer: Renderer2,
                 @Inject(NGX_POPPERJS_DEFAULTS) private _popperDefaults: NgxPopperjsOptions = {}) {
-        NgxPopperjsDirective.baseOptions = {...NgxPopperjsDirective.baseOptions, ...this._popperDefaults};
-    }
-
-    static assignDefined(target: any, ...sources: any[]) {
-        for (const source of sources) {
-            for (const key of Object.keys(source)) {
-                const val = source[key];
-                if (val !== undefined) {
-                    target[key] = val;
-                }
-            }
-        }
-
-        return target;
+        NgxPopperjsDirective.baseOptions = Object.assign({}, NgxPopperjsDirective.baseOptions, this._popperDefaults);
     }
 
     applyTriggerListeners() {
@@ -429,6 +416,16 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         return this._popperContentRef.instance as NgxPopperjsContentComponent;
     }
 
+    private _definedProps(source: { [key: string]: any }): { [key: string]: any } {
+        return this._fromEntries(
+            Object.entries(source).filter(([_k_, v]) => v !== undefined)
+        );
+    }
+
+    private _fromEntries(source: any[]): { [key: string]: any } {
+        return Object.assign({}, ...source.map(([k, v]) => ({[k]: v})));
+    }
+
     private _getScrollParent(node) {
         const isElement = node instanceof HTMLElement;
         const overflowY = isElement && window.getComputedStyle(node).overflowY;
@@ -467,7 +464,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     }
 
     private _setContentProperties(popperRef: NgxPopperjsContentComponent) {
-        popperRef.popperOptions = NgxPopperjsDirective.assignDefined(popperRef.popperOptions, NgxPopperjsDirective.baseOptions, {
+        Object.assign(popperRef.popperOptions, NgxPopperjsDirective.baseOptions, this._definedProps({
             showDelay: this.showDelay,
             disableAnimation: this.disableAnimation,
             disableDefaultStyling: this.disableStyle,
@@ -484,7 +481,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
             styles: this.styles,
             appendTo: this.popperAppendTo,
             preventOverflow: this.preventOverflow,
-        });
+        }));
         popperRef.onUpdate = this._onPopperUpdate.bind(this);
         this._subscriptions.push(popperRef.onHidden.subscribe(this.hide.bind(this)));
     }

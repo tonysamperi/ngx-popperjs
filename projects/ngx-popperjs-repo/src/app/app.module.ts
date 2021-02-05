@@ -3,7 +3,7 @@ import {NgModule} from "@angular/core";
 import {AppRoutingModule} from "./app-routing.module";
 import {NgxPopperjsAppComponent} from "./app.component";
 //
-import {NgxPopperjsModule, NgxPopperjsTriggers} from "ngx-popperjs";
+import {NgxPopperjsModule, NgxPopperjsPlacements, NgxPopperjsTriggers} from "ngx-popperjs";
 
 @NgModule({
     declarations: [
@@ -12,7 +12,11 @@ import {NgxPopperjsModule, NgxPopperjsTriggers} from "ngx-popperjs";
     imports: [
         BrowserModule,
         AppRoutingModule,
-        NgxPopperjsModule.forRoot({trigger: NgxPopperjsTriggers.click, hideOnClickOutside: false})
+        NgxPopperjsModule.forRoot({
+            trigger: NgxPopperjsTriggers.click,
+            hideOnClickOutside: false,
+            placement: NgxPopperjsPlacements.TOP
+        })
         // NgxPopperjsModule
     ],
     providers: [],
