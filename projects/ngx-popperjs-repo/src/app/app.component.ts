@@ -1,6 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import {NgxPopperjsPlacements} from "ngx-popperjs";
-import * as Prism from "prismjs";
+import {highlightElement} from "prismjs";
 //
 import {forEach, map, filter} from "lodash";
 
@@ -81,8 +81,8 @@ export class NgxPopperjsAppComponent implements OnInit {
         forEach(document.querySelectorAll(".pop-popcorn-wrap"), (el: HTMLElement) => el.scrollTop = 300);
     }
 
-    onPopperUpdate($event): void {
-        console.info("ON POPPER UPDATE FIRED!", $event);
+    onPopperUpdate(_$event_): void {
+        // console.info("ON POPPER UPDATE FIRED!", $event);
     }
 
     updatePosition(positionButton: NgxPopperjsPlacements): void {
@@ -97,7 +97,7 @@ export class NgxPopperjsAppComponent implements OnInit {
         }
         $code.classList.add(`language-${codeTypes[key] || "markup"}`);
         $code.innerHTML = this.codeMap[key];
-        Prism.highlightElement($code);
+        highlightElement($code);
     }
 
 }

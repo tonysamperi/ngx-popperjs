@@ -17,7 +17,6 @@
           },
           "configurations": {
             "production": {
-
             }
           }
         },
@@ -57,6 +56,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "lodash"
+            ],
             "outputPath": "dist/ngx-popperjs-repo",
             "index": "projects/ngx-popperjs-repo/src/index.html",
             "main": "projects/ngx-popperjs-repo/src/main.ts",
@@ -164,6 +166,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ngx-popperjs"
 }

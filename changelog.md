@@ -26,3 +26,12 @@
 #9.0.0
 * Removed router which was actually pointless (only for demo, but still unused)
 * Upgrade for Angular 9
+
+#10.0.0
+* Upgrade for Angular 10
+
+#10.0.1
+* Fixed use of "append" breaking IE11 (and probably lower)
+* Added typings for prismjs
+* Added polyfill for prismjs (demo app)
+* Added support for IE10-11 (demo app)

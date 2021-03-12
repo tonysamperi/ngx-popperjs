@@ -6,7 +6,7 @@ import {NgxPopperjsContentComponent} from "./ngx-popperjs-content/ngx-popper-con
 import {NgxPopperjsOptions} from "./models/ngx-popperjs-options.model";
 import {NGX_POPPERJS_DEFAULTS} from "./models/ngx-popperjs-defaults.model";
 
-function provideNgxPopperjsOptions(config: NgxPopperjsOptions = {}): Provider[] {
+export function provideNgxPopperjsOptions(config: NgxPopperjsOptions = {}): Provider[] {
     return [
         {provide: NGX_POPPERJS_DEFAULTS, useValue: config},
     ];
