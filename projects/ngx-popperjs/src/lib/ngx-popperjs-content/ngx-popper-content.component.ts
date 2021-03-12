@@ -241,7 +241,7 @@ export class NgxPopperjsContentComponent implements OnDestroy {
             $style = document.createElement("style") as HTMLStyleElement;
             $style.id = this._styleId;
             $style.setAttribute("type", "text/css");
-            document.head.append($style);
+            document.head.appendChild($style);
         }
         // tslint:disable-next-line:no-string-literal
         if ($style["styleSheet"]) {

@@ -31,3 +31,6 @@
 
 #8.0.9
 * Fixed object merging for default options passed through the forRoot method
+
+#8.0.10
+* Fixed use of "append" breaking IE11 (and probably lower)
