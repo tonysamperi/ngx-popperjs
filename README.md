@@ -258,7 +258,7 @@ NgModule({
 <a href="https://tonysamperi.github.io/ngx-popperjs/">Demo</a>
 
 ### Contribute
-  Hell ya!!!
+  You can only **report bugs**. Every other issue will be deleted right away.
   
 ```terminal
   $ npm install
