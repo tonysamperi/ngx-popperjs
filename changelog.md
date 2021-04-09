@@ -26,3 +26,6 @@
 #9.0.0
 * Removed router which was actually pointless (only for demo, but still unused)
 * Upgrade for Angular 9
+
+#9.0.1
+* Fix peerDependencies
