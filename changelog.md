@@ -27,6 +27,12 @@
 * Removed router which was actually pointless (only for demo, but still unused)
 * Upgrade for Angular 9
 
+#9.0.1
+* Fix peerDependencies
+
+#9.0.4
+* Added postinstall validation
+
 #10.0.0
 * Upgrade for Angular 10
 
@@ -35,3 +41,6 @@
 * Added typings for prismjs
 * Added polyfill for prismjs (demo app)
 * Added support for IE10-11 (demo app)
+
+#10.0.2
+* Added postinstall validation
