@@ -29,3 +29,6 @@
 
 #9.0.1
 * Fix peerDependencies
+
+#9.0.4
+* Added postinstall validation

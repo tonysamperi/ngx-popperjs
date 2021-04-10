@@ -21,7 +21,7 @@ const distFolder = path.join(rootFolder, `dist/${libName}`);
 
 const taskNames = {
     postBuild: "postBuild",
-    copyMDs: "copyMDs",
+    copyFiles: "copyFiles",
     pack: "pack",
     handleStyles: "handleStyles"
 };
@@ -50,14 +50,15 @@ gulp.task(taskNames.handleStyles, function (cb) {
     cb();
 });
 
-gulp.task(taskNames.copyMDs, (cb) => {
-    logStart(taskNames.copyMDs);
+gulp.task(taskNames.copyFiles, (cb) => {
+    logStart(taskNames.copyFiles);
     gulp.src([
         path.join(rootFolder, "changelog.md"),
-        path.join(rootFolder, "README.md")
+        path.join(rootFolder, "README.md"),
+        path.join(rootFolder, "tsbl.js")
     ])
     .pipe(gulp.dest(distFolder));
-    logEnd(taskNames.copyMDs);
+    logEnd(taskNames.copyFiles);
     cb();
 });
 
@@ -73,7 +74,7 @@ gulp.task(taskNames.pack, function (cb) {
 });
 
 //MAIN
-gulp.task(taskNames.postBuild, gulp.series(taskNames.handleStyles, taskNames.copyMDs, function (cb, err) {
+gulp.task(taskNames.postBuild, gulp.series(taskNames.handleStyles, taskNames.copyFiles, function (cb, err) {
     logEnd(taskNames.postBuild);
     cb(err);
 }));

@@ -3,5 +3,6 @@
   "dest": "../../dist/ngx-popperjs",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "keepLifecycleScripts": true
 }

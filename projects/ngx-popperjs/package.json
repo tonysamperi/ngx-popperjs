@@ -1,12 +1,15 @@
 {
   "name": "ngx-popperjs",
-  "version": "9.0.1",
+  "version": "9.0.4",
   "license": "MIT",
   "description": "ngx-popperjs is an Angular wrapper for @popperjs",
   "homepage": "https://tonysamperi.github.io/ngx-popperjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/tonysamperi/ngx-popperjs"
+  },
+  "scripts": {
+    "postinstall": "node ./tsbl"
   },
   "bugs": {
     "url": "https://github.com/tonysamperi/ngx-popperjs/issues"
