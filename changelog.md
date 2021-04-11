@@ -33,6 +33,9 @@
 #9.0.4
 * Added postinstall validation
 
+#9.0.5
+* Updated postinstall validation
+
 #10.0.0
 * Upgrade for Angular 10
 
@@ -44,3 +47,6 @@
 
 #10.0.2
 * Added postinstall validation
+
+#10.0.3
+* Updated postinstall validation
