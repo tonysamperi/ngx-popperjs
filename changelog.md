@@ -32,3 +32,6 @@
 
 #9.0.4
 * Added postinstall validation
+
+#9.0.5
+* Updated postinstall validation
