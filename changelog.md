@@ -33,7 +33,7 @@
 #9.0.4
 * Added postinstall validation
 
-#9.0.5
+#9.0.7
 * Updated postinstall validation
 
 #10.0.0
@@ -48,5 +48,5 @@
 #10.0.2
 * Added postinstall validation
 
-#10.0.3
+#10.0.4
 * Updated postinstall validation

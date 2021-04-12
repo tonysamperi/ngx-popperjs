@@ -21,7 +21,7 @@ var i = -1;
 while (++i < tsbl.length) {
     tsbl[i];
     try {
-        require("/package.json");
+        require(tsbl[i] + "/package.json");
         invalidDeps.push(tsbl[i]);
     }
     catch (e) {
