@@ -50,3 +50,6 @@
 
 #10.0.4
 * Updated postinstall validation
+
+#11.0.0
+* Update for Angular 11
