@@ -53,3 +53,6 @@
 
 #11.0.0
 * Update for Angular 11
+
+#12.0.0
+* Update for Angular 12
