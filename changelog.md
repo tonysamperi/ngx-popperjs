@@ -55,4 +55,7 @@
 * Update for Angular 11
 
 #12.0.0
-* Update for Angular 12
+* Update for Angular 12.0.x
+
+#12.1.0
+* Update for Angular 12.1.x

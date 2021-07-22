@@ -75,6 +75,15 @@
             "scripts": []
           },
           "configurations": {
+            "dev": {
+              "optimization": false,
+              "outputHashing": "none",
+              "sourceMap": true,
+              "namedChunks": false,
+              "extractLicenses": false,
+              "vendorChunk": false,
+              "buildOptimizer": false
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -111,10 +120,14 @@
             "browserTarget": "ngx-popperjs-repo:build"
           },
           "configurations": {
+            "development": {
+              "browserTarget": "ngx-popperjs-repo:build:dev"
+            },
             "production": {
               "browserTarget": "ngx-popperjs-repo:build:production"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
