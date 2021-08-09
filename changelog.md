@@ -59,3 +59,7 @@
 
 #12.1.0
 * Update for Angular 12.1.x
+
+#12.1.1
+* Refactor of duplicated code
+* Updating popper on preventOverflow input change

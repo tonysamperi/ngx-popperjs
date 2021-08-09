@@ -1,8 +1,10 @@
 import {Component, OnInit} from "@angular/core";
 import {NgxPopperjsPlacements} from "ngx-popperjs";
+import {Modifier} from "@popperjs/core";
 import {highlightElement} from "prismjs";
 //
 import {forEach, map, filter} from "lodash";
+import {Options} from "@popperjs/core/lib/modifiers/flip";
 
 enum NgxPopArticleTypes {
     position = "position",
@@ -27,7 +29,16 @@ export class NgxPopperjsAppComponent implements OnInit {
 
     get codeMap() {
         return {
-            flipping: `&lt;popper-content #myPopperContent>I'm popper :)&lt;/popper-content&gt;
+            click: `&lt;popper-content #popperClickContent&gt;
+            &lt;/popper-content&gt;
+&lt;img alt="Popcorn box" src="assets/images/popcorn-box.svg"
+     [popper]="popperClickContent"
+     popperTrigger="click"
+     popperPlacement="top"
+     class="pop-popcorn-box"&gt;`,
+            flipping: `&lt;popper-content #myPopperContent&gt;
+            I'm popper :)
+            &lt;/popper-content&gt;
 &lt;img alt="Popcorn box" src="assets/images/popcorn-box.svg"
      [popper]="myPopperContent"
      [popperShowOnStart]="true"
@@ -52,7 +63,9 @@ export class NgxPopperjsAppComponent implements OnInit {
       popperTrigger="click"
       popperPlacement="right"
       class="pop-popcorn-box"&gt;`,
-            position: `&lt;popper-content #myPopperContent>I'm popper :)&lt;/popper-content&gt;
+            position: `&lt;popper-content #myPopperContent&gt;
+            I'm popper :)
+            &lt;/popper-content&gt;
 &lt;img alt="Popcorn box" src="assets/images/popcorn-box.svg"
      [popper]="myPopperContent"
      [popperShowOnStart]="true"
@@ -72,6 +85,13 @@ export class NgxPopperjsAppComponent implements OnInit {
         } as { [key in NgxPopArticleTypes]: string };
     }
 
+    dontFlipModifier: Partial<Modifier<"flip", Options>> = {
+        name: "flip",
+        options: {
+            fallbackPlacements: [],
+            flipVariations: false, // true by default
+        },
+    };
     // tslint:disable-next-line:no-bitwise
     positionButtons: NgxPopperjsPlacements[] = filter(map(NgxPopperjsPlacements, (v) => v), (v) => !~v.indexOf("auto"));
     selectedPosition: NgxPopperjsPlacements = this.positionButtons[0];

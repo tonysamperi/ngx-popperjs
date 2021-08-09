@@ -19,6 +19,7 @@ import {NgxPopperjsOptions} from "../models/ngx-popperjs-options.model";
 import {NgxPopperjsPlacements} from "../models/ngx-popperjs-placements.model";
 import {NgxPopperjsTriggers} from "../models/ngx-popperjs-triggers.model";
 import {NGX_POPPERJS_DEFAULTS} from "../models/ngx-popperjs-defaults.model";
+import {NgxPopperjsUtils} from "../models/ngx-popperjs-utils.class";
 //
 import {Modifier} from "@popperjs/core";
 
@@ -47,13 +48,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
             return;
         }
         this._applyClass = newValue;
-        if (this._popperContent) {
-            this._popperContent.popperOptions.applyClass = newValue;
-            if (!this._shown) {
-                return;
-            }
-            this._popperContent.popperInstance.setOptions(this._popperContent.popperOptions);
-        }
+        this._checkExisting("applyClass", newValue);
     }
 
     get applyClass(): string {
@@ -130,13 +125,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     @Input("popperPlacement")
     set placement(newValue: NgxPopperjsPlacements) {
         this._popperPlacement = newValue;
-        if (this._popperContent) {
-            this._popperContent.popperOptions.placement = newValue;
-            if (!this._shown) {
-                return;
-            }
-            this._popperContent.popperInstance.setOptions(this._popperContent.popperOptions);
-        }
+        this._checkExisting("placement", newValue);
     }
 
     get placement(): NgxPopperjsPlacements {
@@ -182,7 +171,14 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     positionFixed: boolean;
 
     @Input("popperPreventOverflow")
-    preventOverflow: boolean;
+    set preventOverflow(newValue: boolean) {
+        this._popperPreventOverflow = NgxPopperjsUtils.coerceBooleanProperty(newValue);
+        this._checkExisting("preventOverflow", this._popperPreventOverflow);
+    }
+
+    get preventOverflow(): boolean {
+        return this._popperPreventOverflow;
+    }
 
     @Input("popperDelay")
     showDelay: number | undefined;
@@ -212,6 +208,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     private _popperContentClass = NgxPopperjsContentComponent;
     private _popperContentRef: ComponentRef<NgxPopperjsContentComponent>;
     private _popperPlacement: NgxPopperjsPlacements = NgxPopperjsPlacements.AUTO;
+    private _popperPreventOverflow: boolean;
     private _scheduledHideTimeout: any;
     private _scheduledShowTimeout: any;
     private _shown: boolean = false;
@@ -406,6 +403,16 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     private _applyChanges() {
         this._changeDetectorRef.markForCheck();
         this._changeDetectorRef.detectChanges();
+    }
+
+    private _checkExisting(key: string, newValue: string | number | boolean | NgxPopperjsPlacements): void {
+        if (this._popperContent) {
+            this._popperContent.popperOptions[key] = newValue;
+            if (!this._shown) {
+                return;
+            }
+            this._popperContent.popperInstance.setOptions(this._popperContent.popperOptions);
+        }
     }
 
     private _clearEventListeners() {

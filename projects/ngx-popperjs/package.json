@@ -1,6 +1,6 @@
 {
   "name": "ngx-popperjs",
-  "version": "12.1.0",
+  "version": "12.1.1",
   "license": "MIT",
   "description": "ngx-popperjs is an Angular wrapper for @popperjs",
   "homepage": "https://tonysamperi.github.io/ngx-popperjs",

@@ -152,7 +152,7 @@ strong {
       }
     }
 
-    &[pop-overflow], &[pop-flipping] {
+    &[pop-overflow], &[pop-flipping], &[pop-click] {
       > div.pop-popcorn-wrap {
         position: relative;
         width: 100%;
