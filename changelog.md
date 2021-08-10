@@ -63,3 +63,6 @@
 #12.1.1
 * Refactor of duplicated code
 * Updating popper on preventOverflow input change
+
+#12.1.2
+* Changed peer dependencies to support latest minor, thanks to @BrycenDavisSH
