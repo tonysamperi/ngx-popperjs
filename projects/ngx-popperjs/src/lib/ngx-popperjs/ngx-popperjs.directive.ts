@@ -25,7 +25,8 @@ import {Modifier} from "@popperjs/core";
 
 @Directive({
     // tslint:disable-next-line:directive-selector
-    selector: "[popper]"
+    selector: "[popper]",
+    exportAs: "popper"
 })
 export class NgxPopperjsDirective implements OnInit, OnDestroy {
 
