@@ -207,7 +207,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     private _popperContent: NgxPopperjsContentComponent;
     private _popperContentClass = NgxPopperjsContentComponent;
     private _popperContentRef: ComponentRef<NgxPopperjsContentComponent>;
-    private _popperPlacement: NgxPopperjsPlacements = NgxPopperjsPlacements.AUTO;
+    private _popperPlacement: NgxPopperjsPlacements;
     private _popperPreventOverflow: boolean;
     private _scheduledHideTimeout: any;
     private _scheduledShowTimeout: any;

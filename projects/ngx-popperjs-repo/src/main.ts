@@ -2,9 +2,9 @@ import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { NgxPopperjsAppModule } from './app/app.module';
-import { environment } from './environments/environment';
+import { NGX_POPPERJS_ENVIRONMENT } from './environments/environment';
 
-if (environment.production) {
+if (NGX_POPPERJS_ENVIRONMENT.production) {
   enableProdMode();
 }
 

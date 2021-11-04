@@ -196,7 +196,7 @@
           "const"
         ],
         "format": "UPPER_CASE",
-        "prefix": "NGX_"
+        "prefix": "NGX_POPPERJS_"
       },
       // require exported constant variables that are initialized with functions to be camelCase
       {
