@@ -66,3 +66,7 @@
 
 #12.1.2
 * Changed peer dependencies to support latest minor, thanks to @BrycenDavisSH
+
+#12.2.0
+* Fixed isssue with popperPlacement passed though forRoot ([#14](https://github.com/tonysamperi/ngx-popperjs/issues/14))
+* Added exportAs "popper" on NgxPopperJsDirective ([#15](https://github.com/tonysamperi/ngx-popperjs/issues/15))
