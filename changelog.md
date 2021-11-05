@@ -70,3 +70,7 @@
 #12.2.0
 * Fixed isssue with popperPlacement passed though forRoot ([#14](https://github.com/tonysamperi/ngx-popperjs/issues/14))
 * Added exportAs "popper" on NgxPopperJsDirective ([#15](https://github.com/tonysamperi/ngx-popperjs/issues/15))
+
+#12.2.1
+* Fixed docs (default popperTrigger is "click" since v8)
+* Removed old prop "showTrigger" probably inherit from a previous version of popper.js

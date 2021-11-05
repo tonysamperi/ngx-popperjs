@@ -36,12 +36,12 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         hideOnClickOutside: true,
         hideOnMouseLeave: false,
         hideOnScroll: false,
-        showTrigger: NgxPopperjsTriggers.hover,
         appendTo: undefined,
         ariaRole: "popper",
         ariaDescribe: "",
-        styles: {}
-    } as NgxPopperjsOptions;
+        styles: {},
+        trigger: NgxPopperjsTriggers.click
+    };
 
     @Input("popperApplyClass")
     set applyClass(newValue: string) {
@@ -501,7 +501,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         ["showDelay", "hideOnScroll", "hideOnMouseLeave", "hideOnClickOutside", "ariaRole", "ariaDescribe"].forEach((key) => {
             this[key] = this[key] === void 0 ? NgxPopperjsDirective.baseOptions[key] : this[key];
         });
-        this.showTrigger = this.showTrigger === void 0 ? NgxPopperjsDirective.baseOptions.trigger : this.showTrigger;
+        this.showTrigger = this.showTrigger || NgxPopperjsDirective.baseOptions.trigger;
         this.styles = this.styles === void 0 ? {...NgxPopperjsDirective.baseOptions.styles} : this.styles;
     }
 

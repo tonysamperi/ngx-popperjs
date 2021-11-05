@@ -171,7 +171,7 @@ body {
     | popperTarget                 | HtmlElement       | auto      | Specify a different reference element other the the one hosting the directive                            |
     | popperBoundaries             | string(selector)  | undefined | Specify a selector to serve as the boundaries of the element                                             |
     | popperShowOnStart            | boolean           | false     | Popper default to show                                                                                   |
-    | popperTrigger                | Trigger(string)   | hover     | Trigger/Event on which to show/hide the popper                                                           |
+    | popperTrigger                | Trigger(string)   | click     | Trigger/Event on which to show/hide the popper                                                           |
     | popperPositionFixed          | boolean           | false     | Set the popper element to use position: fixed                                                            |
     | popperAppendTo               | string            | undefined | append The popper-content element to a given selector, if multiple will apply to first                   |
     | popperPreventOverflow        | boolean           | undefined | Prevent the popper from being positioned outside the boundary                                            |
