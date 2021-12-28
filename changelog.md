@@ -74,3 +74,8 @@
 #12.2.1
 * Fixed docs (default popperTrigger is "click" since v8)
 * Removed old prop "showTrigger" probably inherit from a previous version of popper.js
+
+#13.0.0
+* Added support for Angular 13
+* Removed polyfills from demo app
+* Misc

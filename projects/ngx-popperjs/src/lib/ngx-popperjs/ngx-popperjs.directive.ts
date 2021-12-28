@@ -431,8 +431,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     }
 
     private _constructContent(): NgxPopperjsContentComponent {
-        const factory = this._resolver.resolveComponentFactory(this._popperContentClass);
-        this._popperContentRef = this._viewContainerRef.createComponent(factory);
+        this._popperContentRef = this._viewContainerRef.createComponent(this._popperContentClass);
 
         return this._popperContentRef.instance as NgxPopperjsContentComponent;
     }
