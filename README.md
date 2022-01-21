@@ -265,6 +265,12 @@ NgModule({
   $ npm run start  //run example
 ```
 
+## Special thanks
+
+Jetbrains is now supporting this library with an open-source license, which will allow a better code! 🎉
+
+![jetbrains-logo](https://user-images.githubusercontent.com/5957244/150580991-863d6fba-1090-4924-b26c-be19c6310f24.svg)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
