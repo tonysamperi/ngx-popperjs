@@ -69,13 +69,22 @@ Optionally you can include in your `styles.css` / `styles.css` one of the prebui
 * `@import ~ngx-popperjs/scss/theme-dark`
 * `@import ~ngx-popperjs/scss/theme-white`
 
-or easily create your own theme using the @mixin
-
+or easily create your own theme using the @mixin:
 ```
-@import ~ngx-popperjs/scss/theme
+// Angular Version <= 12:
+@import "~ngx-popperjs/scss/theme";
 
 body {
-    @include ngx-popperjs-theme($background-color, $text-color, $max-width, $z-index) 
+    @include ngx-popperjs-theme($background-color, $text-color, $max-width, $z-index);
+}
+```
+
+```
+// Angular Version >= 13:
+@use "ngx-popperjs/scss/theme" as popperjs;
+
+body {
+    @include popperjs.ngx-popperjs-theme($background-color, $text-color, $max-width, $z-index);
 }
 ```
 
