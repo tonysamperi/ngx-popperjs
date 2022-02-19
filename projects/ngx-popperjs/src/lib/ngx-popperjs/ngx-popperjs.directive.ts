@@ -202,8 +202,8 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     private _applyClass: string;
     private _content: string | NgxPopperjsContentComponent;
     private _disabled: boolean;
-    private _eventListeners: any[] = [];
-    private _globalEventListeners: any[] = [];
+    private _eventListeners: (() => void)[] = [];
+    private _globalEventListeners: (() => void)[] = [];
     private _popperApplyArrowClass: string;
     private _popperContent: NgxPopperjsContentComponent;
     private _popperContentClass = NgxPopperjsContentComponent;
@@ -285,10 +285,8 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     }
 
     hideOnClickOutsideHandler($event: MouseEvent): void {
-        // TODO: check if $event.target is a better alternative here
-        if (this.disabled || !this.hideOnClickOutside || $event.srcElement &&
-            $event.srcElement === this._popperContent.elRef.nativeElement ||
-            this._popperContent.elRef.nativeElement.contains($event.srcElement)) {
+        if (this.disabled || !this.hideOnClickOutside || $event.target === this._popperContent.elRef.nativeElement ||
+            this._popperContent.elRef.nativeElement.contains($event.target)) {
             return;
         }
         this.scheduledHide($event, this.hideTimeout);
@@ -388,7 +386,6 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         if (this.timeoutAfterShow > 0) {
             this.scheduledHide(null, this.timeoutAfterShow);
         }
-        this._globalEventListeners.push(this._renderer.listen("document", "touchend", this.hideOnClickOutsideHandler.bind(this)));
         this._globalEventListeners.push(this._renderer.listen("document", "click", this.hideOnClickOutsideHandler.bind(this)));
         // tslint:disable-next-line:max-line-length
         this._globalEventListeners.push(this._renderer.listen(this._getScrollParent(this.getRefElement()), "scroll", this.hideOnScrollHandler.bind(this)));

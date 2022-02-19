@@ -79,3 +79,6 @@
 * Added support for Angular 13
 * Removed polyfills from demo app
 * Misc
+
+#13.0.1
+* Removed listener for touchend, causing popper to close on mobile although it shouldn't (fix [#18](https://github.com/tonysamperi/ngx-popperjs/issues/18)

@@ -12,7 +12,9 @@ enum NgxPopArticleTypes {
     position = "position",
     overflow = "overflow",
     flipping = "flipping",
-    theming = "theming"
+    theming = "theming",
+    click = "click",
+    scroll = "scroll"
 }
 
 const codeTypes: { [key in keyof typeof NgxPopArticleTypes]: "css" | "markup" } = {
@@ -20,6 +22,8 @@ const codeTypes: { [key in keyof typeof NgxPopArticleTypes]: "css" | "markup" } 
     overflow: "markup",
     flipping: "markup",
     theming: "css",
+    click: "markup",
+    scroll: "markup"
 };
 
 @Component({
@@ -35,6 +39,14 @@ export class NgxPopperjsDemoComponent implements OnInit {
             &lt;/popper-content&gt;
 &lt;img alt="Popcorn box" src="assets/images/popcorn-box.svg"
      [popper]="popperClickContent"
+     popperTrigger="click"
+     popperPlacement="top"
+     class="pop-popcorn-box"&gt;`,
+            scroll: `&lt;popper-content #popperClickContent&gt;
+            &lt;/popper-content&gt;
+&lt;img alt="Popcorn box" src="assets/images/popcorn-box.svg"
+     [popper]="popperClickContent"
+     [popperHideOnScroll]="!0"
      popperTrigger="click"
      popperPlacement="top"
      class="pop-popcorn-box"&gt;`,
@@ -87,7 +99,7 @@ export class NgxPopperjsDemoComponent implements OnInit {
         } as { [key in NgxPopArticleTypes]: string };
     }
 
-    dontFlipModifier: Partial<Modifier<"flip", Options>> = NGX_POPPERJS_DONT_FLIP_MODIFIER;
+    dontFlipModifier: Partial<Modifier<"flip", Options>>[] = [NGX_POPPERJS_DONT_FLIP_MODIFIER];
     // tslint:disable-next-line:no-bitwise
     positionButtons: NgxPopperjsPlacements[] = filter(map(NgxPopperjsPlacements, (v) => v), (v) => !~v.indexOf("auto"));
     selectedPosition: NgxPopperjsPlacements = this.positionButtons[0];
