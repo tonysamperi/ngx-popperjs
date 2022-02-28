@@ -12,7 +12,7 @@ ngx-popperjs is an angular wrapper for the [Popper.js](https://popper.js.org/) l
 
 *Note* that I also updated everything to use **Popper 2** (v *2.4.4* in v 9.0.0) 
 
-The goal of this library is to take Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/) and update the compatibility up to Angular 10 (in first instance Angular 8).
+The goal of this library is to take Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/) and update the compatibility up to Angular 13.
 Since his library is compatible with Angular 7 and downwards, this will start with Angular 8.
 If you need to work with an older version of Angular (5 to 7), please refer to Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/).
 
