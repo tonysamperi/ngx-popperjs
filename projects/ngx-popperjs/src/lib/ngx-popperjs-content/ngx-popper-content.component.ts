@@ -9,7 +9,7 @@ import {
     Renderer2,
     ViewChild,
     ViewContainerRef,
-    ViewEncapsulation,
+    ViewEncapsulation
 } from "@angular/core";
 //
 import {NgxPopperjsOptions} from "../models/ngx-popperjs-options.model";
@@ -29,6 +29,7 @@ import {OffsetModifier} from "@popperjs/core/lib/modifiers/offset";
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: "./ngx-popperjs-content.component.html",
     styleUrls: ["./ngx-popperjs-content.component.scss"],
+    exportAs: "ngxPopperjsContent"
 })
 export class NgxPopperjsContentComponent implements OnDestroy {
 
