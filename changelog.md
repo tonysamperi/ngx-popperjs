@@ -82,3 +82,6 @@
 
 #13.0.1
 * Removed listener for touchend, causing popper to close on mobile although it shouldn't (fix [#18](https://github.com/tonysamperi/ngx-popperjs/issues/18)
+
+#13.1.0
+* Added exportAs in NgxPopperjsContentComponent to allow access value, such as id (fix [#21](https://github.com/tonysamperi/ngx-popperjs/issues/21)
