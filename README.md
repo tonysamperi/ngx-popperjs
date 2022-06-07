@@ -9,16 +9,16 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/MrFrankel/ngx-popperjs.svg)](https://greenkeeper.io/)
 -->
 
+ngx-popperjs is an angular wrapper for the [Popper.js](https://popper.js.org/) library.
+
+*Note* that I also updated everything to use **Popper 2** (v *2.4.4* in v 9.0.0) 
+
 ## VERY IMPORTANT READ THIS
 I'm moving this to the top because it appears that people don't get to reading it in the **contribute** section.
 FOR THIS LIBRARY **PLEASE USE ISSUES ONLY FOR BUG REPORTING**. DON'T OPEN ISSUES SUCH AS "I need upgrade for Angular 1745646456" especially if Angular 1745646456 was released a few days ago.
 I **guarantee** that I manage the updates **AS SOON AS POSSIBLE**. But as you understand this is not a paying job, so you can't get Angular 1745646456 the day it gets released.
 **ISSUES NOT RESPECTING THIS WILL BE DELETED IMMEDIATELY WITHOUT ANY RESPONSE**.
 Thank you.
-
-ngx-popperjs is an angular wrapper for the [Popper.js](https://popper.js.org/) library.
-
-*Note* that I also updated everything to use **Popper 2** (v *2.4.4* in v 9.0.0) 
 
 The goal of this library is to take Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/) and update the compatibility up to Angular 13.
 Since his library is compatible with Angular 7 and downwards, this will start with Angular 8.
