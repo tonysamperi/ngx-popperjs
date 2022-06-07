@@ -1,7 +1,6 @@
 // tslint:disable:no-input-rename
 import {
     ChangeDetectorRef,
-    ComponentFactoryResolver,
     ComponentRef,
     Directive,
     ElementRef,
@@ -10,9 +9,7 @@ import {
     Input,
     OnDestroy,
     OnInit,
-    Output,
-    Renderer2,
-    ViewContainerRef
+    Output
 } from "@angular/core";
 import {NgxPopperjsContentComponent} from "../ngx-popperjs-content/ngx-popper-content.component";
 import {NgxPopperjsOptions} from "../models/ngx-popperjs-options.model";
@@ -22,6 +19,9 @@ import {NGX_POPPERJS_DEFAULTS} from "../models/ngx-popperjs-defaults.model";
 import {NgxPopperjsUtils} from "../models/ngx-popperjs-utils.class";
 //
 import {Modifier} from "@popperjs/core";
+//
+import {fromEvent, Subject, takeUntil, timer} from "rxjs";
+import {SmpDomService} from "@ngx-tonysamperi/dom";
 
 @Directive({
     // tslint:disable-next-line:directive-selector
@@ -42,6 +42,8 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         styles: {},
         trigger: NgxPopperjsTriggers.click
     };
+
+    static nextId: number = 0;
 
     @Input("popperApplyClass")
     set applyClass(newValue: string) {
@@ -201,25 +203,22 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
 
     private _applyClass: string;
     private _content: string | NgxPopperjsContentComponent;
+    private _destroy$: Subject<void> = new Subject<void>();
     private _disabled: boolean;
-    private _eventListeners: (() => void)[] = [];
-    private _globalEventListeners: (() => void)[] = [];
+    private _globalEventListenersCtrl$: Subject<void> = new Subject<void>();
     private _popperApplyArrowClass: string;
     private _popperContent: NgxPopperjsContentComponent;
     private _popperContentClass = NgxPopperjsContentComponent;
     private _popperContentRef: ComponentRef<NgxPopperjsContentComponent>;
     private _popperPlacement: NgxPopperjsPlacements;
     private _popperPreventOverflow: boolean;
-    private _scheduledHideTimeout: any;
-    private _scheduledShowTimeout: any;
+    private _scheduledHideTimeoutCtrl$: Subject<void> = new Subject<void>();
+    private _scheduledShowTimeoutCtrl$: Subject<void> = new Subject<void>();
     private _shown: boolean = false;
-    private _subscriptions: any[] = [];
 
-    constructor(private _viewContainerRef: ViewContainerRef,
-                private _changeDetectorRef: ChangeDetectorRef,
-                private _resolver: ComponentFactoryResolver,
+    constructor(private _changeDetectorRef: ChangeDetectorRef,
                 private _elementRef: ElementRef,
-                private _renderer: Renderer2,
+                private _smpDomService: SmpDomService,
                 @Inject(NGX_POPPERJS_DEFAULTS) private _popperDefaults: NgxPopperjsOptions = {}) {
         NgxPopperjsDirective.baseOptions = {...NgxPopperjsDirective.baseOptions, ...this._popperDefaults};
     }
@@ -240,27 +239,27 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     applyTriggerListeners() {
         switch (this.showTrigger) {
             case NgxPopperjsTriggers.click:
-                this._pushListener("click", this.toggle.bind(this));
+                this._addListener("click", this.toggle.bind(this));
                 break;
             case NgxPopperjsTriggers.mousedown:
-                this._pushListener("mousedown", this.toggle.bind(this));
+                this._addListener("mousedown", this.toggle.bind(this));
                 break;
             case NgxPopperjsTriggers.hover:
-                this._pushListener("mouseenter", this.scheduledShow.bind(this, this.showDelay));
+                this._addListener("mouseenter", this.scheduledShow.bind(this, this.showDelay));
                 ["touchend", "touchcancel", "mouseleave"].forEach((eventName) => {
-                    this._pushListener(eventName, this.scheduledHide.bind(this, null, this.hideTimeout));
+                    this._addListener(eventName, this.scheduledHide.bind(this, null, this.hideTimeout));
                 });
                 break;
         }
         if (this.showTrigger !== NgxPopperjsTriggers.hover && this.hideOnMouseLeave) {
             ["touchend", "touchcancel", "mouseleave"].forEach((eventName) => {
-                this._pushListener(eventName, this.scheduledHide.bind(this, null, this.hideTimeout));
+                this._addListener(eventName, this.scheduledHide.bind(this, null, this.hideTimeout));
             });
         }
     }
 
     getRefElement() {
-        return this.targetElement || this._viewContainerRef.element.nativeElement;
+        return this.targetElement || this._elementRef.nativeElement;
     }
 
     hide() {
@@ -268,7 +267,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
             return;
         }
         if (!this._shown) {
-            this._overrideShowTimeout();
+            this._scheduledShowTimeoutCtrl$.next();
 
             return;
         }
@@ -281,7 +280,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
             this._popperContent.hide();
         }
         this.popperOnHidden.emit(this);
-        this._clearGlobalEventListeners();
+        this._globalEventListenersCtrl$.next();
     }
 
     hideOnClickOutsideHandler($event: MouseEvent): void {
@@ -300,12 +299,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     }
 
     ngOnDestroy() {
-        this._subscriptions.forEach(sub => sub.unsubscribe && sub.unsubscribe());
-        this._subscriptions.length = 0;
-        this._clearEventListeners();
-        this._clearGlobalEventListeners();
-        this._scheduledShowTimeout && clearTimeout(this._scheduledShowTimeout);
-        this._scheduledHideTimeout && clearTimeout(this._scheduledHideTimeout);
+        this._destroy$.next();
         this._popperContent && this._popperContent.clean();
     }
 
@@ -339,37 +333,45 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         if (this.disabled) {
             return;
         }
-        this._overrideShowTimeout();
-        this._scheduledHideTimeout = setTimeout(() => {
-            // TODO: check
-            const toElement = $event ? $event.toElement : null;
-            const popperContentView = this._popperContent.popperViewRef ? this._popperContent.popperViewRef.nativeElement : false;
-            if (!popperContentView ||
-                popperContentView === toElement ||
-                popperContentView.contains(toElement) ||
-                (this.content && (this.content as NgxPopperjsContentComponent).isMouseOver)) {
+        this._scheduledShowTimeoutCtrl$.next();
+        timer(delay)
+            .pipe(takeUntil(this._scheduledHideTimeoutCtrl$), takeUntil(this._destroy$))
+            .subscribe({
+                next: () => {
+                    // TODO: check
+                    const toElement = $event ? $event.toElement : null;
+                    const popperContentView = this._popperContent.popperViewRef ? this._popperContent.popperViewRef.nativeElement : false;
+                    if (!popperContentView ||
+                        popperContentView === toElement ||
+                        popperContentView.contains(toElement) ||
+                        (this.content && (this.content as NgxPopperjsContentComponent).isMouseOver)) {
 
-                return;
-            }
-            this.hide();
-            this._applyChanges();
-        }, delay);
+                        return;
+                    }
+                    this.hide();
+                    this._applyChanges();
+                }
+            });
     }
 
     scheduledShow(delay: number = this.showDelay) {
         if (this.disabled) {
             return;
         }
-        this._overrideHideTimeout();
-        this._scheduledShowTimeout = setTimeout(() => {
-            this.show();
-            this._applyChanges();
-        }, delay);
+        this._scheduledHideTimeoutCtrl$.next();
+        timer(delay)
+            .pipe(takeUntil(this._scheduledShowTimeoutCtrl$), takeUntil(this._destroy$))
+            .subscribe({
+                next: () => {
+                    this.show();
+                    this._applyChanges();
+                }
+            });
     }
 
     show() {
         if (this._shown) {
-            this._overrideHideTimeout();
+            this._scheduledHideTimeoutCtrl$.next();
 
             return;
         }
@@ -386,9 +388,16 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         if (this.timeoutAfterShow > 0) {
             this.scheduledHide(null, this.timeoutAfterShow);
         }
-        this._globalEventListeners.push(this._renderer.listen("document", "click", this.hideOnClickOutsideHandler.bind(this)));
-        // tslint:disable-next-line:max-line-length
-        this._globalEventListeners.push(this._renderer.listen(this._getScrollParent(this.getRefElement()), "scroll", this.hideOnScrollHandler.bind(this)));
+        fromEvent(document, "click")
+            .pipe(takeUntil(this._globalEventListenersCtrl$), takeUntil(this._destroy$))
+            .subscribe({
+                next: (e: MouseEvent) => this.hideOnClickOutsideHandler(e)
+            });
+        fromEvent(this._getScrollParent(this.getRefElement()), "scroll")
+            .pipe(takeUntil(this._globalEventListenersCtrl$), takeUntil(this._destroy$))
+            .subscribe({
+                next: (e: MouseEvent) => this.hideOnScrollHandler(e)
+            });
     }
 
     toggle() {
@@ -396,6 +405,14 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
             return;
         }
         this._shown ? this.scheduledHide(null, this.hideTimeout) : this.scheduledShow();
+    }
+
+    private _addListener(eventName: string, cb: () => void): void {
+        fromEvent(this._elementRef.nativeElement, eventName)
+            .pipe(takeUntil(this._destroy$))
+            .subscribe({
+                next: cb
+            });
     }
 
     private _applyChanges() {
@@ -413,22 +430,12 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         }
     }
 
-    private _clearEventListeners() {
-        this._eventListeners.forEach(evt => {
-            evt && typeof evt === "function" && evt();
-        });
-        this._eventListeners.length = 0;
-    }
-
-    private _clearGlobalEventListeners() {
-        this._globalEventListeners.forEach(evt => {
-            evt && typeof evt === "function" && evt();
-        });
-        this._globalEventListeners.length = 0;
-    }
-
     private _constructContent(): NgxPopperjsContentComponent {
-        this._popperContentRef = this._viewContainerRef.createComponent(this._popperContentClass);
+        this._popperContentRef = this._smpDomService.appendComp(
+            this._popperContentClass,
+            `ngx_popperjs_directive-${++NgxPopperjsDirective.nextId}`,
+            this.getRefElement()
+        );
 
         return this._popperContentRef.instance as NgxPopperjsContentComponent;
     }
@@ -452,24 +459,6 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         this.popperOnUpdate.emit(event);
     }
 
-    private _overrideHideTimeout() {
-        if (this._scheduledHideTimeout) {
-            clearTimeout(this._scheduledHideTimeout);
-            this._scheduledHideTimeout = 0;
-        }
-    }
-
-    private _overrideShowTimeout() {
-        if (this._scheduledShowTimeout) {
-            clearTimeout(this._scheduledShowTimeout);
-            this._scheduledHideTimeout = 0;
-        }
-    }
-
-    private _pushListener(name: string, cb: () => void): void {
-        this._eventListeners.push(this._renderer.listen(this._elementRef.nativeElement, name, cb));
-    }
-
     private _setContentProperties(popperRef: NgxPopperjsContentComponent) {
         popperRef.popperOptions = NgxPopperjsDirective.assignDefined(popperRef.popperOptions, NgxPopperjsDirective.baseOptions, {
             showDelay: this.showDelay,
@@ -490,7 +479,9 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
             preventOverflow: this.preventOverflow,
         });
         popperRef.onUpdate = this._onPopperUpdate.bind(this);
-        this._subscriptions.push(popperRef.onHidden.subscribe(this.hide.bind(this)));
+        popperRef.onHidden
+            .pipe(takeUntil(this._destroy$))
+            .subscribe(this.hide.bind(this));
     }
 
     private _setDefaults() {

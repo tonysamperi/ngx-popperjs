@@ -85,3 +85,7 @@
 
 #13.1.0
 * Added exportAs in NgxPopperjsContentComponent to allow access value, such as id (fix [#21](https://github.com/tonysamperi/ngx-popperjs/issues/21)
+
+#13.2.0
+* General refactor of dynamic component handling
+* Refactored events using rxjs instead of renderer: should lead to performance improvement

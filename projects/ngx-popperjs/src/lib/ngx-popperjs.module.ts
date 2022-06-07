@@ -1,5 +1,6 @@
 import {ModuleWithProviders, NgModule, Provider} from "@angular/core";
 import {CommonModule} from "@angular/common";
+import {SmpDomModule} from "@ngx-tonysamperi/dom";
 //
 import {NgxPopperjsDirective} from "./ngx-popperjs/ngx-popperjs.directive";
 import {NgxPopperjsContentComponent} from "./ngx-popperjs-content/ngx-popper-content.component";
@@ -14,7 +15,8 @@ export function provideNgxPopperjsOptions(config: NgxPopperjsOptions = {}): Prov
 
 @NgModule({
     imports: [
-        CommonModule
+        CommonModule,
+        SmpDomModule.forRoot()
     ],
     declarations: [
         NgxPopperjsContentComponent,
