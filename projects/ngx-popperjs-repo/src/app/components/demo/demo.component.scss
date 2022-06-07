@@ -25,7 +25,7 @@ strong {
   > img.pop-angular-logo {
     position: absolute;
     width: $pop-angular-logo-size;
-    left: calc(50% - #{$pop-angular-logo-size/2});
+    left: calc(50% - #{$pop-angular-logo-size * 0.5});
     top: 235px; // Since popper logo has height 200px
     border-radius: 50%;
     background-color: #FFF;
@@ -44,6 +44,17 @@ strong {
 
   > h2 {
     font-size: 36px;
+  }
+}
+
+.pop-badges {
+  > img {
+    display: inline-block;
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
