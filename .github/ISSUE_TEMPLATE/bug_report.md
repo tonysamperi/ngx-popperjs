@@ -1,6 +1,6 @@
 ---
-name: Bug report
-about: Create a report to improve ngx-popperjs
+name: BUGS ONLY!
+about: DO NOT OPEN TO ASK FOR NEXT VERSION!
 title: 'BUG: your summary here'
 labels: ''
 assignees: ''
