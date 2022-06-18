@@ -16,6 +16,10 @@ I deal with updates with my own schedule, don't need a reminder.
 A clear and concise description of what the bug is.
 
 **To Reproduce**
+Possibly create a stackblitz reproducing the bug, or a zip with basic sources for a reproduction
+
+OR
+
 Steps to reproduce the behavior:
 1. Go to '...'
 2. Click on '....'
@@ -28,16 +32,19 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
+**Desktop (if execution):**
  - OS: [e.g. iOS]
  - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+** Versions
+ - ngx-mat-timepicker version [e.g. 9.0.0]
+ - @angular/core version [e.g. 10.2.3]
+ - @angular/material version [e.g. 10.2.7]
+ - typescript version [es. 3.9.2]
+
+**Additional context (optional)**
+Add any other context about the problem here.
+
 
 **Additional context**
 Add any other context about the problem here.
