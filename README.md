@@ -5,6 +5,7 @@
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/tonysamperi/ngx-popperjs/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/tonysamperi/ngx-popperjs.svg?branch=master)](https://travis-ci.org/tonysamperi/ngx-popperjs)
 [![Size](https://img.shields.io/bundlephobia/minzip/ngx-popperjs)](https://img.shields.io/bundlephobia/minzip/ngx-popperjs)
+[![Rate this package](https://badges.openbase.com/js/rating/ngx-popperjs.svg?token=DpYv6h69+u2Wr+75BCWq+dk2b1bF35kyjjKKxFyZ44k=)](https://openbase.com/js/ngx-popperjs?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
 
 ngx-popperjs is an angular wrapper for the [Popper.js](https://popper.js.org/) library.
 
