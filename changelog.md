@@ -1,3 +1,5 @@
+#13.2.2
+* Added missing peer dep (closes [#26](https://github.com/tonysamperi/ngx-popperjs/issues/26))
 
 #13.2.1
 * Updated core dep
@@ -9,7 +11,7 @@
 * Added exportAs in NgxPopperjsContentComponent to allow access value, such as id (fix [#21](https://github.com/tonysamperi/ngx-popperjs/issues/21))
 
 #13.0.1
-* Removed listener for touchend, causing popper to close on mobile although it shouldn't (fix [#18](https://github.com/tonysamperi/ngx-popperjs/issues/18))
+* Removed listener for touchend, causing popper to close on mobile, although it shouldn't (fix [#18](https://github.com/tonysamperi/ngx-popperjs/issues/18))
 
 #13.0.0
 * Added support for Angular 13

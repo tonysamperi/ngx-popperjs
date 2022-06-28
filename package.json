@@ -1,6 +1,7 @@
 {
     "name": "ngx-popperjs-repo",
-    "version": "1.0.0",
+    "version": "13.2.2",
+    "private": true,
     "license": "MIT",
     "description": "ngx-popperjs is an Angular wrapper for @popperjs",
     "homepage": "https://tonysamperi.github.io/ngx-popperjs",
@@ -36,7 +37,6 @@
         "lint": "ng lint",
         "e2e": "ng e2e"
     },
-    "private": true,
     "dependencies": {
         "@angular/animations": "^13.0.3",
         "@angular/common": "^13.0.3",
@@ -64,6 +64,7 @@
         "@types/prismjs": "^1.16.5",
         "codelyzer": "^6.0.2",
         "gulp": "^4.0.2",
+        "gulp-bump": "^3.2.0",
         "gulp-sass": "^4.1.0",
         "jasmine-core": "^3.4.0",
         "jasmine-spec-reporter": "^4.2.1",

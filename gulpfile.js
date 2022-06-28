@@ -9,15 +9,24 @@ function logEnd(msg) {
 }
 
 const gulp = require("gulp"),
-    path = require("path"),
+    {join} = require("path"),
     exec = require("child_process").exec,
-    sass = require("gulp-sass")
+    sass = require("gulp-sass"),
+    bump = require("gulp-bump")
 ;
 
 const libName = "ngx-popperjs";
-const rootFolder = path.join(__dirname);
-const srcFolder = path.join(rootFolder, `projects/${libName}/src/lib`);
-const distFolder = path.join(rootFolder, `dist/${libName}`);
+const rootFolder = join(__dirname);
+const libFolder = join(rootFolder, `projects/${libName}`);
+const srcFolder = join(libFolder, `src/lib`);
+const distFolder = join(rootFolder, `dist/${libName}`);
+const doBump = (type) => {
+    return Promise.all(["./", libFolder].map((p) => {
+        return gulp.src(join(p, "package.json"))
+        .pipe(bump({type}))
+        .pipe(gulp.dest(p));
+    }));
+};
 
 const taskNames = {
     postBuild: "postBuild",
@@ -26,16 +35,30 @@ const taskNames = {
     handleStyles: "handleStyles"
 };
 
+// TASKS
+
+gulp.task("bump:patch", () => {
+    return doBump("patch");
+});
+
+gulp.task("bump:minor", () => {
+    return doBump("minor");
+});
+
+gulp.task("bump:major", () => {
+    return doBump("major");
+});
+
 gulp.task(taskNames.handleStyles, function (cb) {
     logStart(taskNames.handleStyles);
     // SASS BUILD SCSS SOURCES
     gulp.src([
-        path.join(srcFolder, "scss/theme-*.scss")
+        join(srcFolder, "scss/theme-*.scss")
     ])
     .pipe(sass({
         outputStyle: "expanded"
     }))
-    .pipe(gulp.dest(path.join(distFolder, "css")))
+    .pipe(gulp.dest(join(distFolder, "css")))
     .on("end", function () {
         console.info("Compiled folder", srcFolder);
         typeof cb === typeof isNaN && cb();
@@ -43,9 +66,9 @@ gulp.task(taskNames.handleStyles, function (cb) {
 
     // COPY SCSS SOURCES
     gulp.src([
-        path.join(srcFolder, "scss/*.scss")
+        join(srcFolder, "scss/*.scss")
     ])
-    .pipe(gulp.dest(path.join(distFolder, "scss")));
+    .pipe(gulp.dest(join(distFolder, "scss")));
     logEnd(taskNames.handleStyles);
     cb();
 });
@@ -53,9 +76,9 @@ gulp.task(taskNames.handleStyles, function (cb) {
 gulp.task(taskNames.copyFiles, (cb) => {
     logStart(taskNames.copyFiles);
     gulp.src([
-        path.join(rootFolder, "changelog.md"),
-        path.join(rootFolder, "README.md"),
-        path.join(rootFolder, "tsbl.js")
+        join(rootFolder, "changelog.md"),
+        join(rootFolder, "README.md"),
+        join(rootFolder, "tsbl.js")
     ])
     .pipe(gulp.dest(distFolder));
     logEnd(taskNames.copyFiles);

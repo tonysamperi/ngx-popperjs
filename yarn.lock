@@ -2642,6 +2642,13 @@ builtins@^1.0.3:
   resolved "https://registry.yarnpkg.com/builtins/-/builtins-1.0.3.tgz#cb94faeb61c8696451db36534e1422f94f0aee88"
   integrity sha1-y5T662HIaWRR2zZTThQi+U8K7og=
 
+bump-regex@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/bump-regex/-/bump-regex-4.1.0.tgz#b9f3619e54d28c9e4cf5e30265503bb20bff3c1d"
+  integrity sha512-75Kr/Iw6lqnOKF/7YpE0WyOMBaaSpdrXTquIxR0qbTgZxwJos6563zNSn+w/LPJUoL4DXq20QX9AQy4+UJbyhw==
+  dependencies:
+    semver "^5.1.0"
+
 bytes@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.0.0.tgz#d32815404d689699f85a4ea4fa8755dd13a96048"
@@ -3399,6 +3406,14 @@ date-format@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/date-format/-/date-format-2.1.0.tgz#31d5b5ea211cf5fd764cd38baf9d033df7e125cf"
   integrity sha512-bYQuGLeFxhkxNOF3rcMtiZxvCBAquGzZm6oWA1oZ0g2THUzivaRhv8uOhdr19LmoobSOLoIAxeUK2RdbM8IFTA==
+
+dateformat@^1.0.11:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-1.0.12.tgz#9f124b67594c937ff706932e4a642cca8dbbfee9"
+  integrity sha512-5sFRfAAmbHdIts+eKjR9kYJoF0ViCMVX9yqLu5A7S/v+nd077KgCITOMiirmyCBiZpKLDXbBOkYm6tu7rX/TKg==
+  dependencies:
+    get-stdin "^4.0.1"
+    meow "^3.3.0"
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
@@ -4882,6 +4897,17 @@ graceful-fs@^4.0.0, graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6,
   version "4.2.8"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
   integrity sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
+
+gulp-bump@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/gulp-bump/-/gulp-bump-3.2.0.tgz#ab771ec7cf5c5bb3a8fae24ba21cef96855a6e15"
+  integrity sha512-j3Yvi0QQZEN1HsXArQCBMdX5jedQZ1Cul3W1VZrvKal/Z4Slb6Z7UQLQyPaLm0heNdJKCjpKHgkYSR8VhfPlTA==
+  dependencies:
+    bump-regex "^4.1.0"
+    plugin-error "^1.0.1"
+    plugin-log "^0.1.0"
+    semver "^5.3.0"
+    through2 "^2.0.1"
 
 gulp-cli@^2.2.0:
   version "2.3.0"
@@ -6370,10 +6396,10 @@ memfs@^3.2.2:
   dependencies:
     fs-monkey "1.0.3"
 
-meow@^3.7.0:
+meow@^3.3.0, meow@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/meow/-/meow-3.7.0.tgz#72cb668b425228290abbfa856892587308a801fb"
-  integrity sha1-cstmi0JSKCkKu/qFaJJYcwioAfs=
+  integrity sha512-TNdwZs0skRlpPpCUK25StC4VH+tP5GgeY1HQOOGP+lQ2xtdkN2VtT/5tiX9k3IWpkBPV9b3LsAWXn4GGi/PrSA==
   dependencies:
     camelcase-keys "^2.0.0"
     decamelize "^1.1.2"
@@ -7447,6 +7473,14 @@ plugin-error@^1.0.1:
     arr-diff "^4.0.0"
     arr-union "^3.1.0"
     extend-shallow "^3.0.2"
+
+plugin-log@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/plugin-log/-/plugin-log-0.1.0.tgz#86049cf6ab10833398a931f3689cbaee7b5e1333"
+  integrity sha512-TzmfWRMEFAnrZbI4GfyXv9Gp5E71eby3gmvnP6LEfmYbVC8FPN2RBRhwxg4sjIg+fy8AJ3mczhLXvk0pzHPeMg==
+  dependencies:
+    chalk "^1.1.1"
+    dateformat "^1.0.11"
 
 portfinder@^1.0.28:
   version "1.0.28"
@@ -8555,7 +8589,7 @@ semver-greatest-satisfied-range@^1.1.0:
   dependencies:
     sver-compat "^1.5.0"
 
-"semver@2 || 3 || 4 || 5", semver@^5.3.0, semver@^5.6.0:
+"semver@2 || 3 || 4 || 5", semver@^5.1.0, semver@^5.3.0, semver@^5.6.0:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
@@ -9286,7 +9320,7 @@ through2-filter@^3.0.0:
     through2 "~2.0.0"
     xtend "~4.0.0"
 
-through2@^2.0.0, through2@^2.0.3, through2@~2.0.0:
+through2@^2.0.0, through2@^2.0.1, through2@^2.0.3, through2@~2.0.0:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.5.tgz#01c1e39eb31d07cb7d03a96a70823260b23132cd"
   integrity sha512-/mrRod8xqpA+IHSLyGCQ2s8SPHiCDEeQJSep1jqLYeEUClOFG2Qsh+4FU6G9VeqpZnGW/Su8LQGc4YKni5rYSQ==

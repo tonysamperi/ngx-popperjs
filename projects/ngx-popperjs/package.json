@@ -1,6 +1,6 @@
 {
   "name": "ngx-popperjs",
-  "version": "13.2.1",
+  "version": "13.2.2",
   "license": "MIT",
   "description": "ngx-popperjs is an Angular wrapper for @popperjs",
   "homepage": "https://tonysamperi.github.io/ngx-popperjs",
@@ -28,6 +28,7 @@
   "peerDependencies": {
     "@angular/common": "^13.0.3",
     "@angular/core": "^13.0.3",
+    "@ngx-tonysamperi/dom": "^13.1.0",
     "@popperjs/core": "^2.11.0"
   }
 }
