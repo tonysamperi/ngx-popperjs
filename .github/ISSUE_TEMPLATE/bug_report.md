@@ -37,7 +37,7 @@ If applicable, add screenshots to help explain your problem.
  - Browser [e.g. chrome, safari]
 
 ** Versions
- - ngx-mat-timepicker version [e.g. 9.0.0]
+ - ngx-popperjs version [e.g. 9.0.0]
  - @angular/core version [e.g. 10.2.3]
  - @angular/material version [e.g. 10.2.7]
  - typescript version [es. 3.9.2]
