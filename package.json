@@ -28,7 +28,7 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
-        "build": "ng build --configuration=production && gulp postBuild",
+        "build": "ng build ngx-popperjs --configuration=production && gulp postBuild",
         "build:demo": "ng build ngx-popperjs-repo --configuration=production --baseHref=",
         "pack": "gulp pack",
         "publish": "npm publish ./dist/ngx-popperjs",
