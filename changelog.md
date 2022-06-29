@@ -1,5 +1,11 @@
+#14.0.1
+* Added missing peer dep
+
 #14.0.0
 * Update for Angular 14
+
+#13.2.2
+* Added missing peer dep (closes [#26](https://github.com/tonysamperi/ngx-popperjs/issues/26))
 
 #13.2.1
 * Updated core dep
