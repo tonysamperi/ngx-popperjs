@@ -1,3 +1,7 @@
+#13.3.0
+* Moved @ngx-tonysamperi/dom to dependencies, to have automatic install
+* Moved @popperjs/core to dependencies, to have automatic install
+
 #13.2.2
 * Added missing peer dep (closes [#26](https://github.com/tonysamperi/ngx-popperjs/issues/26))
 
