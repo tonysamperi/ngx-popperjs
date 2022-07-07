@@ -9,7 +9,8 @@ import {
     Input,
     OnDestroy,
     OnInit,
-    Output
+    Output,
+    ViewContainerRef
 } from "@angular/core";
 import {NgxPopperjsContentComponent} from "../ngx-popperjs-content/ngx-popper-content.component";
 import {NgxPopperjsOptions} from "../models/ngx-popperjs-options.model";
@@ -21,7 +22,6 @@ import {NgxPopperjsUtils} from "../models/ngx-popperjs-utils.class";
 import {Modifier} from "@popperjs/core";
 //
 import {fromEvent, Subject, takeUntil, timer} from "rxjs";
-import {SmpDomService} from "@ngx-tonysamperi/dom";
 
 @Directive({
     // tslint:disable-next-line:directive-selector
@@ -218,7 +218,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
 
     constructor(private _changeDetectorRef: ChangeDetectorRef,
                 private _elementRef: ElementRef,
-                private _smpDomService: SmpDomService,
+                private _vcr: ViewContainerRef,
                 @Inject(NGX_POPPERJS_DEFAULTS) private _popperDefaults: NgxPopperjsOptions = {}) {
         NgxPopperjsDirective.baseOptions = {...NgxPopperjsDirective.baseOptions, ...this._popperDefaults};
     }
@@ -431,11 +431,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     }
 
     private _constructContent(): NgxPopperjsContentComponent {
-        this._popperContentRef = this._smpDomService.appendComp(
-            this._popperContentClass,
-            `ngx_popperjs_directive-${++NgxPopperjsDirective.nextId}`,
-            this.getRefElement()
-        );
+        this._popperContentRef = this._vcr.createComponent(this._popperContentClass);
 
         return this._popperContentRef.instance as NgxPopperjsContentComponent;
     }
