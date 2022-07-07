@@ -4,5 +4,8 @@
   "lib": {
     "entryFile": "src/public-api.ts"
   },
+  "allowedNonPeerDependencies": [
+    "@popperjs/core"
+  ],
   "keepLifecycleScripts": true
 }

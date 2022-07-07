@@ -1,3 +1,6 @@
+#14.1.0
+* Moved @popperjs/core to dependencies to get it installed automatically upon installing ngx-popperjs
+
 #14.0.2
 * Angular 14 now allows to dynamically append components without using any factory (closes [#29](https://github.com/tonysamperi/ngx-popperjs/issues/29))
 * Fixed tsconfig
