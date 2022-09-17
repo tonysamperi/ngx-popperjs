@@ -1,6 +1,6 @@
 {
     "name": "ngx-popperjs-repo",
-    "version": "14.1.0",
+    "version": "14.1.1",
     "license": "MIT",
     "description": "ngx-popperjs is an Angular wrapper for @popperjs",
     "homepage": "https://tonysamperi.github.io/ngx-popperjs",
@@ -34,7 +34,10 @@
         "publish": "npm publish ./dist/ngx-popperjs",
         "test": "ng test",
         "lint": "ng lint",
-        "e2e": "ng e2e"
+        "e2e": "ng e2e",
+        "bump:patch": "gulp bump:patch",
+        "bump:minor": "gulp bump:minor",
+        "bump:major": "gulp bump:major"
     },
     "private": true,
     "dependencies": {
@@ -45,7 +48,7 @@
         "@angular/forms": "^14.0.1",
         "@angular/platform-browser": "^14.0.1",
         "@angular/platform-browser-dynamic": "^14.0.1",
-        "@popperjs/core": "^2.11.5",
+        "@popperjs/core": "^2.11.6",
         "core-js": "^3.20.1",
         "rxjs": "^7.4.0",
         "tslib": "^2.3.1",

@@ -14,7 +14,7 @@ function is(it) {
 }
 
 var BANNER = '\u001B[96mThank you for using ngx-popperjs (\u001B[94m https://github.com/tonysamperi/ngx-popperjs \u001B[96m)!\u001B[0m\n\n' +
-    '\u001B[96mAlso, the author of ngx-popperjs (\u001B[94m https://tonysamperi.github.io \u001B[96m) is looking for a better job :-)\u001B[0m\n';
+    '\u001B[96mAlso, the author of ngx-popperjs (\u001B[94m https://tonysamperi.github.io \u001B[96m) is looking for freelance angular projects! :-)\u001B[0m\n';
 var invalidDeps = [];
 var tsbl = ["@ngx-tour/core", "ngx-ui-tour-core", "@ngx-tour/ngx-popper"];
 var i = -1;

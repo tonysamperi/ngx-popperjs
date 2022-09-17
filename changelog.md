@@ -1,3 +1,6 @@
+#14.1.1
+* Updated latest patch for @popperjs/core
+
 #14.1.0
 * Moved @popperjs/core to dependencies to get it installed automatically upon installing ngx-popperjs
 
