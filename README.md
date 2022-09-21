@@ -6,6 +6,7 @@
 [![Build Status](https://travis-ci.org/tonysamperi/ngx-popperjs.svg?branch=master)](https://travis-ci.org/tonysamperi/ngx-popperjs)
 [![Size](https://img.shields.io/bundlephobia/minzip/ngx-popperjs)](https://img.shields.io/bundlephobia/minzip/ngx-popperjs)
 [![Rate this package](https://badges.openbase.com/js/rating/ngx-popperjs.svg?token=DpYv6h69+u2Wr+75BCWq+dk2b1bF35kyjjKKxFyZ44k=)](https://openbase.com/js/ngx-popperjs?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
+[![kandi X-Ray](https://kandi.openweaver.com/badges/xray.svg)](https://kandi.openweaver.com/typescript/tonysamperi/ngx-popperjs)
 
 ngx-popperjs is an angular wrapper for the [Popper.js](https://popper.js.org/) library.
 
