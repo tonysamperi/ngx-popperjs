@@ -213,7 +213,7 @@ NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    NgxPopperjsModule.forRoot({placement: 'bottom'})],
+    NgxPopperjsModule.forRoot({placement: NgxPopperjsPlacements.TOP})],
   declarations: [AppComponent],
   providers: [],
   bootstrap: [AppComponent]
