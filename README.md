@@ -269,8 +269,8 @@ NgModule({
   | 'none'
   
     
-### Demo
-<a href="https://tonysamperi.github.io/ngx-popperjs/">Demo</a>
+### Demo site with sample codes
+<a href="https://tonysamperi.github.io/ngx-popperjs/">Demo of ngx-popperjs</a>
 
 ### Contribute
   You can only **report bugs**. Every other issue will be deleted right away.
