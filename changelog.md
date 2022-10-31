@@ -1,3 +1,6 @@
+#14.1.2
+* Added rxjs to peerDependencies in build package
+
 #14.1.1
 * Updated latest patch for @popperjs/core
 

@@ -18,8 +18,8 @@ I **guarantee** that I manage the updates **AS SOON AS POSSIBLE**. But as you un
 **ISSUES NOT RESPECTING THIS WILL BE DELETED IMMEDIATELY WITHOUT ANY RESPONSE**.
 Thank you.
 
-The goal of this library is to take Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/) and update the compatibility up to Angular 14.
-Since his library is compatible with Angular 7 and downwards, this will start with Angular 8.
+The goal of this library is to take Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/) and update the compatibility for more recent versions of Angular.
+Since the old library is compatible with Angular 7 and earlier, I started with Angular 8.
 If you need to work with an older version of Angular (5 to 7), please refer to Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/).
 
 ### Installation
@@ -213,7 +213,7 @@ NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    NgxPopperjsModule.forRoot({placement: 'bottom'})],
+    NgxPopperjsModule.forRoot({placement: NgxPopperjsPlacements.TOP})],
   declarations: [AppComponent],
   providers: [],
   bootstrap: [AppComponent]
@@ -269,8 +269,8 @@ NgModule({
   | 'none'
   
     
-### Demo
-<a href="https://tonysamperi.github.io/ngx-popperjs/">Demo</a>
+### Demo site with sample codes
+<a href="https://tonysamperi.github.io/ngx-popperjs/">Demo of ngx-popperjs</a>
 
 ### Contribute
   You can only **report bugs**. Every other issue will be deleted right away.
