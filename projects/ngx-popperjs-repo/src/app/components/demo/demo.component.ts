@@ -7,6 +7,9 @@ import {NGX_POPPERJS_DONT_FLIP_MODIFIER} from "../../shared/ngx-popperjs-dont-fl
 //
 import {forEach, map, filter} from "lodash";
 import {highlightElement} from "prismjs";
+import {catchError, of, switchMap, timer} from "rxjs";
+import {ajax, AjaxResponse} from "rxjs/ajax";
+import TypeWriter from "typewriter-effect/dist/core.js";
 
 enum NgxPopArticleTypes {
     position = "position",
@@ -100,6 +103,7 @@ export class NgxPopperjsDemoComponent implements OnInit {
     }
 
     dontFlipModifier: Partial<Modifier<"flip", Options>>[] = [NGX_POPPERJS_DONT_FLIP_MODIFIER];
+    messages: string[] = [];
     // tslint:disable-next-line:no-bitwise
     positionButtons: NgxPopperjsPlacements[] = filter(map(NgxPopperjsPlacements, (v) => v), (v) => !~v.indexOf("auto"));
     selectedPosition: NgxPopperjsPlacements = this.positionButtons[0];
@@ -107,6 +111,7 @@ export class NgxPopperjsDemoComponent implements OnInit {
     ngOnInit(): void {
         forEach(NgxPopArticleTypes, (s: NgxPopArticleTypes) => this._updateCode(s));
         forEach(document.querySelectorAll(".pop-popcorn-wrap"), (el: HTMLElement) => el.scrollTop = 300);
+        this._getMessages();
     }
 
     onPopperUpdate(_$event_): void {
@@ -116,6 +121,29 @@ export class NgxPopperjsDemoComponent implements OnInit {
     updatePosition(positionButton: NgxPopperjsPlacements): void {
         this.selectedPosition = positionButton;
         this._updateCode(NgxPopArticleTypes.position);
+    }
+
+    private _getMessages(): void {
+        ajax.get(`./assets/messages.json`)
+            .pipe(
+                switchMap((resp: AjaxResponse<any>) => {
+                    this.messages = resp.response.messages;
+
+                    return timer(150);
+                }),
+                catchError(() => of([]))
+            )
+            .subscribe({
+                next: () => {
+                    this.messages.forEach((m: string, i: number) => {
+                        new TypeWriter(`[pop-messages] li:nth-child(${i + 1})`, {
+                            strings: [m],
+                            autoStart: true,
+                            loop: true
+                        });
+                    });
+                }
+            });
     }
 
     private _updateCode(key: NgxPopArticleTypes): void {
