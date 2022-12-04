@@ -4,23 +4,17 @@ import {Modifier} from "@popperjs/core";
 import {Options} from "@popperjs/core/lib/modifiers/flip";
 //
 import {NGX_POPPERJS_DONT_FLIP_MODIFIER} from "../../shared/ngx-popperjs-dont-flip-modifier.const";
+import {getNgxPopperJsCodeMap} from "../../shared/ngx-popperjs-code-map.const";
+import {NgxPopArticleTypes, NgxPopperjsArticleTypesRef} from "../../shared/ngx-popperjs-article-types.model";
 //
+import pkg from "../../../../../../package.json";
 import {forEach, map, filter} from "lodash";
 import {highlightElement} from "prismjs";
 import {catchError, of, switchMap, timer} from "rxjs";
 import {ajax, AjaxResponse} from "rxjs/ajax";
 import TypeWriter from "typewriter-effect/dist/core.js";
 
-enum NgxPopArticleTypes {
-    position = "position",
-    overflow = "overflow",
-    flipping = "flipping",
-    theming = "theming",
-    click = "click",
-    scroll = "scroll"
-}
-
-const codeTypes: { [key in keyof typeof NgxPopArticleTypes]: "css" | "markup" } = {
+const codeTypes: NgxPopperjsArticleTypesRef<"css" | "markup"> = {
     position: "markup",
     overflow: "markup",
     flipping: "markup",
@@ -36,70 +30,12 @@ const codeTypes: { [key in keyof typeof NgxPopArticleTypes]: "css" | "markup" } 
 })
 export class NgxPopperjsDemoComponent implements OnInit {
 
-    get codeMap() {
-        return {
-            click: `&lt;popper-content #popperClickContent&gt;
-            &lt;/popper-content&gt;
-&lt;img alt="Popcorn box" src="assets/images/popcorn-box.svg"
-     [popper]="popperClickContent"
-     popperTrigger="click"
-     popperPlacement="top"
-     class="pop-popcorn-box"&gt;`,
-            scroll: `&lt;popper-content #popperClickContent&gt;
-            &lt;/popper-content&gt;
-&lt;img alt="Popcorn box" src="assets/images/popcorn-box.svg"
-     [popper]="popperClickContent"
-     [popperHideOnScroll]="!0"
-     popperTrigger="click"
-     popperPlacement="top"
-     class="pop-popcorn-box"&gt;`,
-            flipping: `&lt;popper-content #myPopperContent&gt;
-            I'm popper :)
-            &lt;/popper-content&gt;
-&lt;img alt="Popcorn box" src="assets/images/popcorn-box.svg"
-     [popper]="myPopperContent"
-     [popperShowOnStart]="true"
-     popperTrigger="click"
-     popperPlacement="top"
-     class="pop-popcorn-box"&gt;`,
-            overflow: `&lt;popper-content #popcornPrices&gt;
- &lt;p class="pop-text-bold"&gt;POPCORN&lt;br /&gt;SIZE&lt;br /&gt;&amp; PRICE&lt;/p&gt;
- &lt;ul&gt;
-     &lt;li&gt;XXS: $1.99&lt;/li&gt;
-     &lt;li&gt;XS: $2.99&lt;/li&gt;
-     &lt;li&gt;S: $3.99&lt;/li&gt;
-     &lt;li&gt;M: $4.99&lt;/li&gt;
-     &lt;li&gt;L: $5.99&lt;/li&gt;
-     &lt;li&gt;XL: $6.99&lt;/li&gt;
-     &lt;li&gt;XXL: $7.99&lt;/li&gt;
- &lt;/ul&gt;
- &lt;/popper-content&gt;
- &lt;img alt="Popcorn box" src="assets/images/popcorn-box.svg"
-      [popper]="popcornPrices"
-      [popperShowOnStart]="true"
-      popperTrigger="click"
-      popperPlacement="right"
-      class="pop-popcorn-box"&gt;`,
-            position: `&lt;popper-content #myPopperContent&gt;
-            I'm popper :)
-            &lt;/popper-content&gt;
-&lt;img alt="Popcorn box" src="assets/images/popcorn-box.svg"
-     [popper]="myPopperContent"
-     [popperShowOnStart]="true"
-     popperTrigger="click"
-     popperPlacement="${this.selectedPosition}"
-     class="pop-popcorn-box"&gt;`,
-            theming: `@import ~ngx-popperjs/css/theme-dark.css
-/* OR */
-@import ~ngx-popperjs/css/theme-white.css
-/* OR */
-@import ~ngx-popperjs/scss/theme-dark
-/* OR */
-@import ~ngx-popperjs/scss/theme-white
-/* OR */
-@include ngx-popperjs-theme(#777, #fff1e0);
-`
-        } as { [key in NgxPopArticleTypes]: string };
+    get buildRef(): string {
+        return `${pkg.version}-build-${pkg.build}`;
+    }
+
+    get codeMap(): NgxPopperjsArticleTypesRef<string> {
+        return getNgxPopperJsCodeMap(this.selectedPosition);
     }
 
     dontFlipModifier: Partial<Modifier<"flip", Options>>[] = [NGX_POPPERJS_DONT_FLIP_MODIFIER];
@@ -107,6 +43,7 @@ export class NgxPopperjsDemoComponent implements OnInit {
     // tslint:disable-next-line:no-bitwise
     positionButtons: NgxPopperjsPlacements[] = filter(map(NgxPopperjsPlacements, (v) => v), (v) => !~v.indexOf("auto"));
     selectedPosition: NgxPopperjsPlacements = this.positionButtons[0];
+    year: number = new Date().getFullYear();
 
     ngOnInit(): void {
         forEach(NgxPopArticleTypes, (s: NgxPopArticleTypes) => this._updateCode(s));
