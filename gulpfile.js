@@ -11,7 +11,7 @@ function logEnd(msg) {
 const gulp = require("gulp"),
     {join} = require("path"),
     exec = require("child_process").exec,
-    sass = require("gulp-sass"),
+    sass = require('gulp-sass')(require('sass')),
     semver = require("semver"),
     log = require("plugin-log"),
     {obj} = require("through2")

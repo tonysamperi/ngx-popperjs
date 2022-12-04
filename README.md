@@ -1,11 +1,13 @@
 # ngx-popperjs  
 
-[![npm](https://img.shields.io/npm/v/ngx-popperjs.svg?style=flat-square)](https://www.npmjs.com/package/ngx-popperjs) 
-[![npm](https://img.shields.io/npm/dm/ngx-popperjs.svg?style=flat-square)](https://www.npmjs.com/package/ngx-popperjs) 
+[link-npm]: https://www.npmjs.com/package/ngx-popperjs
+
+[![npm](https://img.shields.io/npm/v/ngx-popperjs.svg?style=flat-square)][link-npm]
+[![npm](https://img.shields.io/npm/dm/ngx-popperjs.svg?style=flat-square)][link-npm]
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/tonysamperi/ngx-popperjs/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/tonysamperi/ngx-popperjs.svg?branch=master)](https://travis-ci.org/tonysamperi/ngx-popperjs)
 [![Size](https://img.shields.io/bundlephobia/minzip/ngx-popperjs)](https://img.shields.io/bundlephobia/minzip/ngx-popperjs)
-[![Rate this package](https://badges.openbase.com/js/rating/ngx-popperjs.svg?token=DpYv6h69+u2Wr+75BCWq+dk2b1bF35kyjjKKxFyZ44k=)](https://openbase.com/js/ngx-popperjs?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
+[![Rate this package](https://badges.openbase.com/js/rating/ngx-popperjs.svg?token=DpYv6h69+u2Wr+75BCWq+dk2b1bF35kyjjKKxFyZ44k=)](https://openbase.com/js/ngx-popperjs)
 
 ngx-popperjs is an angular wrapper for the [Popper.js](https://popper.js.org/) library.
 
@@ -52,42 +54,19 @@ node and npm are required to run this package.
    ]
   })
   ```
-  
-SystemJS 
-```
-    System.config({
-        paths: {
-           'npm:': 'https://unpkg.com/' // or your local folder
-         }
-        // map tells the System loader where to look for things
-        map: {
-            ... ,
-            "@popperjs/core": "npm:@popperjs/core@2.4.4/dist/umd/popper.js",
-            "ngx-popperjs": "npm:ngx-popperjs@8.0.0/bundles/ngx-popperjs.umd.js
-        }
-    });
-
-```
 
 Optionally you can include in your `styles.css` / `styles.css` one of the prebuilt themes:
-* `@import ~ngx-popperjs/css/theme-dark.css`
-* `@import ~ngx-popperjs/css/theme-white.css`
-* `@import ~ngx-popperjs/scss/theme-dark`
-* `@import ~ngx-popperjs/scss/theme-white`
+* `@import node_modules/ngx-popperjs/css/theme-dark.css`
+* `@import node_modules/css/theme-white.css`
+
+* `@use ngx-popperjs/scss/theme as popperBaseTheme`
+* `@use ngx-popperjs/scss/theme-dark as popperDarkTheme`
+* `@use ngx-popperjs/scss/theme-white popperWhiteTheme`
 
 or easily create your own theme using the @mixin:
-```
-// Angular Version <= 12:
-@import "~ngx-popperjs/scss/theme";
-
-body {
-    @include ngx-popperjs-theme($background-color, $text-color, $max-width, $z-index);
-}
-```
 
 ```
-// Angular Version >= 13:
-@use "ngx-popperjs/scss/theme" as popperjs;
+@use "ngx-popperjs/scss/theme" as popperBaseTheme;
 
 body {
     @include popperjs.ngx-popperjs-theme($background-color, $text-color, $max-width, $z-index);
