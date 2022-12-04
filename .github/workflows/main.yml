@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/setup-python@v4
       with:
-        python-version: '2.x'
+        python-version: '2.7.18'
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
