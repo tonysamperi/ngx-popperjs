@@ -54,13 +54,13 @@ export const getNgxPopperJsCodeMap = (position: NgxPopperjsPlacements): NgxPoppe
      popperTrigger="click"
      popperPlacement="${position}"
      class="pop-popcorn-box"&gt;`,
-        theming: `@import ~ngx-popperjs/css/theme-dark.css
+        theming: `@use ngx-popperjs/css/theme-dark.css
 /* OR */
-@import ~ngx-popperjs/css/theme-white.css
+@use ngx-popperjs/css/theme-white.css
 /* OR */
-@import ~ngx-popperjs/scss/theme-dark
+@use ngx-popperjs/scss/theme-dark
 /* OR */
-@import ~ngx-popperjs/scss/theme-white
+@use ngx-popperjs/scss/theme-white
 /* OR */
 @include ngx-popperjs-theme(#777, #fff1e0);
 `
