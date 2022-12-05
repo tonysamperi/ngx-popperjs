@@ -1,6 +1,17 @@
 {
   "messages": [
-    "⭐ Working on V15! Stay tuned!",
-    "If you're liking ngx-popperjs, checkout ngx-tour-wizard!"
+    {
+      "text": "⭐ Working on V15! Stay tuned!",
+      "opts": {
+        "loop": true
+      }
+    },
+    {
+      "text": "If you're liking ngx-popperjs, checkout <a href='https://tonysamperi.github.io/ngx-tour-wizard' target='_blank'>ngx-tour-wizard</a>!",
+      "opts": {
+        "loop": false,
+        "delay": 80
+      }
+    }
   ]
 }

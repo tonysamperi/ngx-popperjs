@@ -39,7 +39,7 @@ export class NgxPopperjsDemoComponent implements OnInit {
     }
 
     dontFlipModifier: Partial<Modifier<"flip", Options>>[] = [NGX_POPPERJS_DONT_FLIP_MODIFIER];
-    messages: string[] = [];
+    messages: { opts?: { delay?: number | "natural"; loop?: boolean; }; text: string; }[] = [];
     // tslint:disable-next-line:no-bitwise
     positionButtons: NgxPopperjsPlacements[] = filter(map(NgxPopperjsPlacements, (v) => v), (v) => !~v.indexOf("auto"));
     selectedPosition: NgxPopperjsPlacements = this.positionButtons[0];
@@ -72,12 +72,19 @@ export class NgxPopperjsDemoComponent implements OnInit {
             )
             .subscribe({
                 next: () => {
-                    this.messages.forEach((m: string, i: number) => {
-                        new TypeWriter(`[pop-messages] li:nth-child(${i + 1})`, {
-                            strings: [m],
-                            autoStart: true,
-                            loop: true
+                    this.messages.forEach(({text, opts = {}}, i: number) => {
+                        const tw = new TypeWriter(`[pop-messages] li:nth-child(${i + 1})`, {
+                            strings: !!opts.loop ? [text] : void 0,
+                            autoStart: !!opts.loop,
+                            loop: !!opts.loop,
+                            delay: opts.delay || "natural"
                         });
+                        if (!opts.loop) {
+                            tw.typeString(text).stop().start();
+                        }
+                        else {
+                            console.info("AUTOSTART WAS TRUE FOR", text);
+                        }
                     });
                 }
             });
