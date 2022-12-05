@@ -36,7 +36,7 @@ const doBump = (type) => {
             const pkgData = JSON.parse(file.contents.toString());
             const prevVersion = pkgData.version;
             pkgData.version = semver.inc(prevVersion, type);
-            file.contents = Buffer.from(JSON.stringify(pkgData, null, 2));
+            file.contents = Buffer.from(JSON.stringify(pkgData, null, 4));
             log(
                 "Bumped", log.colors.cyan(prevVersion),
                 "to", log.colors.magenta(pkgData.version),
@@ -68,7 +68,7 @@ gulp.task("build++", () => {
         const pkgData = JSON.parse(file.contents.toString());
         const prevBuild = pkgData.build;
         pkgData.build++;
-        file.contents = Buffer.from(JSON.stringify(pkgData, null, 2));
+        file.contents = Buffer.from(JSON.stringify(pkgData, null, 4));
         log(
             "Increased", log.colors.cyan(prevBuild),
             "to", log.colors.magenta(pkgData.build)
