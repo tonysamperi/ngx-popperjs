@@ -1,13 +1,6 @@
 # ngx-popperjs  
 
-[link-npm]: https://www.npmjs.com/package/ngx-popperjs
-
-[![npm](https://img.shields.io/npm/v/ngx-popperjs.svg?style=flat-square)][link-npm]
-[![npm](https://img.shields.io/npm/dm/ngx-popperjs.svg?style=flat-square)][link-npm]
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/tonysamperi/ngx-popperjs/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/tonysamperi/ngx-popperjs.svg?branch=master)](https://travis-ci.org/tonysamperi/ngx-popperjs)
-[![Size](https://img.shields.io/bundlephobia/minzip/ngx-popperjs)](https://img.shields.io/bundlephobia/minzip/ngx-popperjs)
-[![Rate this package](https://badges.openbase.com/js/rating/ngx-popperjs.svg?token=DpYv6h69+u2Wr+75BCWq+dk2b1bF35kyjjKKxFyZ44k=)](https://openbase.com/js/ngx-popperjs)
+[![npm][badge-npm-version]][url-npm] [![npm][badge-npm-downloads]][url-npm] [![MIT licensed][badge-licence]][url-licence] [![Build state][badge-ci-state]][url-ci-state] [![Size][badge-bundle]][url-bundle] [![Rate this package][badge-openbase]][url-openbase]
 
 ngx-popperjs is an angular wrapper for the [Popper.js](https://popper.js.org/) library.
 
@@ -273,3 +266,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 MrFrankel for setting up ngx-popper and maintaining till v 7.0.0.
 
+[badge-bundle]: https://img.shields.io/bundlephobia/minzip/ngx-popperjs
+[badge-ci-state]: https://github.com/tonysamperi/ngx-popperjs/actions/workflows/main.yml/badge.svg
+[badge-licence]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[badge-npm-downloads]: https://img.shields.io/npm/dm/ngx-popperjs.svg?style=flat-square
+[badge-npm-version]: https://img.shields.io/npm/v/ngx-popperjs.svg?style=flat-square
+[badge-openbase]: https://badges.openbase.com/js/rating/ngx-popperjs.svg
+[url-bundle]: https://img.shields.io/bundlephobia/minzip/ngx-popperjs
+[url-ci-state]: https://github.com/tonysamperi/ngx-popperjs/actions
+[url-licence]: https://github.com/tonysamperi/ngx-popperjs/blob/master/LICENSE
+[url-npm]: https://www.npmjs.com/package/ngx-popperjs
+[url-openbase]: https://openbase.com/js/ngx-popperjs

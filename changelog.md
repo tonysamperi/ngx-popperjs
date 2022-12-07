@@ -1,3 +1,6 @@
+#15.0.0
+* Update for Angular 15! 🎉
+
 #14.1.2
 * Added rxjs to peerDependencies in build package
 
@@ -15,7 +18,7 @@
 * Added missing peer dep
 
 #14.0.0
-* Update for Angular 14
+* Update for Angular 14! 🎉
 
 #13.2.2
 * Added missing peer dep (closes [#26](https://github.com/tonysamperi/ngx-popperjs/issues/26))
@@ -33,7 +36,7 @@
 * Removed listener for touchend, causing popper to close on mobile although it shouldn't (fix [#18](https://github.com/tonysamperi/ngx-popperjs/issues/18))
 
 #13.0.0
-* Update for Angular 13
+* Update for Angular 13! 🎉
 * Removed polyfills from demo app
 * Misc
 
@@ -53,13 +56,13 @@
 * Updating popper on preventOverflow input change
 
 #12.1.0
-* Update for Angular 12.1.x
+* Update for Angular 12.1.x! 🎉
 
 #12.0.0
-* Update for Angular 12.0.x
+* Update for Angular 12.0.x! 🎉
 
 #11.0.0
-* Update for Angular 11
+* Update for Angular 11! 🎉
 
 #10.0.4
 * Updated postinstall validation

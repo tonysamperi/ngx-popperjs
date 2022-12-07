@@ -1,6 +1,6 @@
 {
     "name": "ngx-popperjs-repo",
-    "version": "14.1.2",
+    "version": "15.0.0",
     "build": 4,
     "license": "MIT",
     "description": "ngx-popperjs is an Angular wrapper for @popperjs",
@@ -80,7 +80,7 @@
         "lodash": "^4.17.21",
         "ng-packagr": "^15.0.1",
         "plugin-log": "^0.1.0",
-        "prismjs": "^1.23.0",
+        "prismjs": "^1.29.0",
         "protractor": "^7.0.0",
         "through2": "^4.0.2",
         "ts-node": "^10.0.0",
