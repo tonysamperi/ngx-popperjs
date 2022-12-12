@@ -25,7 +25,8 @@
           "options": {
             "main": "projects/ngx-popperjs/src/test.ts",
             "tsConfig": "projects/ngx-popperjs/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-popperjs/karma.conf.js"
+            "karmaConfig": "projects/ngx-popperjs/karma.conf.js",
+            "polyfills": "projects/ngx-popperjs-repo/src/polyfills.ts"
           }
         },
         "lint": {
@@ -148,8 +149,7 @@
             ],
             "styles": [
               "projects/ngx-popperjs-repo/src/styles.scss"
-            ],
-            "scripts": []
+            ]
           }
         },
         "lint": {
@@ -163,18 +163,6 @@
             "exclude": [
               "**/node_modules/**"
             ]
-          }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "projects/ngx-popperjs-repo/e2e/protractor.conf.js",
-            "devServerTarget": "ngx-popperjs-repo:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "ngx-popperjs-repo:serve:production"
-            }
           }
         }
       }

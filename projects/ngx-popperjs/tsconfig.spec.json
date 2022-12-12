@@ -12,6 +12,11 @@
   ],
   "include": [
     "**/*.spec.ts",
-    "**/*.d.ts"
+    "**/*.d.ts",
+    "../ngx-popperjs-repo/src/polyfills.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "_node_modules"
   ]
 }

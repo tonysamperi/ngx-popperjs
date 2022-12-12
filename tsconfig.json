@@ -25,10 +25,16 @@
             "--ngx-popperjs": [
                 "dist/ngx-popperjs"
             ]
-        }
+        },
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true
     },
     "angularCompilerOptions": {
         "fullTemplateTypeCheck": true,
         "strictInjectionParameters": true
-    }
+    },
+    "exclude": [
+        "_node_modules",
+        "node_modules"
+    ]
 }

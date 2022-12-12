@@ -12,7 +12,7 @@ const gulp = require("gulp"),
     {join} = require("path"),
     exec = require("child_process").exec,
     sass = require('gulp-sass')(require('sass')),
-    semver = require("semver"),
+    {inc} = require("semver"),
     log = require("plugin-log"),
     {obj} = require("through2")
 ;
@@ -35,7 +35,7 @@ const doBump = (type) => {
         .pipe(obj((file, enc, cb) => {
             const pkgData = JSON.parse(file.contents.toString());
             const prevVersion = pkgData.version;
-            pkgData.version = semver.inc(prevVersion, type);
+            pkgData.version = inc(prevVersion, type);
             file.contents = Buffer.from(JSON.stringify(pkgData, null, 4));
             log(
                 "Bumped", log.colors.cyan(prevVersion),

@@ -27,4 +27,5 @@ jobs:
         cache: 'npm'
     - run: npm i -g yarn
     - run: yarn --check-files
+    - run: npm run test
     - run: npm run build
