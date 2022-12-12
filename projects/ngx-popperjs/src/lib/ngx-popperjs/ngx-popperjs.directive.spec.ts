@@ -1,22 +1,26 @@
 import {Component, DebugElement} from "@angular/core";
 import {ComponentFixture, TestBed} from "@angular/core/testing";
+import {By} from "@angular/platform-browser";
 //
-import {NgxPopperjsDirective} from "./ngx-popperjs.directive.js";
-import {By} from "protractor";
+import {NgxPopperjsDirective, NgxPopperjsModule} from "ngx-popperjs";
+import {NgxPopperjsPlacements} from "../models/ngx-popperjs-placements.model";
 
 @Component({
     template: `
-        <popper-content #myPopperContent><p class="pop-lucky-font">Popcorn</p></popper-content>
-        <img alt="Popcorn box" src="assets/images/popcorn-box.svg"
-             [popper]="myPopperContent"
-             (popperOnUpdate)="onPopperUpdate($event)"
-             [popperShowOnStart]="true"
-             popperTrigger="click"
-             popperPlacement="top"
-             class="pop-popcorn-box">
+		<popper-content #myPopperContent><p class="pop-lucky-font">Popcorn</p></popper-content>
+		<img alt="Popcorn box"
+			 src="assets/images/popcorn-box.svg"
+			 [popper]="myPopperContent"
+			 (popperOnUpdate)="onPopperUpdate($event)"
+			 [popperShowOnStart]="true"
+			 popperTrigger="click"
+			 [popperPlacement]="topPlacement"
+			 class="pop-popcorn-box">
     `
 })
 class NgxPopperjsDirectiveTestComponent {
+
+    topPlacement: NgxPopperjsPlacements = NgxPopperjsPlacements.TOP;
 
     private _updateFired: boolean = !1;
 
@@ -30,8 +34,14 @@ let poppers: DebugElement[];
 
 beforeEach(() => {
     fixture = TestBed.configureTestingModule({
-        declarations: [NgxPopperjsDirective, NgxPopperjsDirectiveTestComponent]
-    })
+            imports: [
+                NgxPopperjsModule
+            ],
+            declarations: [
+                // NgxPopperjsDirective,
+                NgxPopperjsDirectiveTestComponent
+            ]
+        })
         .createComponent(NgxPopperjsDirectiveTestComponent);
 
     fixture.detectChanges(); // initial binding

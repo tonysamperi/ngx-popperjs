@@ -1,3 +1,9 @@
+#15.0.1
+* Fixed peerDependencies
+* Removed protractor
+* Fixed tests and added new tests 🎉
+* Added tests to github actions 🎉
+
 #15.0.0
 * Update for Angular 15! 🎉
 
