@@ -1,7 +1,7 @@
 {
     "name": "ngx-popperjs-repo",
     "version": "15.0.1",
-    "build": 4,
+    "build": 6,
     "license": "MIT",
     "description": "ngx-popperjs is an Angular wrapper for @popperjs",
     "homepage": "https://tonysamperi.github.io/ngx-popperjs",
@@ -31,6 +31,7 @@
         "start": "ng serve",
         "test": "ng test ngx-popperjs",
         "test:demo": "ng test ngx-popperjs-repo",
+        "lint": "ng lint",
         "build++": "gulp build++",
         "build": "ng build ngx-popperjs --configuration=production && gulp postBuild",
         "build:demo": "ng build ngx-popperjs-repo --configuration=production --base-href=",
@@ -38,9 +39,7 @@
         "publish": "npm publish ./dist/ngx-popperjs",
         "bump:patch": "gulp bump:patch",
         "bump:minor": "gulp bump:minor",
-        "bump:major": "gulp bump:major",
-        "lint": "ng lint",
-        "e2e": "ng e2e"
+        "bump:major": "gulp bump:major"
     },
     "private": true,
     "dependencies": {

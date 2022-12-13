@@ -26,7 +26,10 @@
             "main": "projects/ngx-popperjs/src/test.ts",
             "tsConfig": "projects/ngx-popperjs/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-popperjs/karma.conf.js",
-            "polyfills": "projects/ngx-popperjs-repo/src/polyfills.ts"
+            "polyfills": "projects/ngx-popperjs-repo/src/polyfills.ts",
+            "styles": [
+              "projects/ngx-popperjs-repo/src/styles.scss"
+            ]
           }
         },
         "lint": {
