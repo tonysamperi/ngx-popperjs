@@ -1,3 +1,6 @@
+#15.0.2
+* Exposed sass _index for @use
+
 #15.0.1
 * Fixed peerDependencies
 * Removed protractor

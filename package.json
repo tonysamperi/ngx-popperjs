@@ -1,6 +1,6 @@
 {
     "name": "ngx-popperjs-repo",
-    "version": "15.0.1",
+    "version": "15.0.2",
     "build": 6,
     "license": "MIT",
     "description": "ngx-popperjs is an Angular wrapper for @popperjs",
@@ -86,7 +86,6 @@
         "semver": "^7.3.8",
         "through2": "^4.0.2",
         "ts-node": "^10.0.0",
-        "tsickle": "^0.43.0",
         "tslint": "^6.1.3",
         "tslint-consistent-codestyle": "^1.16.0",
         "typescript": "~4.8.4"
