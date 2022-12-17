@@ -1,3 +1,13 @@
+#14.1.6
+* Remove conflicting @forward instructions
+* Added configurable config
+
+#14.1.5
+* Add missing sass exports in package.json
+
+#14.1.4 (depcrecated as built with wrong config!)
+* Add missing sass exports in package.json
+
 #14.1.3
 * Exposed sass _index for @use
 
