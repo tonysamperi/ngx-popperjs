@@ -1,3 +1,6 @@
+#14.1.3
+* Exposed sass _index for @use
+
 #14.1.2
 * Added rxjs to peerDependencies in build package
 

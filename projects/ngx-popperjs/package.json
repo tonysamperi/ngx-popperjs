@@ -1,36 +1,36 @@
 {
-  "name": "ngx-popperjs",
-  "version": "14.1.2",
-  "license": "MIT",
-  "description": "ngx-popperjs is an Angular wrapper for @popperjs",
-  "homepage": "https://tonysamperi.github.io/ngx-popperjs",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tonysamperi/ngx-popperjs"
-  },
-  "bugs": {
-    "url": "https://github.com/tonysamperi/ngx-popperjs/issues"
-  },
-  "author": {
-    "name": "Tony Samperi",
-    "email": "github@tonysamperi.it"
-  },
-  "keywords": [
-    "Angular 8+",
-    "ngx-popperjs",
-    "popper Angular",
-    "Angular 14",
-    "popper.js"
-  ],
-  "scripts": {
-    "postinstall": "node ./tsbl.js"
-  },
-  "dependencies": {
-    "@popperjs/core": "^2.11.5"
-  },
-  "peerDependencies": {
-    "@angular/common": "^14.0.1",
-    "@angular/core": "^14.0.1",
-    "rxjs": "^7.4.0"
-  }
+    "name": "ngx-popperjs",
+    "version": "14.1.3",
+    "license": "MIT",
+    "description": "ngx-popperjs is an Angular wrapper for @popperjs",
+    "homepage": "https://tonysamperi.github.io/ngx-popperjs",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tonysamperi/ngx-popperjs"
+    },
+    "bugs": {
+        "url": "https://github.com/tonysamperi/ngx-popperjs/issues"
+    },
+    "author": {
+        "name": "Tony Samperi",
+        "email": "github@tonysamperi.it"
+    },
+    "keywords": [
+        "Angular 8+",
+        "ngx-popperjs",
+        "popper Angular",
+        "Angular 14",
+        "popper.js"
+    ],
+    "scripts": {
+        "postinstall": "node ./tsbl.js"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.5"
+    },
+    "peerDependencies": {
+        "@angular/common": "^14.0.1",
+        "@angular/core": "^14.0.1",
+        "rxjs": "^7.4.0"
+    }
 }
