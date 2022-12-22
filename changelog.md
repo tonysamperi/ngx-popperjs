@@ -1,3 +1,7 @@
+#15.0.4
+* Remove conflicting @forward instructions
+* Added configurable config
+
 #15.0.3
 * Added missing sass exports in package
 

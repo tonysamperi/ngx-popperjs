@@ -1,3 +1,3 @@
 @import "./theme";
 
-@include ngx-popperjs-theme(#777, white);
+@include ngx-popperjs-theme($dark-theme-bg, $dark-theme-txt);
