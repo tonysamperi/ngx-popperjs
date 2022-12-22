@@ -1,3 +1,10 @@
+#15.0.4
+* Remove conflicting @forward instructions
+* Added configurable config
+
+#15.0.3
+* Added missing sass exports in package
+
 #15.0.2
 * Exposed sass _index for @use
 
