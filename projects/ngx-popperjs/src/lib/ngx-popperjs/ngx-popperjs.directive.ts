@@ -196,7 +196,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     styles: object;
 
     @Input("popperTarget")
-    targetElement: HTMLElement;
+    targetElement: HTMLElement | undefined;
 
     @Input("popperTimeoutAfterShow")
     timeoutAfterShow: number = 0;
