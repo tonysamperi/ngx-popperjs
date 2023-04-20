@@ -2027,11 +2027,6 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.2.tgz#93e25bf9ee75fe0fd80b594bc4feb0e862111b5a"
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
 
-"@types/minimist@^1.2.1":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.2.tgz#ee771e2ba4b3dc5b372935d549fd9617bf345b8c"
-  integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
-
 "@types/node@*":
   version "16.11.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.6.tgz#6bef7a2a0ad684cf6e90fcfe31cecabd9ce0a3ae"
@@ -6755,6 +6750,12 @@ ng-packagr@^15.0.1:
   optionalDependencies:
     esbuild "^0.15.9"
 
+ngx-ui-tour-core@./ngx-ui-tour-core-10.6.0.tgz:
+  version "10.6.0"
+  resolved "./ngx-ui-tour-core-10.6.0.tgz#cd2d7e687cc219e1ceec2a83b8f081ea49d679a2"
+  dependencies:
+    tslib "^2.0.0"
+
 nice-napi@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/nice-napi/-/nice-napi-1.0.2.tgz#dc0ab5a1eac20ce548802fc5686eaa6bc654927b"
@@ -8998,13 +8999,6 @@ ts-node@^10.0.0:
     diff "^4.0.1"
     make-error "^1.1.1"
     yn "3.1.1"
-
-tsickle@^0.43.0:
-  version "0.43.0"
-  resolved "https://registry.yarnpkg.com/tsickle/-/tsickle-0.43.0.tgz#d53501ee54932382c4923a77de9ab5a82abd9e98"
-  integrity sha512-n0lgIQBLliB7EFVTDpqrd/GjyB9I3NCodfX4R3NE/H73PQvGjgrkSZc8RVcWBG6s1MDiFjYDHIezYkuh8GYslw==
-  dependencies:
-    "@types/minimist" "^1.2.1"
 
 tslib@2.4.1:
   version "2.4.1"

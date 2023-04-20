@@ -19,7 +19,6 @@ var invalidDeps = [];
 var tsbl = ["@ngx-tour/core", "ngx-ui-tour-core", "@ngx-tour/ngx-popper"];
 var i = -1;
 while (++i < tsbl.length) {
-    tsbl[i];
     try {
         require(tsbl[i] + "/package.json");
         invalidDeps.push(tsbl[i]);

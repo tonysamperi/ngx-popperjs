@@ -82,9 +82,9 @@ export class NgxPopperjsDemoComponent implements OnInit {
                         if (!opts.loop) {
                             tw.typeString(text).stop().start();
                         }
-                        else {
-                            console.info("AUTOSTART WAS TRUE FOR", text);
-                        }
+                        // else {
+                        //     console.info("AUTOSTART WAS TRUE FOR", text);
+                        // }
                     });
                 }
             });
