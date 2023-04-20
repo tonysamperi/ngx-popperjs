@@ -12,12 +12,12 @@ import {
     Output,
     ViewContainerRef
 } from "@angular/core";
-import {NgxPopperjsContentComponent} from "../ngx-popperjs-content/ngx-popper-content.component";
-import {NgxPopperjsOptions} from "../models/ngx-popperjs-options.model";
-import {NgxPopperjsPlacements} from "../models/ngx-popperjs-placements.model";
-import {NgxPopperjsTriggers} from "../models/ngx-popperjs-triggers.model";
-import {NGX_POPPERJS_DEFAULTS} from "../models/ngx-popperjs-defaults.model";
-import {NgxPopperjsUtils} from "../models/ngx-popperjs-utils.class";
+import {NgxPopperjsContentComponent} from "../../components/ngx-popperjs-content/ngx-popper-content.component";
+import {NgxPopperjsOptions} from "../../models/ngx-popperjs-options.model";
+import {NgxPopperjsPlacements} from "../../models/ngx-popperjs-placements.model";
+import {NgxPopperjsTriggers} from "../../models/ngx-popperjs-triggers.model";
+import {NGX_POPPERJS_DEFAULTS} from "../../models/ngx-popperjs-defaults.model";
+import {NgxPopperjsUtils} from "../../models/ngx-popperjs-utils.class";
 //
 import {Modifier} from "@popperjs/core";
 //

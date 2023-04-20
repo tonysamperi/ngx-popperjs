@@ -12,9 +12,9 @@ import {
     ViewEncapsulation
 } from "@angular/core";
 //
-import {NgxPopperjsOptions} from "../models/ngx-popperjs-options.model";
-import {NgxPopperjsPlacements} from "../models/ngx-popperjs-placements.model";
-import {NgxPopperjsTriggers} from "../models/ngx-popperjs-triggers.model";
+import {NgxPopperjsOptions} from "../../models/ngx-popperjs-options.model";
+import {NgxPopperjsPlacements} from "../../models/ngx-popperjs-placements.model";
+import {NgxPopperjsTriggers} from "../../models/ngx-popperjs-triggers.model";
 //
 import {createPopper as Popper, Options} from "@popperjs/core";
 import {ArrowModifier} from "@popperjs/core/lib/modifiers/arrow";

@@ -2,8 +2,7 @@ import {Component, DebugElement, ViewEncapsulation} from "@angular/core";
 import {ComponentFixture, fakeAsync, TestBed, tick} from "@angular/core/testing";
 import {By} from "@angular/platform-browser";
 //
-import {NgxPopperjsDirective, NgxPopperjsModule} from "ngx-popperjs";
-import {NgxPopperjsPlacements} from "../models/ngx-popperjs-placements.model";
+import {NgxPopperjsDirective, NgxPopperjsModule, NgxPopperjsPlacements} from "ngx-popperjs";
 
 @Component({
     template: `
@@ -12,10 +11,10 @@ import {NgxPopperjsPlacements} from "../models/ngx-popperjs-placements.model";
 				<article>
 					<h2 class="pop-title-light">PIZZA WORKS</h2>
 					<div class="pop-generic-section">
-						<popper-content #myPopperContent><p class="pop-lucky-font">Popcorn</p></popper-content>
+						<popper-content #myPopperContentz><p class="pop-lucky-font">Popcorn</p></popper-content>
 						<img alt="Popcorn box"
 							 [src]="popCornBox"
-							 [popper]="myPopperContent"
+							 [popper]="myPopperContentz"
 							 (popperOnUpdate)="onPopperUpdate($event)"
 							 [popperShowOnStart]="true"
 							 popperTrigger="click"
