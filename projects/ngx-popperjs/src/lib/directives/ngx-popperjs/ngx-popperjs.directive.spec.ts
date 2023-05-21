@@ -2,7 +2,9 @@ import {Component, DebugElement, ViewEncapsulation} from "@angular/core";
 import {ComponentFixture, fakeAsync, TestBed, tick} from "@angular/core/testing";
 import {By} from "@angular/platform-browser";
 //
-import {NgxPopperjsDirective, NgxPopperjsModule, NgxPopperjsPlacements} from "ngx-popperjs";
+import {NgxPopperjsDirective} from "../ngx-popperjs/ngx-popperjs.directive";
+import {NgxPopperjsModule} from "../../ngx-popperjs.module";
+import {NgxPopperjsPlacements} from "../../models/ngx-popperjs-placements.model";
 
 @Component({
     template: `
@@ -20,7 +22,7 @@ import {NgxPopperjsDirective, NgxPopperjsModule, NgxPopperjsPlacements} from "ng
 							 popperTrigger="click"
 							 [popperPlacement]="topPlacement"
 							 class="pop-popcorn-box">
-                        <button>FOO BUTTON</button>
+						<button>FOO BUTTON</button>
 					</div>
 				</article>
 			</div>
@@ -40,7 +42,7 @@ import {NgxPopperjsDirective, NgxPopperjsModule, NgxPopperjsPlacements} from "ng
 		</div>
     `,
     styleUrls: [
-        "../../../../ngx-popperjs-repo/src/app/components/demo/demo.component.scss"
+        "../../../../../ngx-popperjs-repo/src/app/components/demo/demo.component.scss"
     ],
     encapsulation: ViewEncapsulation.None
 })
