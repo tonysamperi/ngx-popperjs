@@ -1,3 +1,7 @@
+#15.2.0
+* Fix hideOnScroll
+* Add popperLoose for people who don't want to use the NgxPopperjsPlacements enum!
+
 #15.1.0
 * General improvements
 

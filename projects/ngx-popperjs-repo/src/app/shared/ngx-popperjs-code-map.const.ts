@@ -1,14 +1,22 @@
 import {NgxPopperjsArticleTypesRef} from "./ngx-popperjs-article-types.model";
 import {NgxPopperjsPlacements} from "ngx-popperjs";
 
+// tslint:disable-next-line:naming-convention
 export const getNgxPopperJsCodeMap = (position: NgxPopperjsPlacements): NgxPopperjsArticleTypesRef => {
     return {
+        popLoose: `<img alt="Popcorn box"
+                     src="assets/images/popcorn-box.svg"
+                     [popperLoose]="'My loose content with string placement'"
+                     [popperLoosePlacement]="'TOP'"
+                     class="pop-popcorn-box" />
+`,
         click: `&lt;popper-content #popperClickContent&gt;
             &lt;/popper-content&gt;
 &lt;img alt="Popcorn box" src="assets/images/popcorn-box.svg"
      [popper]="popperClickContent"
      popperTrigger="click"
-     popperPlacement="top"
+     [popperPlacement]="NgxPopperJsPlacements.BOTTOM"
+     [popperModifiers]="dontFlipModifier"
      class="pop-popcorn-box"&gt;`,
         scroll: `&lt;popper-content #popperClickContent&gt;
             &lt;/popper-content&gt;
@@ -16,7 +24,7 @@ export const getNgxPopperJsCodeMap = (position: NgxPopperjsPlacements): NgxPoppe
      [popper]="popperClickContent"
      [popperHideOnScroll]="!0"
      popperTrigger="click"
-     popperPlacement="top"
+     [popperPlacement]="NgxPopperJsPlacements.TOP"
      class="pop-popcorn-box"&gt;`,
         flipping: `&lt;popper-content #myPopperContent&gt;
             I'm popper :)
@@ -25,7 +33,7 @@ export const getNgxPopperJsCodeMap = (position: NgxPopperjsPlacements): NgxPoppe
      [popper]="myPopperContent"
      [popperShowOnStart]="true"
      popperTrigger="click"
-     popperPlacement="top"
+     [popperPlacement]="NgxPopperJsPlacements.TOP"
      class="pop-popcorn-box"&gt;`,
         overflow: `&lt;popper-content #popcornPrices&gt;
  &lt;p class="pop-text-bold"&gt;POPCORN&lt;br /&gt;SIZE&lt;br /&gt;&amp; PRICE&lt;/p&gt;
@@ -43,7 +51,7 @@ export const getNgxPopperJsCodeMap = (position: NgxPopperjsPlacements): NgxPoppe
       [popper]="popcornPrices"
       [popperShowOnStart]="true"
       popperTrigger="click"
-      popperPlacement="right"
+      [popperPlacement]="NgxPopperJsPlacements.RIGHT"
       class="pop-popcorn-box"&gt;`,
         position: `&lt;popper-content #myPopperContent&gt;
             I'm popper :)
@@ -52,7 +60,7 @@ export const getNgxPopperJsCodeMap = (position: NgxPopperjsPlacements): NgxPoppe
      [popper]="myPopperContent"
      [popperShowOnStart]="true"
      popperTrigger="click"
-     popperPlacement="${position}"
+     [popperPlacement]="NgxPopperJsPlacements.${position}"
      class="pop-popcorn-box"&gt;`,
         theming: `@use ngx-popperjs/css/theme-dark.css
 /* OR */

@@ -43,8 +43,6 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         trigger: NgxPopperjsTriggers.click
     };
 
-    static nextId: number = 0;
-
     @Input("popperApplyClass")
     set applyClass(newValue: string) {
         if (newValue === this._applyClass) {
@@ -201,25 +199,25 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     @Input("popperTimeoutAfterShow")
     timeoutAfterShow: number = 0;
 
-    private _applyClass: string;
-    private _content: string | NgxPopperjsContentComponent;
-    private _destroy$: Subject<void> = new Subject<void>();
-    private _disabled: boolean;
-    private _globalEventListenersCtrl$: Subject<void> = new Subject<void>();
-    private _popperApplyArrowClass: string;
-    private _popperContent: NgxPopperjsContentComponent;
-    private _popperContentClass = NgxPopperjsContentComponent;
-    private _popperContentRef: ComponentRef<NgxPopperjsContentComponent>;
-    private _popperPlacement: NgxPopperjsPlacements;
-    private _popperPreventOverflow: boolean;
-    private _scheduledHideTimeoutCtrl$: Subject<void> = new Subject<void>();
-    private _scheduledShowTimeoutCtrl$: Subject<void> = new Subject<void>();
-    private _shown: boolean = false;
+    protected _applyClass: string;
+    protected _content: string | NgxPopperjsContentComponent;
+    protected _destroy$: Subject<void> = new Subject<void>();
+    protected _disabled: boolean;
+    protected _globalEventListenersCtrl$: Subject<void> = new Subject<void>();
+    protected _popperApplyArrowClass: string;
+    protected _popperContent: NgxPopperjsContentComponent;
+    protected _popperContentClass = NgxPopperjsContentComponent;
+    protected _popperContentRef: ComponentRef<NgxPopperjsContentComponent>;
+    protected _popperPlacement: NgxPopperjsPlacements;
+    protected _popperPreventOverflow: boolean;
+    protected _scheduledHideTimeoutCtrl$: Subject<void> = new Subject<void>();
+    protected _scheduledShowTimeoutCtrl$: Subject<void> = new Subject<void>();
+    protected _shown: boolean = false;
 
-    constructor(private _changeDetectorRef: ChangeDetectorRef,
-                private _elementRef: ElementRef,
-                private _vcr: ViewContainerRef,
-                @Inject(NGX_POPPERJS_DEFAULTS) private _popperDefaults: NgxPopperjsOptions = {}) {
+    constructor(protected _changeDetectorRef: ChangeDetectorRef,
+                protected _elementRef: ElementRef,
+                protected _vcr: ViewContainerRef,
+                @Inject(NGX_POPPERJS_DEFAULTS) protected _popperDefaults: NgxPopperjsOptions = {}) {
         NgxPopperjsDirective.baseOptions = {...NgxPopperjsDirective.baseOptions, ...this._popperDefaults};
     }
 
@@ -396,7 +394,9 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         fromEvent(this._getScrollParent(this.getRefElement()), "scroll")
             .pipe(takeUntil(this._globalEventListenersCtrl$), takeUntil(this._destroy$))
             .subscribe({
-                next: (e: MouseEvent) => this.hideOnScrollHandler(e)
+                next: (e: MouseEvent) => {
+                    this.hideOnScrollHandler(e);
+                }
             });
     }
 
@@ -407,7 +407,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         this._shown ? this.scheduledHide(null, this.hideTimeout) : this.scheduledShow();
     }
 
-    private _addListener(eventName: string, cb: () => void): void {
+    protected _addListener(eventName: string, cb: () => void): void {
         fromEvent(this._elementRef.nativeElement, eventName)
             .pipe(takeUntil(this._destroy$))
             .subscribe({
@@ -415,12 +415,12 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
             });
     }
 
-    private _applyChanges() {
+    protected _applyChanges() {
         this._changeDetectorRef.markForCheck();
         this._changeDetectorRef.detectChanges();
     }
 
-    private _checkExisting(key: string, newValue: string | number | boolean | NgxPopperjsPlacements): void {
+    protected _checkExisting(key: string, newValue: string | number | boolean | NgxPopperjsPlacements): void {
         if (this._popperContent) {
             this._popperContent.popperOptions[key] = newValue;
             if (!this._shown) {
@@ -430,13 +430,13 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         }
     }
 
-    private _constructContent(): NgxPopperjsContentComponent {
+    protected _constructContent(): NgxPopperjsContentComponent {
         this._popperContentRef = this._vcr.createComponent(this._popperContentClass);
 
         return this._popperContentRef.instance as NgxPopperjsContentComponent;
     }
 
-    private _getScrollParent(node) {
+    protected _getScrollParent(node) {
         const isElement = node instanceof HTMLElement;
         const overflowY = isElement && window.getComputedStyle(node).overflowY;
         const isScrollable = overflowY !== "visible" && overflowY !== "hidden";
@@ -444,18 +444,18 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         if (!node) {
             return null;
         }
-        else if (isScrollable && node.scrollHeight >= node.clientHeight) {
+        else if (isScrollable && node.scrollHeight > node.clientHeight) {
             return node;
         }
 
         return this._getScrollParent(node.parentNode) || document;
     }
 
-    private _onPopperUpdate(event) {
+    protected _onPopperUpdate(event) {
         this.popperOnUpdate.emit(event);
     }
 
-    private _setContentProperties(popperRef: NgxPopperjsContentComponent) {
+    protected _setContentProperties(popperRef: NgxPopperjsContentComponent) {
         popperRef.popperOptions = NgxPopperjsDirective.assignDefined(popperRef.popperOptions, NgxPopperjsDirective.baseOptions, {
             showDelay: this.showDelay,
             disableAnimation: this.disableAnimation,
@@ -480,7 +480,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
             .subscribe(this.hide.bind(this));
     }
 
-    private _setDefaults() {
+    protected _setDefaults() {
         ["showDelay", "hideOnScroll", "hideOnMouseLeave", "hideOnClickOutside", "ariaRole", "ariaDescribe"].forEach((key) => {
             this[key] = this[key] === void 0 ? NgxPopperjsDirective.baseOptions[key] : this[key];
         });

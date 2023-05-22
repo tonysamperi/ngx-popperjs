@@ -17,6 +17,17 @@ The goal of this library is to take Mr Frankel's [ngx-popper](https://github.com
 Since the old library is compatible with Angular 7 and earlier, I started with Angular 8.
 If you need to work with an older version of Angular (5 to 7), please refer to Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/).
 
+### Premise, new in v 15.2.0: popperLoose
+
+Since many complained about using the `NgxPopperjsPlacements` enum, I added a version of the popper directive which accepts a plain string as placement!
+Now you can use it with all the options of the classic popper, but you'll have to use:
+
+`popperLoose` instead of `popper`
+
+and
+
+`popperLoosePlacement` instead of `popperPlacement`
+
 ### Installation
 
 node and npm are required to run this package.
