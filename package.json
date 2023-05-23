@@ -24,7 +24,7 @@
         "popperjs"
     ],
     "engines": {
-        "node": ">=18.13.0"
+        "node": ">=14.18.0"
     },
     "scripts": {
         "ng": "ng",
@@ -81,7 +81,7 @@
         "ng-packagr": "^16.0.0",
         "plugin-log": "^0.1.0",
         "prismjs": "^1.29.0",
-        "puppeteer": "^20.3.0",
+        "puppeteer": "~19.4.0",
         "semver": "^7.3.8",
         "through2": "^4.0.2",
         "ts-node": "^10.9.1",
