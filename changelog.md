@@ -1,3 +1,6 @@
+#16.0.0
+* Update for Angular 16! 🎉
+
 #15.2.0
 * Fix hideOnScroll
 * Add popperLoose for people who don't want to use the NgxPopperjsPlacements enum!

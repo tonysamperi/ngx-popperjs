@@ -1,8 +1,13 @@
 import {NgxPopperjsArticleTypesRef} from "./ngx-popperjs-article-types.model";
 import {NgxPopperjsPlacements} from "ngx-popperjs";
 
+const positionEntries = Object.entries(NgxPopperjsPlacements);
 // tslint:disable-next-line:naming-convention
-export const getNgxPopperJsCodeMap = (position: NgxPopperjsPlacements): NgxPopperjsArticleTypesRef => {
+export const getNgxPopperJsCodeMap = (positionValue: NgxPopperjsPlacements): NgxPopperjsArticleTypesRef => {
+    const position = positionValue
+        ? positionEntries.find(([, v]) => v === positionValue)[0]
+        : "";
+
     return {
         popLoose: `<img alt="Popcorn box"
                      src="assets/images/popcorn-box.svg"

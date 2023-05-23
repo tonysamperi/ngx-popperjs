@@ -298,6 +298,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
 
     ngOnDestroy() {
         this._destroy$.next();
+        this._destroy$.complete();
         this._popperContent && this._popperContent.clean();
     }
 
