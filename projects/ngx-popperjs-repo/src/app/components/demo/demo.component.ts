@@ -8,7 +8,6 @@ import {getNgxPopperJsCodeMap} from "../../shared/ngx-popperjs-code-map.const";
 import {NgxPopArticleTypes, NgxPopperjsArticleTypesRef} from "../../shared/ngx-popperjs-article-types.model";
 //
 import pkg from "../../../../../../package.json";
-import {forEach, map, filter} from "lodash";
 import {highlightElement} from "prismjs";
 import {catchError, of, switchMap, timer} from "rxjs";
 import {ajax, AjaxResponse} from "rxjs/ajax";
@@ -41,13 +40,13 @@ export class NgxPopperjsDemoComponent implements OnInit {
     dontFlipModifier: Partial<Modifier<"flip", Options>>[] = [NGX_POPPERJS_DONT_FLIP_MODIFIER];
     messages: { opts?: { delay?: number | "natural"; loop?: boolean; }; text: string; }[] = [];
     // tslint:disable-next-line:no-bitwise
-    positionButtons: NgxPopperjsPlacements[] = filter(map(NgxPopperjsPlacements, (v) => v), (v) => !~v.indexOf("auto"));
+    positionButtons: NgxPopperjsPlacements[] = Object.values(NgxPopperjsPlacements).filter((v) => !~v.indexOf("auto"));
     selectedPosition: NgxPopperjsPlacements = this.positionButtons[0];
     year: number = new Date().getFullYear();
 
     ngOnInit(): void {
-        forEach(NgxPopArticleTypes, (s: NgxPopArticleTypes) => this._updateCode(s));
-        forEach(document.querySelectorAll(".pop-popcorn-wrap"), (el: HTMLElement) => el.scrollTop = 300);
+        Object.values(NgxPopArticleTypes).forEach((s: NgxPopArticleTypes) => this._updateCode(s));
+        Array.from(document.querySelectorAll(".pop-popcorn-wrap")).forEach((el: HTMLElement) => el.scrollTop = 300);
         this._getMessages();
     }
 
