@@ -1,3 +1,7 @@
+#15.2.1
+* Add type-safe popperLooseTrigger in popperLoose
+* Add type safety in popperLoosePlacement (thanks [k290](https://github.com/k290))
+
 #15.2.0
 * Fix hideOnScroll
 * Add popperLoose for people who don't want to use the NgxPopperjsPlacements enum!
