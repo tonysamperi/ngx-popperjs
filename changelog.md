@@ -1,3 +1,7 @@
+#16.0.1
+* Add type-safe popperLooseTrigger in popperLoose
+* Add type safety in popperLoosePlacement (thanks [k290](https://github.com/k290))
+
 #16.0.0
 * Update for Angular 16! 🎉
 
