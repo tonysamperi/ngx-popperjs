@@ -448,7 +448,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         if (!node) {
             return null;
         }
-        else if (isScrollable && node.scrollHeight >= node.clientHeight) {
+        else if (isScrollable && node.scrollHeight > node.clientHeight) {
             return node;
         }
 

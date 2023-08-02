@@ -2,6 +2,10 @@
 * Fix append base popper element (string) when host element doesn't allow append (e.g. host is img)
 * Fix package versions
 * Updated to latest popper.js/core
+* Fix append base popper element (string) when host element doesn't allow append (e.g. host is img)
+* Fix package versions
+* Updated to latest popper.js/core
+* Fix close on scroll
 
 #13.3.0
 * Moved @ngx-tonysamperi/dom to dependencies, to have automatic install
