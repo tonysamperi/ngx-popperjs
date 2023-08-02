@@ -1,5 +1,5 @@
 const fs = require("fs");
-const {join, toNamespacedPath} = require("path");
+const {join} = require("path");
 const pkg = require("./package.json");
 
 (function createSymlink() {

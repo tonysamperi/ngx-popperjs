@@ -13,6 +13,7 @@ import {NgxPopperjsPlacements} from "../../models/ngx-popperjs-placements.model"
 import {NGX_POPPERJS_DEFAULTS} from "../../models/ngx-popperjs-defaults.model";
 import {NgxPopperjsDirective} from "./ngx-popperjs.directive";
 import {NgxPopperjsContentComponent} from "../../components/ngx-popperjs-content/ngx-popper-content.component";
+import {NgxPopperjsTriggers} from "../../models/ngx-popperjs-triggers.model";
 
 @Directive({
     selector: "[popperLoose]",
@@ -26,8 +27,13 @@ export class NgxPopperjsLooseDirective extends NgxPopperjsDirective {
     }
 
     @Input()
-    set popperLoosePlacement(newValue: string) {
+    set popperLoosePlacement(newValue: `${NgxPopperjsPlacements}`) {
         this.placement = newValue as NgxPopperjsPlacements;
+    }
+
+    @Input()
+    set popperLooseTrigger(newValue: `${NgxPopperjsTriggers}`) {
+        this.showTrigger = newValue as NgxPopperjsTriggers;
     }
 
     constructor(changeDetectorRef: ChangeDetectorRef,
