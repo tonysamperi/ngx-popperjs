@@ -2,11 +2,10 @@
      [attr.id]="id"
      [class.ngxp__container]="!popperOptions.disableDefaultStyling"
      [class.ngxp__animation]="!popperOptions.disableAnimation"
-     [style.display]="displayType"
-     [style.opacity]="opacity"
+     [class.ngxp__hide]="!state"
      [ngStyle]="popperOptions.styles"
      [ngClass]="extractAppliedClassListExpr(popperOptions.applyClass)"
-     attr.aria-hidden="{{ariaHidden}}"
+     attr.aria-hidden="{{!state}}"
      [attr.aria-describedby]="popperOptions.ariaDescribe || null"
      attr.role="{{popperOptions.ariaRole}}">
     <div *ngIf="text"

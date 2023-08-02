@@ -21,6 +21,7 @@ import {ArrowModifier} from "@popperjs/core/lib/modifiers/arrow";
 import {Instance} from "@popperjs/core/lib/types";
 import {PreventOverflowModifier} from "@popperjs/core/lib/modifiers/preventOverflow";
 import {OffsetModifier} from "@popperjs/core/lib/modifiers/offset";
+import {fromEvent, Subject, takeUntil} from "rxjs";
 
 @Component({
     // tslint:disable-next-line:component-selector
@@ -35,14 +36,11 @@ export class NgxPopperjsContentComponent implements OnDestroy {
 
     static nextId: number = 0;
 
-    ariaHidden: string = "true";
     arrowColor: string | null = null;
-    displayType: string = "none";
     id: string = `ngx_poppperjs_${++NgxPopperjsContentComponent.nextId}`;
-    isMouseOver: boolean = false;
+    isMouseOver: boolean = !1;
     onHidden = new EventEmitter();
     onUpdate: () => any;
-    opacity: number = 0;
     popperInstance: Instance;
     popperOptions: NgxPopperjsOptions = {
         disableAnimation: false,
@@ -57,10 +55,28 @@ export class NgxPopperjsContentComponent implements OnDestroy {
     @ViewChild("popperViewRef", {static: !0})
     popperViewRef: ElementRef;
     referenceObject: HTMLElement;
-    state: boolean = true;
+    state: boolean = !1;
     text: string;
 
-    protected _globalResize: any;
+    protected readonly _baseModifiers: [OffsetModifier, ArrowModifier] = [
+        {
+            name: "offset",
+            enabled: !0,
+            options: {
+                offset: [0, 8],
+            }
+        } as OffsetModifier,
+        {
+            name: "arrow",
+            enabled: !0,
+            options: {
+                element: ".ngxp__arrow",
+                padding: 3
+            },
+            requires: ["arrow"]
+        } as ArrowModifier
+    ];
+    protected _destroy$: Subject<void> = new Subject<void>();
     protected _styleId = `${this.id}_style`;
 
     constructor(public elRef: ElementRef,
@@ -89,7 +105,6 @@ export class NgxPopperjsContentComponent implements OnDestroy {
     }
 
     hide(): void {
-
         if (this.popperInstance) {
             this.popperInstance.destroy();
         }
@@ -98,6 +113,7 @@ export class NgxPopperjsContentComponent implements OnDestroy {
     }
 
     ngOnDestroy() {
+        this._destroy$.next();
         this.clean();
         if (this.popperOptions.appendTo && this.elRef && this.elRef.nativeElement && this.elRef.nativeElement.parentNode) {
             this._viewRef.detach();
@@ -128,24 +144,7 @@ export class NgxPopperjsContentComponent implements OnDestroy {
         const popperOptions: Options = {
             strategy: this.popperOptions.positionFixed ? "fixed" : "absolute",
             placement: this.popperOptions.placement,
-            modifiers: [
-                {
-                    name: "offset",
-                    enabled: !0,
-                    options: {
-                        offset: [0, 8],
-                    }
-                } as OffsetModifier,
-                {
-                    name: "arrow",
-                    enabled: !0,
-                    options: {
-                        element: ".ngxp__arrow",
-                        padding: 3
-                    },
-                    requires: ["arrow"]
-                } as ArrowModifier,
-            ]
+            modifiers: this._baseModifiers
         } as Options;
         if (this.onUpdate) {
             popperOptions.onFirstUpdate = this.onUpdate as any;
@@ -171,15 +170,17 @@ export class NgxPopperjsContentComponent implements OnDestroy {
         }
         this._determineArrowColor();
         popperOptions.modifiers = popperOptions.modifiers.concat(this.popperOptions.popperModifiers);
-
+        this.toggleVisibility(!0);
         this.popperInstance = Popper(
             this.referenceObject,
             this.popperViewRef.nativeElement,
             popperOptions,
         );
-
-        this.toggleVisibility(true);
-        this._globalResize = this._renderer.listen("document", "resize", this.onDocumentResize.bind(this));
+        fromEvent(document, "resize")
+            .pipe(takeUntil(this._destroy$))
+            .subscribe({
+                next: () => this.onDocumentResize()
+            });
     }
 
     @HostListener("mouseleave")
@@ -191,19 +192,8 @@ export class NgxPopperjsContentComponent implements OnDestroy {
         this.hide();
     }
 
-    toggleVisibility(state: boolean) {
-        if (!state) {
-            this.opacity = 0;
-            this.displayType = "none";
-            this.ariaHidden = "true";
-            this.state = false;
-        }
-        else {
-            this.opacity = 1;
-            this.displayType = "block";
-            this.ariaHidden = "false";
-            this.state = true;
-        }
+    toggleVisibility(state: boolean): void {
+        this.state = state;
         // tslint:disable-next-line:no-string-literal
         if (!this._changeDetectorRef["destroyed"]) {
             this._changeDetectorRef.detectChanges();
@@ -213,11 +203,6 @@ export class NgxPopperjsContentComponent implements OnDestroy {
     update(): void {
         this.popperInstance && (this.popperInstance as any).update();
     }
-
-    // TODO: check if this function might have had a purpose (unused at this time)
-    // private _clearGlobalResize() {
-    //   this._globalResize && typeof this._globalResize === "function" && this._globalResize();
-    // }
 
     protected _createArrowSelector(): string {
         return `div#${this.id}.ngxp__container > .ngxp__arrow.ngxp__force-arrow`;

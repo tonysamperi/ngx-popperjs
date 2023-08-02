@@ -55,6 +55,10 @@ export class NgxPopperjsDemoComponent implements OnInit {
         // console.info("ON POPPER UPDATE FIRED!", $event);
     }
 
+    showAlert(): void {
+        alert("Ciao!");
+    }
+
     updatePosition(positionButton: NgxPopperjsPlacements): void {
         this.selectedPosition = positionButton;
         this._updateCode(NgxPopArticleTypes.position);
