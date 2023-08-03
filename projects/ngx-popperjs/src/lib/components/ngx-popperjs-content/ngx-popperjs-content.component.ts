@@ -77,7 +77,6 @@ export class NgxPopperjsContentComponent implements OnDestroy {
         } as ArrowModifier
     ];
     protected _destroy$: Subject<void> = new Subject<void>();
-    // protected _globalResize: any;
     protected _styleId = `${this.id}_style`;
 
     constructor(public elRef: ElementRef,
@@ -92,7 +91,6 @@ export class NgxPopperjsContentComponent implements OnDestroy {
             return;
         }
         this.popperInstance.destroy();
-
     }
 
     extractAppliedClassListExpr(classList: string | string[] = []): object {

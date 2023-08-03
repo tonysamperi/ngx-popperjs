@@ -1,3 +1,9 @@
+#16.0.4
+* Fixed stylings conflict when using popperInlineStyles (fixes [#56](https://github.com/tonysamperi/ngx-popperjs/issues/56))
+
+#16.0.3
+* Fixed appearance of border when hidden (fixes [#54](https://github.com/tonysamperi/ngx-popperjs/issues/54))
+
 #16.0.2
 * Fixed position issues if shown on click + hover w/ Chrome 115.0.5790.102 (closes [#52](https://github.com/tonysamperi/ngx-popperjs/issues/52))
 

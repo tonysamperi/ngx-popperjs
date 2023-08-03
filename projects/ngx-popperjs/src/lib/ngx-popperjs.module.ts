@@ -3,7 +3,7 @@ import {CommonModule} from "@angular/common";
 //
 import {NgxPopperjsDirective} from "./directives/ngx-popperjs/ngx-popperjs.directive";
 import {NgxPopperjsLooseDirective} from "./directives/ngx-popperjs/ngx-popperjs-loose.directive";
-import {NgxPopperjsContentComponent} from "./components/ngx-popperjs-content/ngx-popper-content.component";
+import {NgxPopperjsContentComponent} from "./components/ngx-popperjs-content/ngx-popperjs-content.component";
 import {NgxPopperjsOptions} from "./models/ngx-popperjs-options.model";
 import {NGX_POPPERJS_DEFAULTS} from "./models/ngx-popperjs-defaults.model";
 

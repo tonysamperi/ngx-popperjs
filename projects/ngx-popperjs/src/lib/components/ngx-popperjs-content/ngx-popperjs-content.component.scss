@@ -12,10 +12,11 @@ popper-content {
   padding: 10px;
 
   &.ngxp__hide {
-    height: 0;
-    width: 0;
-    overflow: hidden;
-    padding: 0;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    border: 0 !important;
   }
 
   &.ngxp__animation {
