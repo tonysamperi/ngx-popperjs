@@ -6,7 +6,6 @@ import {
     EventEmitter,
     HostListener,
     OnDestroy,
-    Renderer2,
     ViewChild,
     ViewContainerRef,
     ViewEncapsulation
@@ -81,7 +80,6 @@ export class NgxPopperjsContentComponent implements OnDestroy {
     protected _styleId = `${this.id}_style`;
 
     constructor(public elRef: ElementRef,
-                protected _renderer: Renderer2,
                 protected _viewRef: ViewContainerRef,
                 protected _changeDetectorRef: ChangeDetectorRef) {
     }

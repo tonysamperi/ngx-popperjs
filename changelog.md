@@ -1,3 +1,6 @@
+#15.2.3
+* Fixed stylings conflict when using popperInlineStyles (fixes [#56](https://github.com/tonysamperi/ngx-popperjs/issues/56))
+
 #15.2.2
 * Fixed position issues if shown on click + hover w/ Chrome 115.0.5790.102 (closes [#52](https://github.com/tonysamperi/ngx-popperjs/issues/52))
 

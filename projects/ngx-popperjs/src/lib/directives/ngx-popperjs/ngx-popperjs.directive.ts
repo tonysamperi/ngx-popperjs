@@ -12,7 +12,7 @@ import {
     Output,
     ViewContainerRef
 } from "@angular/core";
-import {NgxPopperjsContentComponent} from "../../components/ngx-popperjs-content/ngx-popper-content.component";
+import {NgxPopperjsContentComponent} from "../../components/ngx-popperjs-content/ngx-popperjs-content.component";
 import {NgxPopperjsOptions} from "../../models/ngx-popperjs-options.model";
 import {NgxPopperjsPlacements} from "../../models/ngx-popperjs-placements.model";
 import {NgxPopperjsTriggers} from "../../models/ngx-popperjs-triggers.model";

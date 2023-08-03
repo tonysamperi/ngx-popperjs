@@ -12,7 +12,7 @@ import {NgxPopperjsOptions} from "../../models/ngx-popperjs-options.model";
 import {NgxPopperjsPlacements} from "../../models/ngx-popperjs-placements.model";
 import {NGX_POPPERJS_DEFAULTS} from "../../models/ngx-popperjs-defaults.model";
 import {NgxPopperjsDirective} from "./ngx-popperjs.directive";
-import {NgxPopperjsContentComponent} from "../../components/ngx-popperjs-content/ngx-popper-content.component";
+import {NgxPopperjsContentComponent} from "../../components/ngx-popperjs-content/ngx-popperjs-content.component";
 import {NgxPopperjsTriggers} from "../../models/ngx-popperjs-triggers.model";
 
 @Directive({
