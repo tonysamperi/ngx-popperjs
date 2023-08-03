@@ -1,5 +1,5 @@
 #16.0.3
-* Fixed appearance of border when hidden (fixes [#53](https://github.com/tonysamperi/ngx-popperjs/issues/53))
+* Fixed appearance of border when hidden (fixes [#54](https://github.com/tonysamperi/ngx-popperjs/issues/54))
 
 #16.0.2
 * Fixed position issues if shown on click + hover w/ Chrome 115.0.5790.102 (closes [#52](https://github.com/tonysamperi/ngx-popperjs/issues/52))
