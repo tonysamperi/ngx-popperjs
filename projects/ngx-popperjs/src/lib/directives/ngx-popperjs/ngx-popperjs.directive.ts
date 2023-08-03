@@ -390,9 +390,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         fromEvent(document, "click")
             .pipe(takeUntil(this._globalEventListenersCtrl$), takeUntil(this._destroy$))
             .subscribe({
-                next: (e: MouseEvent) => {
-                    this.hideOnClickOutsideHandler(e);
-                }
+                next: (e: MouseEvent) => this.hideOnClickOutsideHandler(e)
             });
         fromEvent(this._getScrollParent(this.getRefElement()), "scroll")
             .pipe(takeUntil(this._globalEventListenersCtrl$), takeUntil(this._destroy$))

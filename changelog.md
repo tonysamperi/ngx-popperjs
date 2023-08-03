@@ -1,3 +1,6 @@
+#16.0.5
+* Removed debug log
+
 #16.0.4
 * Fixed stylings conflict when using popperInlineStyles (fixes [#56](https://github.com/tonysamperi/ngx-popperjs/issues/56))
 
