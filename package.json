@@ -37,7 +37,7 @@
         "build": "ng build ngx-popperjs --configuration=production && gulp postBuild",
         "build:demo": "ng build ngx-popperjs-repo --configuration=production --base-href=",
         "pack": "gulp pack",
-        "publish": "npm publish ./dist/ngx-popperjs",
+        "publish": "npm publish ./dist/ngx-popperjs  --tag latest-ng15",
         "bump:patch": "gulp bump:patch",
         "bump:minor": "gulp bump:minor",
         "bump:major": "gulp bump:major"
