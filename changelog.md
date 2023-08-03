@@ -1,3 +1,6 @@
+#16.0.4
+* Fixed stylings conflict when using popperInlineStyles (fixes [#56](https://github.com/tonysamperi/ngx-popperjs/issues/56))
+
 #16.0.3
 * Fixed appearance of border when hidden (fixes [#54](https://github.com/tonysamperi/ngx-popperjs/issues/54))
 

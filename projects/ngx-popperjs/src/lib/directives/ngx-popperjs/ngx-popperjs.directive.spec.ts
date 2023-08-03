@@ -18,12 +18,16 @@ import {NgxPopperjsPlacements} from "../../models/ngx-popperjs-placements.model"
 							 [src]="popCornBox"
 							 [popper]="myPopperContentz"
 							 (popperOnUpdate)="onPopperUpdate($event)"
+							 (popperOnShown)="onPopperShown()"
+							 (popperOnHidden)="onPopperHidden()"
 							 [popperShowOnStart]="true"
 							 popperTrigger="click"
 							 [popperPlacement]="topPlacement"
 							 class="pop-popcorn-box">
-						<button>FOO BUTTON</button>
 					</div>
+					<button (click)="onFooClicked()"
+							foo-button>FOO BUTTON
+					</button>
 				</article>
 			</div>
 			<div class="pop-demo">
@@ -53,15 +57,30 @@ class NgxPopperjsDirectiveTestComponent {
 
     private _updateFired: boolean = !1;
 
+    onFooClicked(): void {
+        console.info("FOO CLICKED!");
+    }
+
+    onPopperHidden(): void {
+        console.info("POPPER HIDDEN!");
+    }
+
+    onPopperShown(): void {
+        console.info("POPPER SHOWN!");
+    }
+
     onPopperUpdate($event): void {
+        console.info("POPPER UPDATE!");
         this._updateFired = !!$event;
     }
 }
 
 let fixture: ComponentFixture<NgxPopperjsDirectiveTestComponent>;
 let poppers: DebugElement[];
+let j = 0;
 
 beforeEach(() => {
+    console.info("BEFORE EACH", ++j);
     fixture = TestBed.configureTestingModule({
             imports: [
                 NgxPopperjsModule

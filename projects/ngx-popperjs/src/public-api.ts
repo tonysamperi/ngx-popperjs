@@ -3,7 +3,7 @@
  */
 
 // Components
-export * from "./lib/components/ngx-popperjs-content/ngx-popper-content.component";
+export * from "./lib/components/ngx-popperjs-content/ngx-popperjs-content.component";
 // Directives
 export * from "./lib/directives/ngx-popperjs/ngx-popperjs.directive";
 export * from "./lib/directives/ngx-popperjs/ngx-popperjs-loose.directive";

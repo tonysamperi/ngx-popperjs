@@ -26,7 +26,7 @@
         "postinstall": "node ./tsbl.js"
     },
     "dependencies": {
-        "@popperjs/core": "^2.11.6"
+        "@popperjs/core": "^2.11.8"
     },
     "peerDependencies": {
         "@angular/common": "^16.0.0",
