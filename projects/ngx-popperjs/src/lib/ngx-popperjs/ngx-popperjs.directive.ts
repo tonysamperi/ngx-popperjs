@@ -258,7 +258,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         }
     }
 
-    getRefElement() {
+    getRefElement(): HTMLElement {
         return this.targetElement || this._elementRef.nativeElement;
     }
 
@@ -434,7 +434,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         this._popperContentRef = this._smpDomService.appendComp(
             this._popperContentClass,
             `ngx_popperjs_directive-${++NgxPopperjsDirective.nextId}`,
-            this.getRefElement()
+            this.getRefElement().parentElement
         );
 
         return this._popperContentRef.instance as NgxPopperjsContentComponent;

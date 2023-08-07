@@ -1,3 +1,8 @@
+#13.3.1
+* Fix append base popper element (string) when host element doesn't allow append (e.g. host is img)
+* Fix package versions
+* Updated to latest popper.js/core
+
 #13.3.0
 * Moved @ngx-tonysamperi/dom to dependencies, to have automatic install
 * Moved @popperjs/core to dependencies, to have automatic install
