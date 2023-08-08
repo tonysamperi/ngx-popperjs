@@ -74,3 +74,6 @@
 #12.2.1
 * Fixed docs (default popperTrigger is "click" since v8)
 * Removed old prop "showTrigger" probably inherit from a previous version of popper.js
+
+#12.2.2
+* The final fix of the "Chrome 115.0.5790.102 bug" reverting the original behaviour
