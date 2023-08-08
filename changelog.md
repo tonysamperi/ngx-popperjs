@@ -1,3 +1,7 @@
+#14.1.8
+* The final fix of the "Chrome 115.0.5790.102 bug" reverting the original behaviour
+* Refine tests
+
 #14.1.7
 * Fixed position issues if shown on click + hover w/ Chrome 115.0.5790.102 (closes [#52](https://github.com/tonysamperi/ngx-popperjs/issues/52))
 * Fixed hide on scroll
