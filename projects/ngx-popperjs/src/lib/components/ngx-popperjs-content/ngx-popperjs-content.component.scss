@@ -4,20 +4,12 @@ popper-content {
 }
 
 .ngxp__container {
-  display: block;
+  display: none;
   position: absolute;
   border-radius: 3px;
   border: 1px solid grey;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   padding: 10px;
-
-  &.ngxp__hide {
-    height: 0 !important;
-    width: 0 !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    border: 0 !important;
-  }
 
   &.ngxp__animation {
     -webkit-animation: ngxp-fadeIn 150ms ease-out;

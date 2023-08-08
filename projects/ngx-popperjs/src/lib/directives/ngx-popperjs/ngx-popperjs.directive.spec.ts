@@ -22,8 +22,9 @@ import {NgxPopperjsPlacements} from "../../models/ngx-popperjs-placements.model"
 							 popperTrigger="click"
 							 [popperPlacement]="topPlacement"
 							 class="pop-popcorn-box">
-						<button>FOO BUTTON</button>
 					</div>
+					<button foo>Foo button
+					</button>
 				</article>
 			</div>
 			<div class="pop-demo">
@@ -58,6 +59,25 @@ class NgxPopperjsDirectiveTestComponent {
     }
 }
 
+const utils = {
+    containerClazz: "ngxp__container",
+    expectPopperHidden(popperDebugEl: DebugElement) {
+        const popperContent = utils.getClosestPopperContainer(popperDebugEl);
+        expect(popperContent).not.toBeNull();
+        expect(popperContent.offsetParent).toBeNull();
+    },
+    expectPopperVisible(popperDebugEl: DebugElement) {
+        const popperContent = utils.getClosestPopperContainer(popperDebugEl);
+        expect(popperContent).not.toBeNull();
+        expect(popperContent.offsetParent).toBeTruthy();
+    },
+    getClosestPopperContainer(el: DebugElement){
+        return el.nativeElement.parentElement.querySelector(`.${utils.containerClazz}`);
+    },
+    sleep(t = 0) {
+        return new Promise((r) => setTimeout(r, t));
+    }
+};
 let fixture: ComponentFixture<NgxPopperjsDirectiveTestComponent>;
 let poppers: DebugElement[];
 
@@ -67,20 +87,17 @@ beforeEach(() => {
                 NgxPopperjsModule
             ],
             declarations: [
-                // NgxPopperjsDirective,
                 NgxPopperjsDirectiveTestComponent
             ]
         })
         .createComponent(NgxPopperjsDirectiveTestComponent);
-
     fixture.detectChanges(); // initial binding
-
     // all elements with an attached NgxPopperjsDirective
     poppers = fixture.debugElement.queryAll(By.directive(NgxPopperjsDirective));
 });
 
 
-it("should have one popper element", () => {
+it("should have two popper elements", () => {
     expect(poppers.length).toBe(2);
 });
 
@@ -90,46 +107,23 @@ it("should have popper sibling", () => {
 });
 
 it("should show popper on start", async () => {
-    const popperContent = poppers[0].nativeElement.parentElement.querySelector(".ngxp__container");
-    if (!popperContent) {
-        return !1;
-    }
-
-    const popperText = popperContent.querySelector(".ngxp__inner").innerText;
-    expect(popperText.trim()).toEqual("Popcorn");
+    await utils.sleep(100);
+    utils.expectPopperVisible(poppers[0]);
 });
-//
+
 it("should show popper on click", fakeAsync(() => {
     poppers[1].nativeElement.click();
     tick();
-    const popperContent = poppers[1].nativeElement.parentElement.querySelector(".ngxp__container");
-    if (!popperContent) {
-        return !1;
-    }
-    const popperText = popperContent.querySelector(".ngxp__inner").innerText;
-    expect(popperText.trim()).toEqual("Direct popcorn");
-    // await page.waitForSelector(`.ngxp__container`, {
-    //     visible: false
-    // });
-    // await page.click(`.popperTarget`);
-    // await page.waitForSelector(`.ngxp__container`, {
-    //     visible: true
-    // });
-    // const popperText = await utils.getPopperText(page);
-    // const popperContainerBox = await utils.getPopperBoundingBox(page);
-    // const targetBox = await utils.getTargetBoundingBox(page);
-    // expect(popperText.trim()).toEqual("testing");
-    // expect(popperContainerBox.y - (targetBox.y + targetBox.height)).toEqual(5);
+    utils.expectPopperVisible(poppers[1]);
 }));
-it("should hide popper on click outside", fakeAsync(() => {
-    poppers[0].nativeElement.parentElement.querySelector("button").click();
-    tick();
-    const popperContent = poppers[0].nativeElement.parentElement.querySelector(".ngxp__container");
-    if (!popperContent) {
-        return !0;
-    }
-    expect(popperContent.offsetParent).toBeNull();
-}));
+
+it("should hide popper on click outside", async () => {
+    await utils.sleep(100);
+    const fooButtonDebugEl = fixture.debugElement.query(By.css("[foo]"));
+    fooButtonDebugEl.nativeElement.click();
+    await utils.sleep(100);
+    utils.expectPopperHidden(poppers[0]);
+});
 //
 // it("should on right", async () => {
 //     await page.waitForSelector(`.ngxp__container`, {

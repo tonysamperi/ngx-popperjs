@@ -1,6 +1,6 @@
 {
     "name": "ngx-popperjs-repo",
-    "version": "15.2.3",
+    "version": "15.2.4",
     "build": 0,
     "license": "MIT",
     "description": "ngx-popperjs is an Angular wrapper for @popperjs",
