@@ -1,3 +1,19 @@
+#16.0.6
+* The final fix of the "Chrome 115.0.5790.102 bug" reverting the original behaviour
+* Refine tests
+
+#16.0.5
+* Removed debug log
+
+#16.0.4
+* Fixed stylings conflict when using popperInlineStyles (fixes [#56](https://github.com/tonysamperi/ngx-popperjs/issues/56))
+
+#16.0.3
+* Fixed appearance of border when hidden (fixes [#54](https://github.com/tonysamperi/ngx-popperjs/issues/54))
+
+#16.0.2
+* Fixed position issues if shown on click + hover w/ Chrome 115.0.5790.102 (closes [#52](https://github.com/tonysamperi/ngx-popperjs/issues/52))
+
 #16.0.1
 * Add type-safe popperLooseTrigger in popperLoose
 * Add type safety in popperLoosePlacement (thanks [k290](https://github.com/k290))
