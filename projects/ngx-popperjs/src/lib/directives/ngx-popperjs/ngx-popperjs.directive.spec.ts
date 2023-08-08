@@ -61,7 +61,16 @@ class NgxPopperjsDirectiveTestComponent {
 
 const utils = {
     containerClazz: "ngxp__container",
-    hideClazz: "ngxp__hide",
+    expectPopperHidden(popperDebugEl: DebugElement) {
+        const popperContent = utils.getClosestPopperContainer(popperDebugEl);
+        expect(popperContent).not.toBeNull();
+        expect(popperContent.offsetParent).toBeNull();
+    },
+    expectPopperVisible(popperDebugEl: DebugElement) {
+        const popperContent = utils.getClosestPopperContainer(popperDebugEl);
+        expect(popperContent).not.toBeNull();
+        expect(popperContent.offsetParent).toBeTruthy();
+    },
     getClosestPopperContainer(el: DebugElement){
         return el.nativeElement.parentElement.querySelector(`.${utils.containerClazz}`);
     },
@@ -88,7 +97,7 @@ beforeEach(() => {
 });
 
 
-it("should have one popper element", () => {
+it("should have two popper elements", () => {
     expect(poppers.length).toBe(2);
 });
 
@@ -99,32 +108,21 @@ it("should have popper sibling", () => {
 
 it("should show popper on start", async () => {
     await utils.sleep(100);
-    const popperContent = utils.getClosestPopperContainer(poppers[0]);
-    if (!popperContent) {
-        return !1;
-    }
-    expect(popperContent.classList.contains(utils.hideClazz)).toBeFalse();
+    utils.expectPopperVisible(poppers[0]);
 });
 
 it("should show popper on click", fakeAsync(() => {
     poppers[1].nativeElement.click();
     tick();
-    const popperContent = utils.getClosestPopperContainer(poppers[1]);
-    if (!popperContent) {
-        return !1;
-    }
-    expect(popperContent.classList.contains(utils.hideClazz)).toBeFalse();
+    utils.expectPopperVisible(poppers[1]);
 }));
+
 it("should hide popper on click outside", async () => {
     await utils.sleep(100);
     const fooButtonDebugEl = fixture.debugElement.query(By.css("[foo]"));
-    const popperContent = utils.getClosestPopperContainer(poppers[0]);
     fooButtonDebugEl.nativeElement.click();
     await utils.sleep(100);
-    if (!popperContent) {
-        return !0;
-    }
-    expect(popperContent.classList.contains(utils.hideClazz)).toBeTrue();
+    utils.expectPopperHidden(poppers[0]);
 });
 //
 // it("should on right", async () => {

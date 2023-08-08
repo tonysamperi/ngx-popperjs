@@ -1,3 +1,10 @@
+#16.0.6
+* The final fix of the "Chrome 115.0.5790.102 bug" reverting the original behaviour
+* Refine tests
+
+#16.0.5
+* Removed debug log
+
 #16.0.4
 * Fixed stylings conflict when using popperInlineStyles (fixes [#56](https://github.com/tonysamperi/ngx-popperjs/issues/56))
 

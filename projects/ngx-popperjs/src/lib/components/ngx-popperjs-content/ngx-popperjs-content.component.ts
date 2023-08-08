@@ -6,7 +6,6 @@ import {
     EventEmitter,
     HostListener,
     OnDestroy,
-    Renderer2,
     ViewChild,
     ViewContainerRef,
     ViewEncapsulation
@@ -36,11 +35,14 @@ export class NgxPopperjsContentComponent implements OnDestroy {
 
     static nextId: number = 0;
 
+    ariaHidden: string;
     arrowColor: string | null = null;
+    displayType: string;
     id: string = `ngx_poppperjs_${++NgxPopperjsContentComponent.nextId}`;
     isMouseOver: boolean = !1;
     onHidden = new EventEmitter();
     onUpdate: () => any;
+    opacity: number;
     popperInstance: Instance;
     popperOptions: NgxPopperjsOptions = {
         disableAnimation: false,
@@ -55,7 +57,7 @@ export class NgxPopperjsContentComponent implements OnDestroy {
     @ViewChild("popperViewRef", {static: !0})
     popperViewRef: ElementRef;
     referenceObject: HTMLElement;
-    state: boolean = !1;
+    state: boolean;
     text: string;
 
     protected readonly _baseModifiers: [OffsetModifier, ArrowModifier] = [
@@ -80,9 +82,9 @@ export class NgxPopperjsContentComponent implements OnDestroy {
     protected _styleId = `${this.id}_style`;
 
     constructor(public elRef: ElementRef,
-                protected _renderer: Renderer2,
                 protected _viewRef: ViewContainerRef,
                 protected _changeDetectorRef: ChangeDetectorRef) {
+        this._toggleVisibility(!1);
     }
 
     clean() {
@@ -169,12 +171,16 @@ export class NgxPopperjsContentComponent implements OnDestroy {
         }
         this._determineArrowColor();
         popperOptions.modifiers = popperOptions.modifiers.concat(this.popperOptions.popperModifiers);
+        window.requestAnimationFrame(() => {
+            window.requestAnimationFrame(() => {
+                this.popperInstance = Popper(
+                    this.referenceObject,
+                    this.popperViewRef.nativeElement,
+                    popperOptions,
+                );
+            });
+        });
         this.toggleVisibility(!0);
-        this.popperInstance = Popper(
-            this.referenceObject,
-            this.popperViewRef.nativeElement,
-            popperOptions,
-        );
         fromEvent(document, "resize")
             .pipe(takeUntil(this._destroy$))
             .subscribe({
@@ -191,8 +197,9 @@ export class NgxPopperjsContentComponent implements OnDestroy {
         this.hide();
     }
 
+    // Toggle visibility and detect changes - Run only after ngOnInit!
     toggleVisibility(state: boolean): void {
-        this.state = state;
+        this._toggleVisibility(state);
         // tslint:disable-next-line:no-string-literal
         if (!this._changeDetectorRef["destroyed"]) {
             this._changeDetectorRef.detectChanges();
@@ -235,5 +242,12 @@ export class NgxPopperjsContentComponent implements OnDestroy {
         else {
             $style.innerHTML = styleContent;
         }
+    }
+
+    protected _toggleVisibility(state): void {
+        this.displayType = ["none", "block"][+state];
+        this.opacity = +state;
+        this.ariaHidden = `${!state}`;
+        this.state = state;
     }
 }
