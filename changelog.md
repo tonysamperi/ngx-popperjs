@@ -1,3 +1,6 @@
+#13.3.2
+* The final fix of the "Chrome 115.0.5790.102 bug" reverting the original behaviour
+
 #13.3.1
 * Fix append base popper element (string) when host element doesn't allow append (e.g. host is img)
 * Fix package versions
