@@ -32,7 +32,7 @@
         "build": "ng build --configuration=production && gulp postBuild",
         "build:demo": "ng build ngx-popperjs-repo --configuration=production --baseHref=",
         "pack": "gulp pack",
-        "release": "npm publish ./dist/ngx-popperjs",
+        "publish": "npm publish ./dist/ngx-popperjs --tag latest-ng12",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"
