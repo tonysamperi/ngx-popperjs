@@ -82,3 +82,6 @@
 * Added rxjs to peer dependencies
 * Removed travis config
 * Added GH workflow
+
+#12.2.4
+* Change import for rxjs operator to have retrocompatibility with rxjs v6

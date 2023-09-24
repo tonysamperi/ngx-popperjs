@@ -20,7 +20,8 @@ import {ArrowModifier} from "@popperjs/core/lib/modifiers/arrow";
 import {Instance} from "@popperjs/core/lib/types";
 import {PreventOverflowModifier} from "@popperjs/core/lib/modifiers/preventOverflow";
 import {OffsetModifier} from "@popperjs/core/lib/modifiers/offset";
-import {fromEvent, Subject, takeUntil} from "rxjs";
+import {fromEvent, Subject} from "rxjs";
+import {takeUntil} from "rxjs/operators";
 
 @Component({
     // tslint:disable-next-line:component-selector
