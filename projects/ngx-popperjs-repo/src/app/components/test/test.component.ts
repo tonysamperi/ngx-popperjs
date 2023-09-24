@@ -11,6 +11,6 @@ import {NGX_POPPERJS_DONT_FLIP_MODIFIER} from "../../shared/ngx-popperjs-dont-fl
 })
 export class NgxPopperjsTestComponent {
 
-    dontFlipModifier: Partial<Modifier<"flip", Options>> = NGX_POPPERJS_DONT_FLIP_MODIFIER;
+    dontFlipModifier: Partial<Modifier<"flip", Options>>[] = [NGX_POPPERJS_DONT_FLIP_MODIFIER];
 
 }

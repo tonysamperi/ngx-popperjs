@@ -77,3 +77,8 @@
 
 #12.2.2
 * The final fix of the "Chrome 115.0.5790.102 bug" reverting the original behaviour
+
+#12.2.3
+* Added rxjs to peer dependencies
+* Removed travis config
+* Added GH workflow
