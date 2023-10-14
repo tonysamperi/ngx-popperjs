@@ -118,14 +118,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-popperjs-repo:build"
+            "buildTarget": "ngx-popperjs-repo:build"
           },
           "configurations": {
             "development": {
-              "browserTarget": "ngx-popperjs-repo:build:dev"
+              "buildTarget": "ngx-popperjs-repo:build:dev"
             },
             "production": {
-              "browserTarget": "ngx-popperjs-repo:build:production"
+              "buildTarget": "ngx-popperjs-repo:build:production"
             }
           },
           "defaultConfiguration": "development"
@@ -133,7 +133,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-popperjs-repo:build"
+            "buildTarget": "ngx-popperjs-repo:build"
           }
         },
         "test": {
