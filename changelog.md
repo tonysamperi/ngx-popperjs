@@ -1,3 +1,6 @@
+#16.0.7
+* Version bump
+
 #16.0.6
 * The final fix of the "Chrome 115.0.5790.102 bug" reverting the original behaviour
 * Refine tests
