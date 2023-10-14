@@ -18,9 +18,7 @@ $default-z-index: 999 !default;
     z-index: $z-index;
 
     > .ngxp__arrow {
-      &:before {
-        background-color: $background;
-      }
+      background-color: $background;
     }
   }
 }

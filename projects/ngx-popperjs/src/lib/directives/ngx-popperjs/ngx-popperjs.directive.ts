@@ -19,8 +19,6 @@ import {NgxPopperjsTriggers} from "../../models/ngx-popperjs-triggers.model";
 import {NGX_POPPERJS_DEFAULTS} from "../../models/ngx-popperjs-defaults.model";
 import {NgxPopperjsUtils} from "../../models/ngx-popperjs-utils.class";
 //
-import {Modifier} from "@popperjs/core";
-//
 import {fromEvent, Subject, takeUntil, timer} from "rxjs";
 
 @Directive({
@@ -57,17 +55,14 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         return this._applyClass;
     }
 
-    @Input("popperAriaDescribeBy")
-    ariaDescribe: string | void;
+    @Input("popperHideOnClickOutside")
+    set hideOnClickOutside(newValue: boolean | string) {
+        this._hideOnClickOutside = NgxPopperjsUtils.coerceBooleanProperty(newValue);
+    }
 
-    @Input("popperAriaRole")
-    ariaRole: string | void;
-
-    @Input("popperBoundaries")
-    boundariesElement: string;
-
-    @Input("popperCloseOnClickOutside")
-    closeOnClickOutside: boolean;
+    get hideOnClickOutside(): boolean {
+        return this._hideOnClickOutside;
+    }
 
     @Input("popper")
     set content(newValue: string | NgxPopperjsContentComponent) {
@@ -91,39 +86,6 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     }
 
 
-    @Input("popperDisableAnimation")
-    disableAnimation: boolean;
-
-    @Input("popperDisabled")
-    set disabled(newValue: boolean) {
-        if (newValue === this._disabled) {
-            return;
-        }
-        this._disabled = !!newValue;
-        if (this._shown) {
-            this.hide();
-        }
-    }
-
-    get disabled(): boolean {
-        return this._disabled;
-    }
-
-    @Input("popperDisableStyle")
-    disableStyle: boolean;
-
-    @Input("popperHideOnClickOutside")
-    hideOnClickOutside: boolean | void;
-
-    @Input("popperHideOnMouseLeave")
-    hideOnMouseLeave: boolean | void;
-
-    @Input("popperHideOnScroll")
-    hideOnScroll: boolean | void;
-
-    @Input("popperTimeout")
-    hideTimeout: number = 0;
-
     @Input("popperPlacement")
     set placement(newValue: NgxPopperjsPlacements) {
         this._popperPlacement = newValue;
@@ -135,8 +97,16 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         return this._popperPlacement;
     }
 
-    @Input()
-    popperAppendTo: string;
+
+    @Input("popperPreventOverflow")
+    set preventOverflow(newValue: boolean) {
+        this._popperPreventOverflow = NgxPopperjsUtils.coerceBooleanProperty(newValue);
+        this._checkExisting("preventOverflow", this._popperPreventOverflow);
+    }
+
+    get preventOverflow(): boolean {
+        return this._popperPreventOverflow;
+    }
 
     @Input()
     set popperApplyArrowClass(newValue: string) {
@@ -157,8 +127,47 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         return this._popperApplyArrowClass;
     }
 
+    @Input("popperDisabled")
+    set disabled(newValue: boolean) {
+        if (newValue === this._disabled) {
+            return;
+        }
+        this._disabled = !!newValue;
+        if (this._shown) {
+            this.hide();
+        }
+    }
+
+    get disabled(): boolean {
+        return this._disabled;
+    }
+
+    @Input("popperAriaDescribeBy")
+    ariaDescribe: string | void;
+
+    @Input("popperAriaRole")
+    ariaRole: string | void;
+
+    @Input("popperBoundaries")
+    boundariesElement: string;
+
+    @Input("popperDisableAnimation")
+    disableAnimation: boolean;
+
+    @Input("popperDisableStyle")
+    disableStyle: boolean;
+
+    @Input("popperHideOnMouseLeave")
+    hideOnMouseLeave: boolean | void;
+
+    @Input("popperHideOnScroll")
+    hideOnScroll: boolean | void;
+
+    @Input("popperTimeout")
+    hideTimeout: number = 0;
+
     @Input()
-    popperModifiers: Partial<Modifier<any, any>>[];
+    popperAppendTo: string;
 
     @Output()
     popperOnHidden: EventEmitter<NgxPopperjsDirective> = new EventEmitter<NgxPopperjsDirective>();
@@ -171,16 +180,6 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
 
     @Input("popperPositionFixed")
     positionFixed: boolean;
-
-    @Input("popperPreventOverflow")
-    set preventOverflow(newValue: boolean) {
-        this._popperPreventOverflow = NgxPopperjsUtils.coerceBooleanProperty(newValue);
-        this._checkExisting("preventOverflow", this._popperPreventOverflow);
-    }
-
-    get preventOverflow(): boolean {
-        return this._popperPreventOverflow;
-    }
 
     @Input("popperDelay")
     showDelay: number | undefined;
@@ -205,6 +204,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     protected _destroy$: Subject<void> = new Subject<void>();
     protected _disabled: boolean;
     protected _globalEventListenersCtrl$: Subject<void> = new Subject<void>();
+    protected _hideOnClickOutside: boolean = false;
     protected _popperApplyArrowClass: string;
     protected _popperContent: NgxPopperjsContentComponent;
     protected _popperContentClass = NgxPopperjsContentComponent;
@@ -283,6 +283,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     }
 
     hideOnClickOutsideHandler($event: MouseEvent): void {
+        console.info("OUSIDE HANDLER", this.hideOnClickOutside);
         if (this.disabled || !this.hideOnClickOutside || $event.target === this._popperContent.elRef.nativeElement ||
             this._popperContent.elRef.nativeElement.contains($event.target)) {
             return;
@@ -304,10 +305,6 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
-        // Support legacy prop
-        this.hideOnClickOutside = typeof this.hideOnClickOutside === "undefined" ?
-            this.closeOnClickOutside : this.hideOnClickOutside;
-
         if (typeof this.content === "string") {
             this._popperContent = this._constructContent();
             this._popperContent.text = this.content;
@@ -466,7 +463,6 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
             boundariesElement: this.boundariesElement,
             trigger: this.showTrigger,
             positionFixed: this.positionFixed,
-            popperModifiers: this.popperModifiers,
             ariaDescribe: this.ariaDescribe,
             ariaRole: this.ariaRole,
             applyClass: this.applyClass,

@@ -1,6 +1,6 @@
 {
   "name": "ngx-popperjs-repo",
-  "version": "17.0.0",
+  "version": "17.0.0-beta.0",
   "build": 0,
   "license": "MIT",
   "description": "ngx-popperjs is an Angular wrapper for @popperjs",
@@ -20,7 +20,8 @@
     "Angular 8+",
     "ngx-popperjs",
     "popper Angular",
-    "popper 2",
+    "floating ui",
+    "popper",
     "popperjs"
   ],
   "engines": {
@@ -52,7 +53,7 @@
     "@angular/platform-browser": "^17.0.0-next.8",
     "@angular/platform-browser-dynamic": "^17.0.0-next.8",
     "@angular/ssr": "^17.0.0-next.0",
-    "@popperjs/core": "^2.11.8",
+    "@floating-ui/dom": "^1.5.3",
     "rxjs": "^7.4.0",
     "tslib": "^2.3.1",
     "typewriter-effect": "^2.19.0",

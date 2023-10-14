@@ -6,10 +6,7 @@ import {
     NgxPopperjsDirective,
     NgxPopperjsContentComponent
 } from "ngx-popperjs";
-import {Modifier} from "@popperjs/core";
-import {Options} from "@popperjs/core/lib/modifiers/flip";
 //
-import {NGX_POPPERJS_DONT_FLIP_MODIFIER} from "../../shared/ngx-popperjs-dont-flip-modifier.const";
 import {getNgxPopperJsCodeMap} from "../../shared/ngx-popperjs-code-map.const";
 import {NgxPopArticleTypes, NgxPopperjsArticleTypesRef} from "../../shared/ngx-popperjs-article-types.model";
 //
@@ -45,7 +42,6 @@ export class NgxPopperjsDemoComponent implements OnInit {
         return getNgxPopperJsCodeMap(this.selectedPosition);
     }
 
-    dontFlipModifier: Partial<Modifier<"flip", Options>>[] = [NGX_POPPERJS_DONT_FLIP_MODIFIER];
     messages: { opts?: { delay?: number | "natural"; loop?: boolean; }; text: string; }[] = [];
     // tslint:disable-next-line:no-bitwise
     positionButtons: NgxPopperjsPlacements[] = Object.values(NgxPopperjsPlacements).filter((v) => !~v.indexOf("auto"));

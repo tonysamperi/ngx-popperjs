@@ -1,6 +1,5 @@
 import {NgxPopperjsTriggers} from "./ngx-popperjs-triggers.model";
 import {NgxPopperjsPlacements} from "./ngx-popperjs-placements.model";
-import {Modifier} from "@popperjs/core";
 
 export interface NgxPopperjsOptions {
     appendTo?: string;
@@ -15,7 +14,6 @@ export interface NgxPopperjsOptions {
     hideOnMouseLeave?: boolean;
     hideOnScroll?: boolean;
     placement?: NgxPopperjsPlacements;
-    popperModifiers?: Partial<Modifier<any, any>>[];
     positionFixed?: boolean;
     preventOverflow?: boolean;
     showDelay?: number;

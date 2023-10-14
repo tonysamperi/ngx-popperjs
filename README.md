@@ -35,13 +35,13 @@ node and npm are required to run this package.
 1. Use npm/yarn to install the package:
 
   ```terminal
-  $ npm install @popperjs/core ngx-popperjs --save
+  $ npm install @floating-ui/dom ngx-popperjs --save
   ```
   
   Or 
   
    ```terminal
-    $ yarn add @popperjs/core --save
+    $ yarn add @floating-ui/dom --save
     $ yarn add ngx-popperjs --save 
   ```
 
@@ -86,7 +86,7 @@ body {
    <div [popper]="popper1Content"
         [popperShowOnStart]="true"
         [popperTrigger]="'click'"
-        [popperHideOnClickOutside]="true"
+		popperHideOnClickOutside
         [popperHideOnScroll]="true"
         [popperPlacement]="'bottom'">
        <p class="bold">Hey!</p>
@@ -109,7 +109,7 @@ body {
        <div popper="{{someTextProperty}}"
             [popperTrigger]="'hover'"
             [popperPlacement]="'bottom'"
-            [popperStyles]="{'background-color: 'blue''}",
+            [popperStyles]="{'background-color: 'blue''}"
             (popperOnShown)="onShown($event)">
          <p class="bold">Pop</p>
          <p class="thin">on the bottom</p>
@@ -176,7 +176,6 @@ body {
     | popperHideOnClickOutside     | boolean           | true      | Popper will hide on a click outside                                                                      |
     | popperHideOnScroll           | boolean           | false     | Popper will hide on scroll                                                                               |
     | popperHideOnMouseLeave       | boolean           | false     | Popper will hide on mouse leave                                                                          |
-    | popperModifiers              | popperModifier    | undefined | popper.js custom modifiers hock                                                                          |
     | popperApplyClass             | string            | undefined | list of comma separated class to apply on ngpx__container                                                |
     | popperStyles                 | Object            | undefined | Apply the styles object, aligned with ngStyles                                                           |
     | popperApplyArrowClass        | string            | undefined | list of comma separated class to apply on ngpx__arrow                                                    |
@@ -212,7 +211,6 @@ NgModule({
    | placement                | Placement(string) | auto      |
    | boundariesElement        | string(selector)  | undefined |
    | trigger                  | Trigger(string)   | hover     |
-   | popperModifiers          | popperModifier    | undefined |
    | positionFixed            | boolean           | false     |
    | hideOnClickOutside       | boolean           | true      |
    | hideOnMouseLeave         | boolean           | false     |
