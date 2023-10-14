@@ -43,6 +43,7 @@ export class NgxPopperjsDemoComponent implements OnInit {
     }
 
     messages: { opts?: { delay?: number | "natural"; loop?: boolean; }; text: string; }[] = [];
+    popperPlacements: typeof NgxPopperjsPlacements = NgxPopperjsPlacements;
     // tslint:disable-next-line:no-bitwise
     positionButtons: NgxPopperjsPlacements[] = Object.values(NgxPopperjsPlacements).filter((v) => !~v.indexOf("auto"));
     selectedPosition: NgxPopperjsPlacements = this.positionButtons[0];

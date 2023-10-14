@@ -4,7 +4,7 @@
 
 export const NGX_POPPERJS_ENVIRONMENT = {
     production: !1,
-    isDemo: !1
+    isDemo: !0
 };
 
 /*

@@ -179,12 +179,13 @@
 			</div>
 		</article>
 		<article pop-flipping>
-			<div class="pop-popcorn-wrap">
+			<div class="pop-popcorn-wrap" fubar>
 				<img alt="Popcorn box"
 					 src="assets/images/popcorn-box.svg"
 					 popper="I'm another popper :)"
 					 [popperShowOnStart]="true"
 					 popperTrigger="click"
+					 popperPreventOverflow
 					 popperPlacement="top"
 					 class="pop-popcorn-box">
 			</div>
@@ -316,6 +317,7 @@
 					 src="assets/images/popcorn-box.svg"
 					 [popper]="popperClickScrollContent"
 					 popperTrigger="click"
+					 [popperPlacement]="popperPlacements.TOP"
 					 [popperHideOnScroll]="!0"
 					 class="pop-popcorn-box" />
 			</div>

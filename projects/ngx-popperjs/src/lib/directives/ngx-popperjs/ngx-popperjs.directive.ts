@@ -31,7 +31,6 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
 
     static baseOptions: NgxPopperjsOptions = {
         showDelay: 0,
-        placement: NgxPopperjsPlacements.AUTO,
         hideOnClickOutside: true,
         hideOnMouseLeave: false,
         hideOnScroll: false,
@@ -119,7 +118,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
             if (!this._shown) {
                 return;
             }
-            this._popperContent.popperInstance.setOptions(this._popperContent.popperOptions);
+            this._popperContent.update();
         }
     }
 
@@ -425,7 +424,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
             if (!this._shown) {
                 return;
             }
-            this._popperContent.popperInstance.setOptions(this._popperContent.popperOptions);
+            this._popperContent.update();
         }
     }
 

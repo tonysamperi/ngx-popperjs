@@ -1,3 +1,4 @@
+
 export enum NgxPopperjsPlacements {
   TOP = "top",
   BOTTOM = "bottom",
@@ -10,8 +11,5 @@ export enum NgxPopperjsPlacements {
   TOPEND = "top-end",
   BOTTOMEND = "bottom-end",
   LEFTEND = "left-end",
-  RIGHTEND = "right-end",
-  AUTO = "auto",
-  AUTOSTART = "auto-start",
-  AUTOEND = "auto-end"
+  RIGHTEND = "right-end"
 }

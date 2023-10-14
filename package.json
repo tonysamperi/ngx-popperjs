@@ -1,6 +1,6 @@
 {
   "name": "ngx-popperjs-repo",
-  "version": "17.0.0-beta.0",
+  "version": "17.0.0-beta.1",
   "build": 0,
   "license": "MIT",
   "description": "ngx-popperjs is an Angular wrapper for @popperjs",
@@ -39,6 +39,7 @@
     "build:demo": "ng build ngx-popperjs-repo --configuration=production --base-href=",
     "pack": "gulp pack",
     "publish": "npm publish ./dist/ngx-popperjs",
+    "publish:beta": "npm publish ./dist/ngx-popperjs --tag beta",
     "bump:patch": "gulp bump:patch",
     "bump:minor": "gulp bump:minor",
     "bump:major": "gulp bump:major"

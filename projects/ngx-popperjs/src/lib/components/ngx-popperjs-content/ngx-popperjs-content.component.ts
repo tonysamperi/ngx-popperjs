@@ -13,7 +13,6 @@ import {
 import {NgStyle, NgClass, NgIf} from "@angular/common";
 //
 import {NgxPopperjsOptions} from "../../models/ngx-popperjs-options.model";
-import {NgxPopperjsPlacements} from "../../models/ngx-popperjs-placements.model";
 import {NgxPopperjsTriggers} from "../../models/ngx-popperjs-triggers.model";
 //
 import {
@@ -24,7 +23,7 @@ import {
     limitShift,
     shift,
     offset,
-    autoPlacement,
+    autoPlacement, ComputePositionConfig,
 } from "@floating-ui/dom";
 import {fromEvent, Subject, takeUntil} from "rxjs";
 
@@ -51,11 +50,10 @@ export class NgxPopperjsContentComponent implements OnDestroy {
     onHidden = new EventEmitter();
     onUpdate: () => any;
     opacity: number;
-    popperInstance: any;
+    popperInstance: () => void;
     popperOptions: NgxPopperjsOptions = {
         disableAnimation: false,
         disableDefaultStyling: false,
-        placement: NgxPopperjsPlacements.AUTO,
         boundariesElement: "",
         trigger: NgxPopperjsTriggers.hover,
         positionFixed: false,
@@ -83,7 +81,7 @@ export class NgxPopperjsContentComponent implements OnDestroy {
         if (!this.popperInstance) {
             return;
         }
-        this.popperInstance.destroy();
+        this.popperInstance();
     }
 
     extractAppliedClassListExpr(classList: string | string[] = []): object {
@@ -127,54 +125,12 @@ export class NgxPopperjsContentComponent implements OnDestroy {
             return;
         }
         this._resizeCtrl$.next();
-        const appendToParent = this.popperOptions.appendTo && document.querySelector(this.popperOptions.appendTo);
-        if (appendToParent && this.elRef.nativeElement.parentNode !== appendToParent) {
-            this.elRef.nativeElement.parentNode && this.elRef.nativeElement.parentNode.removeChild(this.elRef.nativeElement);
-            appendToParent.appendChild(this.elRef.nativeElement);
-        }
-
-        const arrowElement = this.elRef.nativeElement.querySelector(".ngxp__arrow");
-        const popperOptions: any = {
-            placement: this.popperOptions.placement,
-            middleware: [
-                offset(8),
-                ...(this.popperOptions.preventOverflow ? [flip(), shift({limiter: limitShift()})] : []),
-                arrow({
-                    element: arrowElement,
-                    padding: 0
-                })
-            ],
-        };
-        if (!this.popperOptions.preventOverflow && !popperOptions.placement || popperOptions.placement.startsWith(NgxPopperjsPlacements.AUTO)) {
-            const boundariesElement = this.popperOptions.boundariesElement && document.querySelector(this.popperOptions.boundariesElement);
-            popperOptions.middleware.push(
-                autoPlacement({
-                    boundary: boundariesElement
-                })
-            );
-        }
         this._determineArrowColor();
         this.popperInstance = autoUpdate(
             this.referenceObject,
             this.popperViewRef.nativeElement,
             () => {
-                computePosition(this.referenceObject, this.popperViewRef.nativeElement, popperOptions)
-                    .then(({middlewareData, x, y, placement}) => {
-                        if (middlewareData.arrow) {
-                            const {x, y} = middlewareData.arrow;
-                            Object.assign(arrowElement.style, {
-                                left: x != null ? `${x}px` : "",
-                                top: y != null ? `${y}px` : "",
-                            });
-                        }
-                        Object.assign(this.popperViewRef.nativeElement.style, {
-                            left: `${x}px`,
-                            top: `${y}px`,
-                        });
-                        this.popperViewRef.nativeElement.setAttribute("data-popper-placement", placement);
-                        this.toggleVisibility(!0);
-                        this.onUpdate?.();
-                    });
+                this._computePosition();
             }
         );
         fromEvent(document, "resize")
@@ -206,7 +162,64 @@ export class NgxPopperjsContentComponent implements OnDestroy {
     }
 
     update(): void {
-        this.popperInstance && (this.popperInstance as any).update();
+        this._computePosition();
+    }
+
+    protected _computePosition(): void {
+        const appendToParent = this.popperOptions.appendTo && document.querySelector(this.popperOptions.appendTo);
+        if (appendToParent && this.elRef.nativeElement.parentNode !== appendToParent) {
+            this.elRef.nativeElement.parentNode && this.elRef.nativeElement.parentNode.removeChild(this.elRef.nativeElement);
+            appendToParent.appendChild(this.elRef.nativeElement);
+        }
+
+        const arrowElement = this.elRef.nativeElement.querySelector(".ngxp__arrow");
+        const arrowLen = arrowElement.offsetWidth;
+        // Get half the arrow box's hypotenuse length
+        const floatingOffset = Math.sqrt(2 * arrowLen ** 2) / 2;
+        const popperOptions: Partial<ComputePositionConfig> = {
+            placement: this.popperOptions.placement,
+            strategy: this.popperOptions.positionFixed ? "fixed" : "absolute",
+            middleware: [
+                offset(floatingOffset),
+                ...(this.popperOptions.preventOverflow ? [flip(), shift({limiter: limitShift()})] : [shift({limiter: limitShift()})]),
+                arrow({
+                    element: arrowElement,
+                    padding: 0
+                })
+            ],
+        };
+        if (!this.popperOptions.preventOverflow && !popperOptions.placement) {
+            const boundariesElement = this.popperOptions.boundariesElement && document.querySelector(this.popperOptions.boundariesElement);
+            popperOptions.middleware.push(
+                autoPlacement({
+                    boundary: boundariesElement
+                })
+            );
+        }
+        computePosition(this.referenceObject, this.popperViewRef.nativeElement, popperOptions)
+            .then(({middlewareData, x, y, placement}) => {
+                const side = placement.split("-")[0];
+                this.popperViewRef.nativeElement.setAttribute("data-popper-placement", side);
+                if (middlewareData.arrow) {
+                    const staticSide = {
+                        top: "bottom",
+                        right: "left",
+                        bottom: "top",
+                        left: "right"
+                    }[side];
+                    Object.assign(arrowElement.style, {
+                        left: middlewareData.arrow.x != null ? `${middlewareData.arrow.x}px` : "",
+                        top: middlewareData.arrow.y != null ? `${middlewareData.arrow.y}px` : "",
+                        [staticSide]: `${-arrowLen / 2}px`
+                    });
+                }
+                Object.assign(this.popperViewRef.nativeElement.style, {
+                    left: `${x}px`,
+                    top: `${y}px`,
+                });
+                this.toggleVisibility(!0);
+                this.onUpdate?.();
+            });
     }
 
     protected _createArrowSelector(): string {
