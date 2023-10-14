@@ -1,5 +1,11 @@
 import {Component, OnInit} from "@angular/core";
-import {NgxPopperjsPlacements} from "ngx-popperjs";
+import {NgFor} from "@angular/common";
+import {
+    NgxPopperjsPlacements,
+    NgxPopperjsLooseDirective,
+    NgxPopperjsDirective,
+    NgxPopperjsContentComponent
+} from "ngx-popperjs";
 import {Modifier} from "@popperjs/core";
 import {Options} from "@popperjs/core/lib/modifiers/flip";
 //
@@ -25,7 +31,9 @@ const codeTypes: NgxPopperjsArticleTypesRef<"css" | "markup"> = {
 @Component({
     selector: "app-demo",
     templateUrl: "demo.component.html",
-    styleUrls: ["demo.component.scss"]
+    styleUrls: ["demo.component.scss"],
+    standalone: true,
+    imports: [NgFor, NgxPopperjsContentComponent, NgxPopperjsDirective, NgxPopperjsLooseDirective]
 })
 export class NgxPopperjsDemoComponent implements OnInit {
 

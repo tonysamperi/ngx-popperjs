@@ -17,7 +17,8 @@ import {NgxPopperjsTriggers} from "../../models/ngx-popperjs-triggers.model";
 
 @Directive({
     selector: "[popperLoose]",
-    exportAs: "popperLoose"
+    exportAs: "popperLoose",
+    standalone: true
 })
 export class NgxPopperjsLooseDirective extends NgxPopperjsDirective {
 

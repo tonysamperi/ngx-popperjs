@@ -8,19 +8,16 @@ import {NgxPopperjsDemoComponent} from "./components/demo/demo.component";
 import {NgxPopperjsTestComponent} from "./components/test/test.component";
 
 @NgModule({
-    declarations: [
-        NgxPopperjsAppComponent,
-        NgxPopperjsDemoComponent,
-        NgxPopperjsTestComponent
-    ],
+    declarations: [NgxPopperjsAppComponent],
     imports: [
         BrowserModule,
         NgxPopperjsModule.forRoot({
             trigger: NgxPopperjsTriggers.click,
             hideOnClickOutside: false,
             placement: NgxPopperjsPlacements.BOTTOM
-        })
-        // NgxPopperjsModule
+        }),
+        NgxPopperjsDemoComponent,
+        NgxPopperjsTestComponent
     ],
     providers: [],
     bootstrap: [NgxPopperjsAppComponent]

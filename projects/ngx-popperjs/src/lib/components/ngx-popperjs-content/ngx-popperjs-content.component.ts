@@ -10,6 +10,7 @@ import {
     ViewContainerRef,
     ViewEncapsulation
 } from "@angular/core";
+import { NgStyle, NgClass, NgIf } from "@angular/common";
 //
 import {NgxPopperjsOptions} from "../../models/ngx-popperjs-options.model";
 import {NgxPopperjsPlacements} from "../../models/ngx-popperjs-placements.model";
@@ -29,7 +30,9 @@ import {fromEvent, Subject, takeUntil} from "rxjs";
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: "./ngx-popperjs-content.component.html",
     styleUrls: ["./ngx-popperjs-content.component.scss"],
-    exportAs: "ngxPopperjsContent"
+    exportAs: "ngxPopperjsContent",
+    standalone: true,
+    imports: [NgStyle, NgClass, NgIf]
 })
 export class NgxPopperjsContentComponent implements OnDestroy {
 

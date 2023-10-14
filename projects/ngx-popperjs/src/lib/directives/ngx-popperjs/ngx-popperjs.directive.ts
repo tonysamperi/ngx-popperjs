@@ -26,7 +26,8 @@ import {fromEvent, Subject, takeUntil, timer} from "rxjs";
 @Directive({
     // tslint:disable-next-line:directive-selector
     selector: "[popper]",
-    exportAs: "popper"
+    exportAs: "popper",
+    standalone: true
 })
 export class NgxPopperjsDirective implements OnInit, OnDestroy {
 
