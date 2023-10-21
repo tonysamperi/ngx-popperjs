@@ -184,7 +184,7 @@ export class NgxPopperjsContentComponent implements OnDestroy {
                 ...(this.popperOptions.preventOverflow ? [flip(), shift({limiter: limitShift()})] : [shift({limiter: limitShift()})]),
                 arrow({
                     element: arrowElement,
-                    padding: 0
+                    padding: 4
                 })
             ],
         };
