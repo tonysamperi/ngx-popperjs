@@ -203,7 +203,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     protected _destroy$: Subject<void> = new Subject<void>();
     protected _disabled: boolean;
     protected _globalEventListenersCtrl$: Subject<void> = new Subject<void>();
-    protected _hideOnClickOutside: boolean = false;
+    protected _hideOnClickOutside: boolean = true;
     protected _popperApplyArrowClass: string;
     protected _popperContent: NgxPopperjsContentComponent;
     protected _popperContentClass = NgxPopperjsContentComponent;
@@ -282,7 +282,6 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     }
 
     hideOnClickOutsideHandler($event: MouseEvent): void {
-        console.info("OUSIDE HANDLER", this.hideOnClickOutside);
         if (this.disabled || !this.hideOnClickOutside || $event.target === this._popperContent.elRef.nativeElement ||
             this._popperContent.elRef.nativeElement.contains($event.target)) {
             return;
