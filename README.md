@@ -2,9 +2,7 @@
 
 [![npm][badge-npm-version]][url-npm] [![npm][badge-npm-downloads]][url-npm] [![MIT licensed][badge-licence]][url-licence] [![Build state][badge-ci-state]][url-ci-state] [![Size][badge-bundle]][url-bundle] [![Rate this package][badge-openbase]][url-openbase]
 
-ngx-popperjs is an angular wrapper for the [Popper.js](https://popper.js.org/) library.
-
-*Note* that I also updated everything to use **Popper 2** (v *2.4.4* in v 9.0.0) 
+ngx-popperjs is an angular wrapper for the [FloatingUI](https://floating-ui.com/) library (v ^1.5.3).
 
 ## VERY IMPORTANT READ THIS
 I'm moving this to the top because it appears that people don't get to reading it in the **contribute** section.
@@ -13,11 +11,36 @@ I **guarantee** that I manage the updates **AS SOON AS POSSIBLE**. But as you un
 **ISSUES NOT RESPECTING THIS WILL BE DELETED IMMEDIATELY WITHOUT ANY RESPONSE**.
 Thank you.
 
+
+## NOW USING FLOATING UI - UPGRADING TO V17
+If you used previous versions of ngx-popperjs, you'll now that it wrapped popper.js initially.
+Since Floating UI is the future version of Popper.js and since latest happenings with recent Chrome updates breaking ngx-popperjs, I decided to move to the newer technology.
+
+What impacts does it have for the library?
+
+Well on a graphic perspective, none. You will be able to use the v17 without changing any stylings.
+
+The only deprecation is in the `NgxPopperjsOptions` which now doesn't provide the **modifiers**.
+The reason is that **you can't now pass modifiers** like you did in Popper.js.
+It didn't seem like a huge change, since in this library modifiers should be mostly (but let me know with an issue) for preventing the popper flipping.
+
+Now by default, **popovers won't flip**. You will have to pass `popperPreventOverflow` as attribute (coerced so the empty attribute will suffice) to make the popovers flip.
+
+I will be publishing the new ngx-floating-ui (still contending for the name on npm) along this one.
+The goal is gradually moving everybody to ngx-floating-ui. So I will probably publish both for this and the next major (18), then deprecate this package in favor of the new one.
+
+Clearly switching to the new package will require some work, cause I can't have a library called "ngx-floating-ui" and then modules called "NgxPopperjs".
+It will be worth it though cause there's much more potential in Floating UI, and we will be able to include new features, such as combobox or dialog as shown on their website.
+
+Check NgxPopperjs official [page](https://tonysamperi.github.io/ngx-popperjs) to be updated!
+
+### Premise
+
 The goal of this library is to take Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/) and update the compatibility for more recent versions of Angular.
 Since the old library is compatible with Angular 7 and earlier, I started with Angular 8.
 If you need to work with an older version of Angular (5 to 7), please refer to Mr Frankel's [ngx-popper](https://github.com/MrFrankel/ngx-popper/).
 
-### Premise, new in v 15.2.0: popperLoose
+### From v15.2.0: 
 
 Since many complained about using the `NgxPopperjsPlacements` enum, I added a version of the popper directive which accepts a plain string as placement!
 Now you can use it with all the options of the classic popper, but you'll have to use:
