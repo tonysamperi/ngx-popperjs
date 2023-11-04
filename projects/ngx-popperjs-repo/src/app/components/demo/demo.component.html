@@ -97,6 +97,7 @@
 					 src="assets/images/popcorn-box.svg"
 					 [popper]="myPopperContent"
 					 (popperOnUpdate)="onPopperUpdate($event)"
+					 [popperHideOnClickOutside]="false"
 					 [popperShowOnStart]="true"
 					 popperTrigger="click"
 					 [popperPlacement]="selectedPosition"
