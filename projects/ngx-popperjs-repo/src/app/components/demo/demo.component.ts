@@ -1,5 +1,5 @@
 import {Component, OnInit} from "@angular/core";
-import {NgFor} from "@angular/common";
+import {NgFor, NgIf} from "@angular/common";
 import {
     NgxPopperjsPlacements,
     NgxPopperjsLooseDirective,
@@ -30,7 +30,7 @@ const codeTypes: NgxPopperjsArticleTypesRef<"css" | "markup"> = {
     templateUrl: "demo.component.html",
     styleUrls: ["demo.component.scss"],
     standalone: true,
-    imports: [NgFor, NgxPopperjsContentComponent, NgxPopperjsDirective, NgxPopperjsLooseDirective]
+    imports: [NgIf, NgFor, NgxPopperjsContentComponent, NgxPopperjsDirective, NgxPopperjsLooseDirective]
 })
 export class NgxPopperjsDemoComponent implements OnInit {
 
@@ -47,6 +47,7 @@ export class NgxPopperjsDemoComponent implements OnInit {
     // tslint:disable-next-line:no-bitwise
     positionButtons: NgxPopperjsPlacements[] = Object.values(NgxPopperjsPlacements).filter((v) => !~v.indexOf("auto"));
     selectedPosition: NgxPopperjsPlacements = this.positionButtons[0];
+    showWarning: boolean = !0;
     year: number = new Date().getFullYear();
 
     ngOnInit(): void {

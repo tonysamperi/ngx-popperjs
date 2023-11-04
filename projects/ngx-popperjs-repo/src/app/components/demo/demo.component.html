@@ -2,6 +2,18 @@
 <!-- * * * * * * * * * * * * POPPER DEMO! :) * * * * * * * * * * * -->
 <!-- * * * * * * * * * cloned from popper.js.org * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<div class="warning-dialog" *ngIf="showWarning">
+	<span class="close" (click)="showWarning = !1">x</span>
+	<p>Dear ngx-popperjs users,
+	   <br />
+	   from v17, this library is not relying anymore on popper.js to render the popper.</p>
+	<p>This means that there's no point in having a library called ngx-popperjs, when it uses floating-ui underneath. This will be the <strong>last version</strong> of ngx-popperjs.</p>
+	<p>That's why I'm publishing along this, <strong>ngx-float-ui</strong> (damn ngx-floating-ui was already taken and I got no response in my request to claim the name I made more than 1 month ago).</p>
+	<p>I did this overlap to give everyone the time (as you know it's 6 months before the next major) to switch to the new library instead.</p>
+	<p>After that I'll mark ngx-popperjs v17 as <strong>deprecated</strong>.</p>
+	<p>Also, since last events after <strong>Chrome 118</strong> (or whatever broke ngx-popperjs), I think it could be a good idea to publish even previous versions of ngx-float-ui, since they don't need the Chrome workaround.</p>
+	<p>If there's a good number of requests I can do so. If you want to vote for the release of some v < 17, open an issue (if not already opened) and leave a thumb up.</p>
+</div>
 <div class="content"
 	 role="main">
 	<div class="pop-top-section">
