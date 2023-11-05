@@ -10,6 +10,7 @@ export interface NgxPopperjsOptions {
     boundariesElement?: string;
     disableAnimation?: boolean;
     disableDefaultStyling?: boolean;
+    flip?: boolean;
     hideOnClickOutside?: boolean;
     hideOnMouseLeave?: boolean;
     hideOnScroll?: boolean;

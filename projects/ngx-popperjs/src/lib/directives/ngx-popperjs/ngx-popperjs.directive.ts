@@ -84,35 +84,45 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
         return this._content;
     }
 
+    @Input("popperFlip")
+    set flip(newValue: boolean) {
+        this._flip = NgxPopperjsUtils.coerceBooleanProperty(newValue);
+        this._checkExisting("preventOverflow", this._preventOverflow);
+    }
+
+    get flip(): boolean {
+        return this._flip;
+    }
+
 
     @Input("popperPlacement")
     set placement(newValue: NgxPopperjsPlacements) {
-        this._popperPlacement = newValue;
+        this._placement = newValue;
         this._checkExisting("placement", newValue);
     }
 
     get placement(): NgxPopperjsPlacements {
 
-        return this._popperPlacement;
+        return this._placement;
     }
 
 
     @Input("popperPreventOverflow")
     set preventOverflow(newValue: boolean) {
-        this._popperPreventOverflow = NgxPopperjsUtils.coerceBooleanProperty(newValue);
-        this._checkExisting("preventOverflow", this._popperPreventOverflow);
+        this._preventOverflow = NgxPopperjsUtils.coerceBooleanProperty(newValue);
+        this._checkExisting("preventOverflow", this._preventOverflow);
     }
 
     get preventOverflow(): boolean {
-        return this._popperPreventOverflow;
+        return this._preventOverflow;
     }
 
     @Input()
     set popperApplyArrowClass(newValue: string) {
-        if (newValue === this._popperApplyArrowClass) {
+        if (newValue === this._applyArrowClass) {
             return;
         }
-        this._popperApplyArrowClass = newValue;
+        this._applyArrowClass = newValue;
         if (this._popperContent) {
             this._popperContent.popperOptions.applyArrowClass = newValue;
             if (!this._shown) {
@@ -123,7 +133,7 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     }
 
     get popperApplyArrowClass(): string {
-        return this._popperApplyArrowClass;
+        return this._applyArrowClass;
     }
 
     @Input("popperDisabled")
@@ -198,18 +208,19 @@ export class NgxPopperjsDirective implements OnInit, OnDestroy {
     @Input("popperTimeoutAfterShow")
     timeoutAfterShow: number = 0;
 
+    protected _applyArrowClass: string;
     protected _applyClass: string;
     protected _content: string | NgxPopperjsContentComponent;
     protected _destroy$: Subject<void> = new Subject<void>();
     protected _disabled: boolean;
+    protected _flip: boolean = !0;
     protected _globalEventListenersCtrl$: Subject<void> = new Subject<void>();
     protected _hideOnClickOutside: boolean = true;
-    protected _popperApplyArrowClass: string;
+    protected _placement: NgxPopperjsPlacements;
     protected _popperContent: NgxPopperjsContentComponent;
     protected _popperContentClass = NgxPopperjsContentComponent;
     protected _popperContentRef: ComponentRef<NgxPopperjsContentComponent>;
-    protected _popperPlacement: NgxPopperjsPlacements;
-    protected _popperPreventOverflow: boolean;
+    protected _preventOverflow: boolean = !0;
     protected _scheduledHideTimeoutCtrl$: Subject<void> = new Subject<void>();
     protected _scheduledShowTimeoutCtrl$: Subject<void> = new Subject<void>();
     protected _shown: boolean = false;

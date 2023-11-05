@@ -176,12 +176,19 @@ export class NgxPopperjsContentComponent implements OnDestroy {
         const arrowLen = arrowElement.offsetWidth;
         // Get half the arrow box's hypotenuse length
         const floatingOffset = Math.sqrt(2 * arrowLen ** 2) / 2;
+        const boundaryMiddleware = [];
+        if (this.popperOptions.flip) {
+            boundaryMiddleware.push(flip());
+        }
+        if (this.popperOptions.preventOverflow) {
+            boundaryMiddleware.push(shift({limiter: limitShift()}));
+        }
         const popperOptions: Partial<ComputePositionConfig> = {
             placement: this.popperOptions.placement,
             strategy: this.popperOptions.positionFixed ? "fixed" : "absolute",
             middleware: [
                 offset(floatingOffset),
-                ...(this.popperOptions.preventOverflow ? [flip(), shift({limiter: limitShift()})] : [shift({limiter: limitShift()})]),
+                ...boundaryMiddleware,
                 arrow({
                     element: arrowElement,
                     padding: 4

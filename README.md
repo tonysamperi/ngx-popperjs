@@ -5,14 +5,14 @@
 ngx-popperjs is an angular wrapper for the [FloatingUI](https://floating-ui.com/) library (v ^1.5.3).
 
 ## VERY IMPORTANT READ THIS
-I'm moving this to the top because it appears that people don't get to reading it in the **contribute** section.
-FOR THIS LIBRARY **PLEASE USE ISSUES ONLY FOR BUG REPORTING**. DON'T OPEN ISSUES SUCH AS "I need upgrade for Angular 1745646456" especially if Angular 1745646456 was released a few days ago.
-I **guarantee** that I manage the updates **AS SOON AS POSSIBLE**. But as you understand this is not a paying job, so you can't get Angular 1745646456 the day it gets released.
-**ISSUES NOT RESPECTING THIS WILL BE DELETED IMMEDIATELY WITHOUT ANY RESPONSE**.
-Thank you.
+With v17 ngx-popperjs **won't get any updates**. That's because from v17 it's not actually using popper.js anymore.
 
+I developed ngx-float-ui and released v17 at the same time of this.
+My suggestion is to migrate to that one. In 6 months from the release, this version will be marked as **deprecated**.
+Since the new library isn't affected by the "Chrome 110 bug" I would suggest to migrate earlier versions as well.
+If you open an issue on ngx-float-ui asking for a certain version (or search for an open issue for that version and leave a thumb), I will publish earlier versions as well.
 
-## NOW USING FLOATING UI - UPGRADING TO V17
+## NOW USING FLOATING UI - UPGRADING TO v17
 If you used previous versions of ngx-popperjs, you'll now that it wrapped popper.js initially.
 Since Floating UI is the future version of Popper.js and since latest happenings with recent Chrome updates breaking ngx-popperjs, I decided to move to the newer technology.
 
@@ -23,16 +23,11 @@ Well on a graphic perspective, none. You will be able to use the v17 without cha
 The only deprecation is in the `NgxPopperjsOptions` which now doesn't provide the **modifiers**.
 The reason is that **you can't now pass modifiers** like you did in Popper.js.
 It didn't seem like a huge change, since in this library modifiers should be mostly (but let me know with an issue) for preventing the popper flipping.
+Maybe if we see that it can be useful we can pass an override for the `middleware`.
 
-Now by default, **popovers won't flip**. You will have to pass `popperPreventOverflow` as attribute (coerced so the empty attribute will suffice) to make the popovers flip.
+I simply added a new attribute, `popperFlip`, that you can set to false, in order to prevent the flipping (default `true`).
 
-I will be publishing the new ngx-floating-ui (still contending for the name on npm) along this one.
-The goal is gradually moving everybody to ngx-floating-ui. So I will probably publish both for this and the next major (18), then deprecate this package in favor of the new one.
-
-Clearly switching to the new package will require some work, cause I can't have a library called "ngx-floating-ui" and then modules called "NgxPopperjs".
-It will be worth it though cause there's much more potential in Floating UI, and we will be able to include new features, such as combobox or dialog as shown on their website.
-
-Check NgxPopperjs official [page](https://tonysamperi.github.io/ngx-popperjs) to be updated!
+Check NgxPopperjs official [page](https://tonysamperi.github.io/ngx-popperjs) to stay up to date!
 
 ### Premise
 
@@ -180,33 +175,34 @@ body {
  
 8. Attributes map:  
   
-    | Option                       | Type              | Default   | Description                                                                                              |
-    |:-----------------------      |:----------------  |:--------- | :------------------------------------------------------------------------------------------------------  |
-    | popperDisableAnimation       | boolean           | false     | Disable the default animation on show/hide                                                               |
-    | popperDisableStyle           | boolean           | false     | Disable the default styling                                                                              |
-    | popperDisabled               | boolean           | false     | Disable the popper, ignore all events                                                                    |
-    | popperDelay                  | number            | 0         | Delay time until popper it shown                                                                         |
-    | popperTimeout                | number            | 0         | Set delay before the popper is hidden                                                                    |
-    | popperTimeoutAfterShow       | number            | 0         | Set a time on which the popper will be hidden after it is shown                                          |
-    | popperPlacement              | Placement(string) | auto      | The placement to show the popper relative to the reference element                                       |
-    | popperTarget                 | HtmlElement       | auto      | Specify a different reference element other the the one hosting the directive                            |
-    | popperBoundaries             | string(selector)  | undefined | Specify a selector to serve as the boundaries of the element                                             |
-    | popperShowOnStart            | boolean           | false     | Popper default to show                                                                                   |
-    | popperTrigger                | Trigger(string)   | click     | Trigger/Event on which to show/hide the popper                                                           |
-    | popperPositionFixed          | boolean           | false     | Set the popper element to use position: fixed                                                            |
-    | popperAppendTo               | string            | undefined | append The popper-content element to a given selector, if multiple will apply to first                   |
-    | popperPreventOverflow        | boolean           | undefined | Prevent the popper from being positioned outside the boundary                                            |
-    | popperHideOnClickOutside     | boolean           | true      | Popper will hide on a click outside                                                                      |
-    | popperHideOnScroll           | boolean           | false     | Popper will hide on scroll                                                                               |
-    | popperHideOnMouseLeave       | boolean           | false     | Popper will hide on mouse leave                                                                          |
-    | popperApplyClass             | string            | undefined | list of comma separated class to apply on ngpx__container                                                |
-    | popperStyles                 | Object            | undefined | Apply the styles object, aligned with ngStyles                                                           |
-    | popperApplyArrowClass        | string            | undefined | list of comma separated class to apply on ngpx__arrow                                                    |
-    | popperOnShown                | EventEmitter<>    | $event    | Event handler when popper is shown                                                                       |
-    | popperOnHidden               | EventEmitter<>    | $event    | Event handler when popper is hidden                                                                      |
-    | popperOnUpdate               | EventEmitter<>    | $event    | Event handler when popper is updated                                                                     |
-    | popperAriaDescribeBy         | string            | undefined | Define value for aria-describeby attribute                                                               |
-    | popperAriaRole               | string            | popper    | Define value for aria-role attribute                                                                     |
+    | Option                   | Type              | Default   | Description                                                                            |
+    |:-------------------------|:------------------|:----------|:---------------------------------------------------------------------------------------|
+    | popperDisableAnimation   | boolean           | false     | Disable the default animation on show/hide                                             |
+    | popperDisableStyle       | boolean           | false     | Disable the default styling                                                            |
+    | popperDisabled           | boolean           | false     | Disable the popper, ignore all events                                                  |
+    | popperDelay              | number            | 0         | Delay time until popper it shown                                                       |
+    | popperTimeout            | number            | 0         | Set delay before the popper is hidden                                                  |
+    | popperTimeoutAfterShow   | number            | 0         | Set a time on which the popper will be hidden after it is shown                        |
+    | popperPlacement          | Placement(string) | auto      | The placement to show the popper relative to the reference element                     |
+    | popperTarget             | HtmlElement       | auto      | Specify a different reference element other the the one hosting the directive          |
+    | popperBoundaries         | string(selector)  | undefined | Specify a selector to serve as the boundaries of the element                           |
+    | popperShowOnStart        | boolean           | false     | Popper default to show                                                                 |
+    | popperTrigger            | Trigger(string)   | click     | Trigger/Event on which to show/hide the popper                                         |
+    | popperPositionFixed      | boolean           | false     | Set the popper element to use position: fixed                                          |
+    | popperAppendTo           | string            | undefined | append The popper-content element to a given selector, if multiple will apply to first |
+    | popperPreventOverflow    | boolean           | undefined | Prevent the popper from being positioned outside the boundary                          |
+    | popperHideOnClickOutside | boolean           | true      | Popper will hide on a click outside                                                    |
+    | popperHideOnScroll       | boolean           | false     | Popper will hide on scroll                                                             |
+    | popperHideOnMouseLeave   | boolean           | false     | Popper will hide on mouse leave                                                        |
+    | popperApplyClass         | string            | undefined | list of comma separated class to apply on ngpx__container                              |
+    | popperStyles             | Object            | undefined | Apply the styles object, aligned with ngStyles                                         |
+    | popperApplyArrowClass    | string            | undefined | list of comma separated class to apply on ngpx__arrow                                  |
+    | popperOnShown            | EventEmitter<>    | $event    | Event handler when popper is shown                                                     |
+    | popperOnHidden           | EventEmitter<>    | $event    | Event handler when popper is hidden                                                    |
+    | popperOnUpdate           | EventEmitter<>    | $event    | Event handler when popper is updated                                                   |
+    | popperAriaDescribeBy     | string            | undefined | Define value for aria-describeby attribute                                             |
+    | popperAriaRole           | string            | popper    | Define value for aria-role attribute                                                   |
+    | popperFlip               | boolean           | true      | Enable or disable the flipping                                                         |
 
 
 9. Override defaults:
