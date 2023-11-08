@@ -55,6 +55,10 @@ task("bump:major", () => {
     return doBump("major");
 });
 
+gulp.task("bump:beta", () => {
+    return doBump("prerelease", "beta");
+});
+
 task("build++", () => {
     return gulp.src(join(__dirname, "package.json"))
         .pipe(obj((file, enc, cb) => {

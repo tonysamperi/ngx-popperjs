@@ -1,3 +1,5 @@
+$arrow-size: 10px !default;
+
 popper-content {
   position: relative;
   display: block;
@@ -18,39 +20,31 @@ popper-content {
     animation: ngxp-fadeIn 150ms ease-out;
   }
 
-
-  > .ngxp__arrow,
-  > .ngxp__arrow:before {
+  > .ngxp__arrow {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: $arrow-size;
+    height: $arrow-size;
     z-index: -1;
-  }
-
-  > .ngxp__arrow:before {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-    content: '';
-    background-color: #FFF;
-    top: 0;
-    left: 0;
+    background-color: red;
   }
 
   &[data-popper-placement^='top'] > .ngxp__arrow {
-    bottom: -4px;
+    bottom: -1 * $arrow-size / 2;
   }
 
   &[data-popper-placement^='bottom'] > .ngxp__arrow {
-    top: -4px;
+    top: -1 * $arrow-size  / 2;
   }
 
   &[data-popper-placement^='left'] > .ngxp__arrow {
-    right: -4px;
+    right: -1 * $arrow-size  / 2;
   }
 
   &[data-popper-placement^='right'] > .ngxp__arrow {
-    left: -4px;
+    left: -1 * $arrow-size  / 2;
   }
 
 }

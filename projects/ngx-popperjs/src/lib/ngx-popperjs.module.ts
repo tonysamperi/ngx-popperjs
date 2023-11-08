@@ -15,9 +15,7 @@ export function provideNgxPopperjsOptions(config: NgxPopperjsOptions = {}): Prov
 
 @NgModule({
     imports: [
-        CommonModule
-    ],
-    declarations: [
+        CommonModule,
         NgxPopperjsContentComponent,
         NgxPopperjsDirective,
         NgxPopperjsLooseDirective

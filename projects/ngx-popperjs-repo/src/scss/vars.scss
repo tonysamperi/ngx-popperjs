@@ -8,3 +8,21 @@ $pop-colors: (
 );
 
 $pop-angular-logo-size: 40px;
+
+@mixin pop-scrollbar() {
+  -webkit-scrollbar-color: rgba(255, 230, 157, 1) transparent;
+  -moz-scrollbar-color: rgba(255, 230, 157, 1) transparent;
+  -ms-scrollbar-color: rgba(255, 230, 157, 1) transparent;
+  scrollbar-color: rgba(255, 230, 157, 1) transparent;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(255, 230, 157, 1);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+}

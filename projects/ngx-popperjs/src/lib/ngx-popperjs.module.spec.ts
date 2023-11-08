@@ -2,14 +2,9 @@ import mainPkg from "../../../../package.json";
 import libPkg from "../../package.json";
 import {minVersion} from "semver";
 
-// beforeEach(() => {
-//
-// });
-
-it("should have matching package versions for @popperjs/core", () => {
-
-    const popperjsVersionMain = mainPkg.dependencies["@popperjs/core"];
-    const popperjsVersionLib = libPkg.dependencies["@popperjs/core"];
+it("should have matching package versions for @floating-ui/dom", () => {
+    const popperjsVersionMain = mainPkg.dependencies["@floating-ui/dom"];
+    const popperjsVersionLib = libPkg.dependencies["@floating-ui/dom"];
 
     expect(popperjsVersionLib).toEqual(popperjsVersionMain);
 });

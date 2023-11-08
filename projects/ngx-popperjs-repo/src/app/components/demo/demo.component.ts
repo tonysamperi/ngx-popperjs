@@ -1,9 +1,12 @@
 import {Component, OnInit} from "@angular/core";
-import {NgxPopperjsPlacements} from "ngx-popperjs";
-import {Modifier} from "@popperjs/core";
-import {Options} from "@popperjs/core/lib/modifiers/flip";
+import {NgFor, NgIf} from "@angular/common";
+import {
+    NgxPopperjsPlacements,
+    NgxPopperjsLooseDirective,
+    NgxPopperjsDirective,
+    NgxPopperjsContentComponent
+} from "ngx-popperjs";
 //
-import {NGX_POPPERJS_DONT_FLIP_MODIFIER} from "../../shared/ngx-popperjs-dont-flip-modifier.const";
 import {getNgxPopperJsCodeMap} from "../../shared/ngx-popperjs-code-map.const";
 import {NgxPopArticleTypes, NgxPopperjsArticleTypesRef} from "../../shared/ngx-popperjs-article-types.model";
 //
@@ -25,7 +28,9 @@ const codeTypes: NgxPopperjsArticleTypesRef<"css" | "markup"> = {
 @Component({
     selector: "app-demo",
     templateUrl: "demo.component.html",
-    styleUrls: ["demo.component.scss"]
+    styleUrls: ["demo.component.scss"],
+    standalone: true,
+    imports: [NgIf, NgFor, NgxPopperjsContentComponent, NgxPopperjsDirective, NgxPopperjsLooseDirective]
 })
 export class NgxPopperjsDemoComponent implements OnInit {
 
@@ -37,11 +42,12 @@ export class NgxPopperjsDemoComponent implements OnInit {
         return getNgxPopperJsCodeMap(this.selectedPosition);
     }
 
-    dontFlipModifier: Partial<Modifier<"flip", Options>>[] = [NGX_POPPERJS_DONT_FLIP_MODIFIER];
     messages: { opts?: { delay?: number | "natural"; loop?: boolean; }; text: string; }[] = [];
+    popperPlacements: typeof NgxPopperjsPlacements = NgxPopperjsPlacements;
     // tslint:disable-next-line:no-bitwise
     positionButtons: NgxPopperjsPlacements[] = Object.values(NgxPopperjsPlacements).filter((v) => !~v.indexOf("auto"));
     selectedPosition: NgxPopperjsPlacements = this.positionButtons[0];
+    showWarning: boolean = !0;
     year: number = new Date().getFullYear();
 
     ngOnInit(): void {

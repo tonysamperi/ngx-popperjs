@@ -6,6 +6,27 @@ strong {
   color: map-get($pop-colors, primary-light);
 }
 
+.warning-dialog {
+  position: fixed;
+  left: 12px;
+  top: 12px;
+  width: 33%;
+  padding: 24px 16px 16px 16px;
+  color: #222;
+  background-color: darkorange;
+  z-index: 9999;
+  > .close {
+    position: absolute;
+    right: 16px;
+    top: 0;
+    cursor: pointer;
+  }
+
+  strong {
+    color: #222;
+  }
+}
+
 .pop-generic-section {
   padding: 50px 40px;
   max-width: 900px;
@@ -166,12 +187,9 @@ strong {
 
     &[pop-overflow], &[pop-flipping], &[pop-click], &[pop-loose] {
       > div.pop-popcorn-wrap {
+        @include pop-scrollbar();
         position: relative;
         width: 100%;
-        -webkit-scrollbar-color: rgba(255, 230, 157, 1) transparent;
-        -moz-scrollbar-color: rgba(255, 230, 157, 1) transparent;
-        -ms-scrollbar-color: rgba(255, 230, 157, 1) transparent;
-        scrollbar-color: rgba(255, 230, 157, 1) transparent;
         border-radius: 10px;
         overflow-y: scroll;
         overscroll-behavior: contain;
@@ -194,17 +212,6 @@ strong {
           width: 1px;
           height: 600px;
           //border: 2px solid blue;
-        }
-
-        &::-webkit-scrollbar {
-          -webkit-appearance: none;
-          width: 7px;
-        }
-
-        &::-webkit-scrollbar-thumb {
-          border-radius: 4px;
-          background-color: rgba(255, 230, 157, 1);
-          -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
         }
 
         .pop-popcorn-box {

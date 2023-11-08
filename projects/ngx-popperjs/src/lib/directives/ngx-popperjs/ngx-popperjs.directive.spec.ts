@@ -2,9 +2,7 @@ import {Component, DebugElement, ViewEncapsulation} from "@angular/core";
 import {ComponentFixture, fakeAsync, TestBed, tick} from "@angular/core/testing";
 import {By} from "@angular/platform-browser";
 //
-import {NgxPopperjsDirective} from "../ngx-popperjs/ngx-popperjs.directive";
-import {NgxPopperjsModule} from "../../ngx-popperjs.module";
-import {NgxPopperjsPlacements} from "../../models/ngx-popperjs-placements.model";
+import {NgxPopperjsModule, NgxPopperjsDirective, NgxPopperjsPlacements} from "ngx-popperjs";
 
 @Component({
     template: `
@@ -45,7 +43,9 @@ import {NgxPopperjsPlacements} from "../../models/ngx-popperjs-placements.model"
     styleUrls: [
         "../../../../../ngx-popperjs-repo/src/app/components/demo/demo.component.scss"
     ],
-    encapsulation: ViewEncapsulation.None
+    encapsulation: ViewEncapsulation.None,
+    standalone: true,
+    imports: [NgxPopperjsModule]
 })
 class NgxPopperjsDirectiveTestComponent {
 
@@ -83,13 +83,11 @@ let poppers: DebugElement[];
 
 beforeEach(() => {
     fixture = TestBed.configureTestingModule({
-            imports: [
-                NgxPopperjsModule
-            ],
-            declarations: [
-                NgxPopperjsDirectiveTestComponent
-            ]
-        })
+    imports: [
+        NgxPopperjsModule,
+        NgxPopperjsDirectiveTestComponent
+    ]
+})
         .createComponent(NgxPopperjsDirectiveTestComponent);
     fixture.detectChanges(); // initial binding
     // all elements with an attached NgxPopperjsDirective

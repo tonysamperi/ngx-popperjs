@@ -5,7 +5,7 @@
     "entryFile": "src/public-api.ts"
   },
   "allowedNonPeerDependencies": [
-    "@popperjs/core"
+    "@floating-ui/dom"
   ],
   "keepLifecycleScripts": true
 }

@@ -10,16 +10,21 @@ import {
     ViewContainerRef,
     ViewEncapsulation
 } from "@angular/core";
+import {NgStyle, NgClass, NgIf} from "@angular/common";
 //
 import {NgxPopperjsOptions} from "../../models/ngx-popperjs-options.model";
-import {NgxPopperjsPlacements} from "../../models/ngx-popperjs-placements.model";
 import {NgxPopperjsTriggers} from "../../models/ngx-popperjs-triggers.model";
 //
-import {createPopper as Popper, Options} from "@popperjs/core";
-import {ArrowModifier} from "@popperjs/core/lib/modifiers/arrow";
-import {Instance} from "@popperjs/core/lib/types";
-import {PreventOverflowModifier} from "@popperjs/core/lib/modifiers/preventOverflow";
-import {OffsetModifier} from "@popperjs/core/lib/modifiers/offset";
+import {
+    computePosition,
+    autoUpdate,
+    flip,
+    arrow,
+    limitShift,
+    shift,
+    offset,
+    autoPlacement, ComputePositionConfig,
+} from "@floating-ui/dom";
 import {fromEvent, Subject, takeUntil} from "rxjs";
 
 @Component({
@@ -29,7 +34,9 @@ import {fromEvent, Subject, takeUntil} from "rxjs";
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: "./ngx-popperjs-content.component.html",
     styleUrls: ["./ngx-popperjs-content.component.scss"],
-    exportAs: "ngxPopperjsContent"
+    exportAs: "ngxPopperjsContent",
+    standalone: true,
+    imports: [NgStyle, NgClass, NgIf]
 })
 export class NgxPopperjsContentComponent implements OnDestroy {
 
@@ -43,11 +50,10 @@ export class NgxPopperjsContentComponent implements OnDestroy {
     onHidden = new EventEmitter();
     onUpdate: () => any;
     opacity: number;
-    popperInstance: Instance;
+    popperInstance: () => void;
     popperOptions: NgxPopperjsOptions = {
         disableAnimation: false,
         disableDefaultStyling: false,
-        placement: NgxPopperjsPlacements.AUTO,
         boundariesElement: "",
         trigger: NgxPopperjsTriggers.hover,
         positionFixed: false,
@@ -60,25 +66,8 @@ export class NgxPopperjsContentComponent implements OnDestroy {
     state: boolean;
     text: string;
 
-    protected readonly _baseModifiers: [OffsetModifier, ArrowModifier] = [
-        {
-            name: "offset",
-            enabled: !0,
-            options: {
-                offset: [0, 8],
-            }
-        } as OffsetModifier,
-        {
-            name: "arrow",
-            enabled: !0,
-            options: {
-                element: ".ngxp__arrow",
-                padding: 3
-            },
-            requires: ["arrow"]
-        } as ArrowModifier
-    ];
     protected _destroy$: Subject<void> = new Subject<void>();
+    protected _resizeCtrl$: Subject<void> = new Subject<void>();
     protected _styleId = `${this.id}_style`;
 
     constructor(public elRef: ElementRef,
@@ -92,7 +81,7 @@ export class NgxPopperjsContentComponent implements OnDestroy {
         if (!this.popperInstance) {
             return;
         }
-        this.popperInstance.destroy();
+        this.popperInstance();
     }
 
     extractAppliedClassListExpr(classList: string | string[] = []): object {
@@ -107,9 +96,9 @@ export class NgxPopperjsContentComponent implements OnDestroy {
 
     hide(): void {
         if (this.popperInstance) {
-            this.popperInstance.destroy();
+            this.popperInstance();
         }
-        this.toggleVisibility(false);
+        this.toggleVisibility(!1);
         this.onHidden.emit();
     }
 
@@ -135,54 +124,20 @@ export class NgxPopperjsContentComponent implements OnDestroy {
         if (!this.referenceObject) {
             return;
         }
-
-        const appendToParent = this.popperOptions.appendTo && document.querySelector(this.popperOptions.appendTo);
-        if (appendToParent && this.elRef.nativeElement.parentNode !== appendToParent) {
-            this.elRef.nativeElement.parentNode && this.elRef.nativeElement.parentNode.removeChild(this.elRef.nativeElement);
-            appendToParent.appendChild(this.elRef.nativeElement);
-        }
-
-        const popperOptions: Options = {
-            strategy: this.popperOptions.positionFixed ? "fixed" : "absolute",
-            placement: this.popperOptions.placement,
-            modifiers: this._baseModifiers
-        } as Options;
-        if (this.onUpdate) {
-            popperOptions.onFirstUpdate = this.onUpdate as any;
-        }
-
-        const boundariesElement = this.popperOptions.boundariesElement && document.querySelector(this.popperOptions.boundariesElement);
-
-        if (popperOptions.modifiers && boundariesElement) {
-            popperOptions.modifiers.push({
-                name: "preventOverflow",
-                enabled: this.popperOptions.preventOverflow,
-                options: {
-                    boundary: boundariesElement
-                }
-            } as PreventOverflowModifier);
-        }
-        if (popperOptions.modifiers) {
-            const preventOverflowModifier = popperOptions.modifiers.find((v) => v.name === "preventOverflow");
-            if (preventOverflowModifier && !preventOverflowModifier.enabled) {
-                const hideModifier = popperOptions.modifiers.find((v) => v.name === "preventOverflow");
-                hideModifier && (hideModifier.enabled = !1);
-            }
-        }
+        this._resizeCtrl$.next();
         this._determineArrowColor();
-        popperOptions.modifiers = popperOptions.modifiers.concat(this.popperOptions.popperModifiers);
-        window.requestAnimationFrame(() => {
-            window.requestAnimationFrame(() => {
-                this.popperInstance = Popper(
-                    this.referenceObject,
-                    this.popperViewRef.nativeElement,
-                    popperOptions,
-                );
-            });
-        });
-        this.toggleVisibility(!0);
+        this.popperInstance = autoUpdate(
+            this.referenceObject,
+            this.popperViewRef.nativeElement,
+            () => {
+                this._computePosition();
+            }
+        );
         fromEvent(document, "resize")
-            .pipe(takeUntil(this._destroy$))
+            .pipe(
+                takeUntil(this._resizeCtrl$),
+                takeUntil(this._destroy$),
+            )
             .subscribe({
                 next: () => this.onDocumentResize()
             });
@@ -207,7 +162,71 @@ export class NgxPopperjsContentComponent implements OnDestroy {
     }
 
     update(): void {
-        this.popperInstance && (this.popperInstance as any).update();
+        this._computePosition();
+    }
+
+    protected _computePosition(): void {
+        const appendToParent = this.popperOptions.appendTo && document.querySelector(this.popperOptions.appendTo);
+        if (appendToParent && this.elRef.nativeElement.parentNode !== appendToParent) {
+            this.elRef.nativeElement.parentNode && this.elRef.nativeElement.parentNode.removeChild(this.elRef.nativeElement);
+            appendToParent.appendChild(this.elRef.nativeElement);
+        }
+
+        const arrowElement = this.elRef.nativeElement.querySelector(".ngxp__arrow");
+        const arrowLen = arrowElement.offsetWidth;
+        // Get half the arrow box's hypotenuse length
+        const floatingOffset = Math.sqrt(2 * arrowLen ** 2) / 2;
+        const boundaryMiddleware = [];
+        if (this.popperOptions.flip) {
+            boundaryMiddleware.push(flip());
+        }
+        if (this.popperOptions.preventOverflow) {
+            boundaryMiddleware.push(shift({limiter: limitShift()}));
+        }
+        const popperOptions: Partial<ComputePositionConfig> = {
+            placement: this.popperOptions.placement,
+            strategy: this.popperOptions.positionFixed ? "fixed" : "absolute",
+            middleware: [
+                offset(floatingOffset),
+                ...boundaryMiddleware,
+                arrow({
+                    element: arrowElement,
+                    padding: 4
+                })
+            ],
+        };
+        if (!this.popperOptions.preventOverflow && !popperOptions.placement) {
+            const boundariesElement = this.popperOptions.boundariesElement && document.querySelector(this.popperOptions.boundariesElement);
+            popperOptions.middleware.push(
+                autoPlacement({
+                    boundary: boundariesElement
+                })
+            );
+        }
+        computePosition(this.referenceObject, this.popperViewRef.nativeElement, popperOptions)
+            .then(({middlewareData, x, y, placement}) => {
+                const side = placement.split("-")[0];
+                this.popperViewRef.nativeElement.setAttribute("data-popper-placement", side);
+                if (middlewareData.arrow) {
+                    const staticSide = {
+                        top: "bottom",
+                        right: "left",
+                        bottom: "top",
+                        left: "right"
+                    }[side];
+                    Object.assign(arrowElement.style, {
+                        left: middlewareData.arrow.x != null ? `${middlewareData.arrow.x}px` : "",
+                        top: middlewareData.arrow.y != null ? `${middlewareData.arrow.y}px` : "",
+                        [staticSide]: `${-arrowLen / 2}px`
+                    });
+                }
+                Object.assign(this.popperViewRef.nativeElement.style, {
+                    left: `${x}px`,
+                    top: `${y}px`,
+                });
+                this.toggleVisibility(!0);
+                this.onUpdate?.();
+            });
     }
 
     protected _createArrowSelector(): string {

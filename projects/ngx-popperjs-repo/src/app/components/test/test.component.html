@@ -17,9 +17,9 @@
                 </popper-content>
                 <img alt="Popcorn box"
                      src="assets/images/popcorn-box.svg"
-                     [popperHideOnScroll]="!0"
+                     popperHideOnClickOutside
+                     popperPreventOverflow
                      [popper]="popperClickContent"
-                     [popperModifiers]="dontFlipModifier"
                      class="pop-popcorn-box">
             </div>
             <div>
@@ -44,5 +44,5 @@
                                                      target="_blank">Tony
         Samperi</a>
     </p>
-    <p>© 2022 MIT License</p>
+    <p>© 2023 MIT License</p>
 </footer>
