@@ -1,6 +1,6 @@
 {
   "name": "ngx-popperjs-repo",
-  "version": "17.0.0-rc.3",
+  "version": "17.0.0",
   "build": 0,
   "license": "MIT",
   "description": "ngx-popperjs is an Angular wrapper for @popperjs",
@@ -25,7 +25,7 @@
     "popperjs"
   ],
   "engines": {
-    "node": ">=14.18.0"
+    "node": ">=18"
   },
   "scripts": {
     "ng": "ng",
@@ -46,13 +46,13 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^17.0.0-rc.2",
-    "@angular/common": "^17.0.0-rc.2",
-    "@angular/compiler": "^17.0.0-rc.2",
-    "@angular/core": "^17.0.0-rc.2",
-    "@angular/forms": "^17.0.0-rc.2",
-    "@angular/platform-browser": "^17.0.0-rc.2",
-    "@angular/platform-browser-dynamic": "^17.0.0-rc.2",
+    "@angular/animations": "^17.0.0",
+    "@angular/common": "^17.0.0",
+    "@angular/compiler": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "@angular/forms": "^17.0.0",
+    "@angular/platform-browser": "^17.0.0",
+    "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/ssr": "^17.0.0-next.0",
     "@floating-ui/dom": "^1.5.3",
     "rxjs": "^7.4.0",
@@ -61,11 +61,11 @@
     "zone.js": "^0.14.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.0.0-rc.3",
+    "@angular-devkit/build-angular": "^17.0.0",
     "@angular-devkit/build-ng-packagr": "^0.1002.0",
     "@angular/cli": "^17.0.0-next.9",
-    "@angular/compiler-cli": "^17.0.0-rc.2",
-    "@angular/language-service": "^17.0.0-rc.2",
+    "@angular/compiler-cli": "^17.0.0",
+    "@angular/language-service": "^17.0.0",
     "@types/jasmine": "^3.3.8",
     "@types/jasminewd2": "^2.0.3",
     "@types/node": "^18.13.0",
