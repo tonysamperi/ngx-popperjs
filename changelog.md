@@ -1,3 +1,9 @@
+#16.0.9
+* Version bump (revert to v16.0.7)
+
+#16.0.8 (deprecated)
+* The real final fix of the "Chrome 115" bug. Removed `requestAnimationFrame` in favour of separating toggle `display` and `opacity`. This now solves the problem even when you use `popperDisableAnimation`.
+
 #16.0.7
 * Version bump
 
