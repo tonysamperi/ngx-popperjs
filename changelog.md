@@ -1,3 +1,6 @@
+#17.0.1
+* Jetbrains no longer supporting :(
+
 #17.0.0
 * Update for Angular 17! 🎉
 
